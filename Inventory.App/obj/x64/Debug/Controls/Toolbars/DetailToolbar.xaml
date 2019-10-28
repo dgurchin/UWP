@@ -1,0 +1,18 @@
+﻿<UserControl
+    x:Class="Inventory.Controls.DetailToolbar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="36">
+
+    <CommandBar x:ConnectionId='2' x:Name="commandBar" Height="36" DefaultLabelPosition="Right" Style="{StaticResource ToolBarStyle}" Background="Transparent">
+        <AppBarButton x:ConnectionId='3' x:Name="buttonBack" Icon="Back" Label="Назад" LabelPosition="Default" HorizontalAlignment="Left" Style="{StaticResource ToolBarButtonStyle}" Tag="back" />
+        <AppBarButton x:ConnectionId='4' x:Name="buttonEdit" Icon="Edit" Label="Изменить" LabelPosition="Default" HorizontalAlignment="Left" Style="{StaticResource ToolBarButtonStyle}" Tag="edit" />
+        <AppBarButton x:ConnectionId='5' x:Name="buttonDelete" Icon="Delete" Label="Удалить" LabelPosition="Default" HorizontalAlignment="Left" Style="{StaticResource ToolBarButtonStyle}" Tag="delete" />
+        <AppBarButton x:ConnectionId='6' x:Name="buttonCancel" Icon="Cancel" Label="Отменить" LabelPosition="Default" HorizontalAlignment="Left" Style="{StaticResource ToolBarButtonStyle}" Tag="cancel" />
+        <AppBarButton x:ConnectionId='7' x:Name="buttonSave" Icon="Save" Label="Сохранить" LabelPosition="Default" HorizontalAlignment="Left" Style="{StaticResource ToolBarButtonStyle}" Tag="save" />
+    </CommandBar>
+</UserControl>
+

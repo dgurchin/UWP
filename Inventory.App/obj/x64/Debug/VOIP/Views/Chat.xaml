@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="Linphone.VOIP.Views.Chat"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="using:Linphone"
+    xmlns:controls="using:Linphone.VOIP.Controls"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary Source="ms-appx:///VOIP/VOIPStyles/VOIPStyles.xaml" />
+    </Page.Resources>
+    
+    <Grid x:ConnectionId='2' x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12,17,0,10">
+            <TextBlock x:ConnectionId='11' 
+                x:Name="ContactName"
+                Style="{StaticResource StatusBarTextStyle}"
+                Margin="9,0,0,0" />
+            
+            <Border x:ConnectionId='12' x:Name="NewChat" BorderThickness="0,0,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" x:Uid="To" Text="To:" VerticalAlignment="Center" Margin="0,0,5,0"></TextBlock>
+                    <TextBox x:ConnectionId='13' Grid.Column="1" 
+                             x:Name="NewChatSipAddress" 
+                             VerticalAlignment="Center" 
+                             VerticalContentAlignment="Center" 
+                             InputScope="EmailSmtpAddress"
+                             AcceptsReturn="False"
+                             PlaceholderText="Number or address"
+                             IsSpellCheckEnabled="false">
+                    </TextBox>
+                    <Button x:ConnectionId='14' Grid.Column="2" x:Name="ChooseContact" Margin="0,0,5,5" Style="{StaticResource ButtonStyle}" Background="Transparent" BorderThickness="0"                            >
+                        <Button.ContentTemplate>
+                            <DataTemplate>
+                                <FontIcon x:Name="SendFile" FontFamily="Segoe MDL2 Assets" Glyph="&#xE710;" RenderTransformOrigin="0.5,0.5"/>
+                            </DataTemplate>
+                        </Button.ContentTemplate>
+                    </Button>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <Grid x:ConnectionId='3' x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <ScrollViewer x:ConnectionId='6' x:Name="MessagesScroll">
+                <StackPanel x:ConnectionId='10'
+                    x:Name="MessagesList" 
+                    Orientation="Vertical"
+                    VerticalAlignment="Bottom">
+                </StackPanel>
+            </ScrollViewer>
+
+            <TextBlock x:ConnectionId='7' x:Name="RemoteComposing" Grid.Row="1" Visibility="Collapsed"/>
+
+            <Border Grid.Row="2" BorderBrush="Gray" BorderThickness="0.5"/>
+            <controls:TextBoxChatBubble x:ConnectionId='8' Grid.Row="3" x:Name="MessageBox"  BorderThickness="1" BorderBrush="Gray" Margin="10"/>
+
+            <Border x:ConnectionId='9' 
+                x:Name="ProgressPopup"
+                Grid.Row="1"
+                Padding="5"
+                Visibility="Collapsed"
+                BorderThickness="10">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <ProgressBar
+                        IsIndeterminate="True"
+                        Width="300"/>
+                    <TextBlock
+                        Width="300"
+                        TextAlignment="Center"
+                        Text="" />
+                </StackPanel>
+            </Border>
+        </Grid>
+        <CommandBar Grid.Row="4" VerticalAlignment="Bottom">
+            <AppBarButton x:ConnectionId='4' Icon="Phone" Label="Call" x:Uid="Call"                   />
+            <AppBarButton x:ConnectionId='5' Visibility="Collapsed" x:Name="CancelUpload" Icon="Cancel" Label="Cancel" x:Uid="Cancel"                      />
+        </CommandBar>
+
+    </Grid>
+
+</Page>
+

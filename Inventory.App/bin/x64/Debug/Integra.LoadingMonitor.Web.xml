@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Integra.LoadingMonitor.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Integra.LoadingMonitor.Web.DataProviders.KDSWebServiceDataProvider">
+            <summary>
+            Источник данных который работает через HttpClient
+            </summary>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.DataProviders.KDSWebServiceDataProvider.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Throws an exceptions when input parameters is null or empty
+            </summary>
+            <param name="host">Remove host address without / at the end</param>
+            <param name="user">User name</param>
+            <param name="password">Password</param>
+            <exception cref="T:System.ArgumentNullException">Throws when a host, user or password is empty</exception>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.DataProviders.KDSWebServiceDataProvider.InitProviderAsync">
+            <summary>
+            Establish connection with web service for obtains token, future communications
+            </summary>
+            <exception cref="T:System.NullReferenceException">Throws when response parameter is incorrect</exception>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.DataProviders.KDSWebServiceDataProvider.Departments">
+            <summary>
+            Отделы <see cref="T:Integra.LoadingMonitor.Web.Repositories.DepartmentWebRepository"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.DataProviders.KDSWebServiceDataProvider.OrderStates">
+            <summary>
+            Статусы <see cref="T:Integra.LoadingMonitor.Web.Repositories.OrderStateWebRepository"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.DataProviders.KDSWebServiceDataProvider.Restaurants">
+            <summary>
+            Рестораны <see cref="T:Integra.LoadingMonitor.Web.Repositories.RestaurantWebRepository"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.DataProviders.KDSWebServiceDataProvider.Orders">
+            <summary>
+            Заказы <see cref="T:Integra.LoadingMonitor.Web.Repositories.OrderWebRepository"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Web.Repositories.DepartmentWebRepository">
+            <summary>
+            Отделы - удаленный доступ
+            </summary>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.DepartmentWebRepository.GetAllAsync">
+            <summary>
+            Получить все отделы
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Web.Repositories.KDSWebRepository`1">
+            <summary>
+            Базовое web хранилище
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Web.Repositories.KDSWebRepository`1.Host">
+            <summary>
+            Удаленный хост http's://address.com
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Web.Repositories.KDSWebRepository`1.Token">
+            <summary>
+            Bearer token
+            </summary>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.KDSWebRepository`1.#ctor(System.String,System.String)">
+            <summary>
+            Throws an exception if parameters is null or empty
+            </summary>
+            <param name="host"></param>
+            <param name="token"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.KDSWebRepository`1.GetAllAsync">
+            <summary>
+            Получить все записи
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Web.Repositories.OrderStateWebRepository">
+            <summary>
+            Статусы заказа - удаленный доступ
+            </summary>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.OrderStateWebRepository.GetAllAsync">
+            <summary>
+            Получить все статусы
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Web.Repositories.OrderWebRepository">
+            <summary>
+            Заказы - удаленный доступ
+            </summary>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.OrderWebRepository.GetAllAsync">
+            <summary>
+            Получить все заказы
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.OrderWebRepository.GetOrdersAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить заказы по фильтру
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.OrderWebRepository.GetRestaurantGroupings(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Группировка по ресторану
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.OrderWebRepository.GetOrderDishesAsync(System.Int32)">
+            <summary>
+            Блюда заказа
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.OrderWebRepository.GetDishModelsAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить блюда
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.OrderWebRepository.GetStateSummaryAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить группировку по состояниям
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.OrderWebRepository.GetDepartmentStateSummaries(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить группировку по отделам
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Web.Repositories.RestaurantWebRepository">
+            <summary>
+            Рестораны
+            </summary>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Web.Repositories.RestaurantWebRepository.GetAllAsync">
+            <summary>
+            Получить все записи
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

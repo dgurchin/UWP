@@ -1,0 +1,45 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="Inventory.Views.ShellView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Frame x:ConnectionId='6' x:Name="frame"                                                      >
+                    <Frame.ContentTransitions>
+                        <TransitionCollection>
+                            <NavigationThemeTransition/>
+                        </TransitionCollection>
+                    </Frame.ContentTransitions>
+                </Frame>
+            </Grid>
+   
+            <Grid Grid.Row="1" Background="DarkGray">
+                <Rectangle x:ConnectionId='4' Fill="{StaticResource Error}"                                                      />
+                <TextBlock x:ConnectionId='5' Margin="6,4"                                                Foreground="White" FontSize="12" />
+            </Grid>
+        </Grid>
+
+        <Grid x:ConnectionId='2' RequestedTheme="Dark" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"                                                      >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <StackPanel VerticalAlignment="Center">
+                <Image Source="ms-appx:///Assets/SplashScreen.scale-200.png" Width="640" />
+                <TextBlock Text="Приложение заблокировано" HorizontalAlignment="Center" FontSize="18" />
+                <HyperlinkButton x:ConnectionId='3' Content="Переключиться на основной вид, чтобы разблокировать" Foreground="White" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"                       />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
+

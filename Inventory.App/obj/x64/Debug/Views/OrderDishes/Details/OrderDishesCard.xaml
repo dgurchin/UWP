@@ -1,0 +1,38 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="Inventory.Views.OrderDishesCard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="260" d:DesignHeight="400">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto" BorderThickness="0,0,1,0" BorderBrush="LightGray">
+        <StackPanel>
+            <TextBlock>OrderDishesCard.xaml</TextBlock>
+            <TextBlock Style="{StaticResource CardSection}" Text="Заказ"  />
+            <TextBlock Style="{StaticResource CardHeader}" Text="ID заказа" />
+            <TextBlock x:ConnectionId='2' Style="{StaticResource CardText}"                                      />
+
+            <Rectangle Style="{StaticResource CardSeparator}"/>
+            <TextBlock Style="{StaticResource CardSection}" Text="Блюдо"  />
+            <StackPanel Orientation="Horizontal" Margin="0,0">
+                <Image x:ConnectionId='5'                                                                                                             
+                           Margin="0,3,9,12" Height="56"
+                           Stretch="Uniform" HorizontalAlignment="Center" 
+                           VerticalAlignment="Center" />
+                <TextBlock x:ConnectionId='6'                                             
+                           VerticalAlignment="Center"
+                           Style="{StaticResource CardSuperHeader}"
+                           TextAlignment="Center" />
+            </StackPanel>
+
+            <TextBlock Style="{StaticResource CardHeader}" Text="Цена" />
+            <TextBlock x:ConnectionId='3' Style="{StaticResource CardText}"                                              />
+
+            <TextBlock Style="{StaticResource CardHeader}" Text="Всего" />
+            <TextBlock x:ConnectionId='4' Style="{StaticResource CardText}"                                         />
+          
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
+

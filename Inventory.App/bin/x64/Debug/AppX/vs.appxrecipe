@@ -1,0 +1,1392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>HURCHYN-PC</Machine>
+    <WindowsUser>Dmytro.Hurchyn</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>0b535621-4369-4594-8e33-d63161bc2b5f</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Integra, O=Integra ITS, C=UK</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\Delivery\src\Inventory.App\obj\x64\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>D:\Delivery\src\Inventory.App\bin\x64\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>22C5E0B80B33D0F3087E30F1CC159C50C87C60E3584BFF40C4BF8E9397E0A262</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>IntegraDelivery_1.0.34.0_x64__ff0sz094pnd5p</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>IntegraDelivery_ff0sz094pnd5p!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>IntegraDelivery</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Integra, O=Integra ITS, C=UK</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.34.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-28T15:00:32.725</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Inventory.Sample.exe">
+      <PackagePath>entrypoint\Inventory.Sample.exe</PackagePath>
+      <Modified>2019-10-28T15:00:28.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.appcenter.crashes\2.1.1\build\uap10.0\..\..\runtimes\win10-x64\native\WatsonRegistrationUtility.dll">
+      <PackagePath>WatsonRegistrationUtility.dll</PackagePath>
+      <Modified>2019-06-25T23:50:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
+      <PackagePath>ColorCode.Core.dll</PackagePath>
+      <Modified>2018-10-05T20:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\colorcode.uwp\2.0.6\lib\uap10.0\ColorCode.UWP.dll">
+      <PackagePath>ColorCode.UWP.dll</PackagePath>
+      <Modified>2018-10-05T20:30:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\lib\uap10.0\CsWrapper.dll">
+      <PackagePath>CsWrapper.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.appcenter\2.1.1\lib\uap10.0\Microsoft.AppCenter.dll">
+      <PackagePath>Microsoft.AppCenter.dll</PackagePath>
+      <Modified>2019-06-25T23:51:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.appcenter.analytics\2.1.1\lib\uap10.0\Microsoft.AppCenter.Analytics.dll">
+      <PackagePath>Microsoft.AppCenter.Analytics.dll</PackagePath>
+      <Modified>2019-06-25T23:50:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.appcenter.crashes\2.1.1\runtimes\win10-x64\lib\uap10.0\Microsoft.AppCenter.Crashes.dll">
+      <PackagePath>Microsoft.AppCenter.Crashes.dll</PackagePath>
+      <Modified>2019-06-25T23:50:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.data.sqlite.core\2.2.6\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
+      <Modified>2019-06-18T18:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.dotnet.platformabstractions\2.1.0\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll">
+      <PackagePath>Microsoft.DotNet.PlatformAbstractions.dll</PackagePath>
+      <Modified>2018-05-15T18:01:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.entityframeworkcore\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.dll</PackagePath>
+      <Modified>2019-06-18T18:21:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.entityframeworkcore.abstractions\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Abstractions.dll</PackagePath>
+      <Modified>2019-06-18T18:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.entityframeworkcore.relational\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Relational.dll</PackagePath>
+      <Modified>2019-06-18T18:21:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.entityframeworkcore.sqlite.core\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Sqlite.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Sqlite.dll</PackagePath>
+      <Modified>2019-06-18T18:21:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.entityframeworkcore.sqlserver\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.SqlServer.dll</PackagePath>
+      <Modified>2019-06-18T18:21:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.caching.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Caching.Abstractions.dll</PackagePath>
+      <Modified>2018-11-10T22:26:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.caching.memory\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll">
+      <PackagePath>Microsoft.Extensions.Caching.Memory.dll</PackagePath>
+      <Modified>2018-11-10T22:26:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.configuration\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
+      <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
+      <Modified>2018-11-10T22:27:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.configuration.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Configuration.Abstractions.dll</PackagePath>
+      <Modified>2018-11-10T22:26:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.configuration.binder\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll">
+      <PackagePath>Microsoft.Extensions.Configuration.Binder.dll</PackagePath>
+      <Modified>2018-11-10T22:27:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.dependencyinjection\2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.dll</PackagePath>
+      <Modified>2018-11-10T22:26:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+      <Modified>2018-11-10T22:26:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.dependencymodel\2.1.0\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll">
+      <PackagePath>Microsoft.Extensions.DependencyModel.dll</PackagePath>
+      <Modified>2018-05-15T18:01:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.logging\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.dll">
+      <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
+      <Modified>2018-11-10T22:27:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.logging.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
+      <Modified>2018-11-10T22:26:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.options\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll">
+      <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
+      <Modified>2018-11-10T22:26:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.primitives\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll">
+      <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
+      <Modified>2018-11-10T22:26:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.graph\1.8.1\lib\netstandard1.1\Microsoft.Graph.dll">
+      <PackagePath>Microsoft.Graph.dll</PackagePath>
+      <Modified>2018-03-26T08:13:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.graph.core\1.8.1\lib\netstandard1.1\Microsoft.Graph.Core.dll">
+      <PackagePath>Microsoft.Graph.Core.dll</PackagePath>
+      <Modified>2018-03-23T12:10:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.identity.client\2.7.0\lib\uap10.0\Microsoft.Identity.Client.dll">
+      <PackagePath>Microsoft.Identity.Client.dll</PackagePath>
+      <Modified>2019-01-11T23:17:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.identitymodel.clients.activedirectory\3.13.7\lib\netcore45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll">
+      <PackagePath>Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</PackagePath>
+      <Modified>2016-11-01T14:39:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.identitymodel.clients.activedirectory\3.13.7\lib\netcore45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll">
+      <PackagePath>Microsoft.IdentityModel.Clients.ActiveDirectory.dll</PackagePath>
+      <Modified>2016-11-01T14:39:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.powerbi.api\2.0.12\lib\portable-net45+win+wpa81+MonoAndroid10+MonoTouch10+xamarinios10+xamarinmac20\Microsoft.PowerBI.Api.dll">
+      <PackagePath>Microsoft.PowerBI.Api.dll</PackagePath>
+      <Modified>2018-04-24T11:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.rest.clientruntime\2.0.1\lib\portable-net45+win+wpa81\Microsoft.Rest.ClientRuntime.dll">
+      <PackagePath>Microsoft.Rest.ClientRuntime.dll</PackagePath>
+      <Modified>2016-02-03T11:37:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit\5.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
+      <PackagePath>Microsoft.Toolkit.dll</PackagePath>
+      <Modified>2019-03-15T20:15:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.parsers\5.1.1\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
+      <PackagePath>Microsoft.Toolkit.Parsers.dll</PackagePath>
+      <Modified>2019-03-15T20:15:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.services\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Services.dll">
+      <PackagePath>Microsoft.Toolkit.Services.dll</PackagePath>
+      <Modified>2019-02-12T20:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
+      <Modified>2019-03-15T20:15:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
+      <Modified>2019-03-15T20:15:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.animations\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Animations.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Animations.dll</PackagePath>
+      <Modified>2019-03-15T20:15:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.dll</PackagePath>
+      <Modified>2019-03-15T20:49:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
+      <Modified>2019-02-12T20:34:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph.dll</PackagePath>
+      <Modified>2019-02-12T20:34:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+      <Modified>2016-02-22T11:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+      <Modified>2016-02-22T11:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2019-04-21T22:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\remotion.linq\2.2.0\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
+      <PackagePath>Remotion.Linq.dll</PackagePath>
+      <Modified>2018-02-06T20:25:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\runtimes\win10-x64\native\Robmikh.CompositionSurfaceFactory.dll">
+      <PackagePath>Robmikh.CompositionSurfaceFactory.dll</PackagePath>
+      <Modified>2017-09-27T16:20:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+      <Modified>2019-07-22T11:01:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlite-net-pcl\1.3.1\lib\netstandard1.1\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2017-01-16T10:56:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlitepclraw.bundle_green\1.1.12\lib\uap10.0\SQLitePCLRaw.batteries_green.dll">
+      <PackagePath>SQLitePCLRaw.batteries_green.dll</PackagePath>
+      <Modified>2018-12-18T13:00:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlitepclraw.bundle_green\1.1.12\lib\uap10.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2018-12-18T13:00:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlitepclraw.core\1.1.12\lib\uap10.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2018-12-18T13:00:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlitepclraw.lib.e_sqlite3.v140\1.1.12\runtimes\win10-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2018-12-18T13:01:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlitepclraw.provider.e_sqlite3.uwp10\1.1.12\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2018-12-18T13:00:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\system.data.sqlclient\4.6.1\runtimes\win\lib\uap10.0.16299\System.Data.SqlClient.dll">
+      <PackagePath>System.Data.SqlClient.dll</PackagePath>
+      <Modified>2019-04-17T15:07:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\system.interactive.async\3.2.0\lib\netstandard2.0\System.Interactive.Async.dll">
+      <PackagePath>System.Interactive.Async.dll</PackagePath>
+      <Modified>2018-07-11T10:48:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\win2d.uwp\1.23.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2018-05-17T17:17:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\ExternalFiles\LoadingMonitor\Integra.LoadingMonitor.dll">
+      <PackagePath>Integra.LoadingMonitor.dll</PackagePath>
+      <Modified>2019-09-09T08:33:13.595</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\ExternalFiles\LoadingMonitor\Integra.LoadingMonitor.Web.dll">
+      <PackagePath>Integra.LoadingMonitor.Web.dll</PackagePath>
+      <Modified>2019-09-09T08:33:13.588</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.Data\bin\Debug\netstandard2.0\Inventory.Data.dll">
+      <PackagePath>Inventory.Data.dll</PackagePath>
+      <Modified>2019-10-28T14:59:55.195</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.ViewModels\bin\Debug\netstandard2.0\Inventory.ViewModels.dll">
+      <PackagePath>Inventory.ViewModels.dll</PackagePath>
+      <Modified>2019-10-28T14:59:58.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.appcenter.crashes\2.1.1\runtimes\win10-x64\lib\uap10.0\WatsonRegistrationUtility.winmd">
+      <PackagePath>WatsonRegistrationUtility.winmd</PackagePath>
+      <Modified>2019-06-25T23:51:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\lib\uap10.0\Robmikh.CompositionSurfaceFactory.winmd">
+      <PackagePath>Robmikh.CompositionSurfaceFactory.winmd</PackagePath>
+      <Modified>2017-09-27T16:20:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\win2d.uwp\1.23.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2018-05-17T17:15:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+      <Modified>2018-10-22T22:33:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\AppLogo.png">
+      <PackagePath>Assets\AppLogo.png</PackagePath>
+      <Modified>2019-09-09T08:33:13.608</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:13.611</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\BadgeLogo.scale-125.png">
+      <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:13.614</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\BadgeLogo.scale-150.png">
+      <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:13.616</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\BadgeLogo.scale-200.png">
+      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:13.619</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\BadgeLogo.scale-400.png">
+      <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:13.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:13.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:13.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:14.070</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:14.073</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:14.077</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2019-09-09T08:33:14.080</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.096</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.098</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.101</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.102</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.103</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.105</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.108</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.109</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.110</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-09-09T08:33:16.112</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\avatar.png">
+      <PackagePath>VOIP\Assets\avatar.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.421</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\avatar2.png">
+      <PackagePath>VOIP\Assets\avatar2.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.424</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\call_status_incoming.png">
+      <PackagePath>VOIP\Assets\call_status_incoming.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.425</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\call_status_missed.png">
+      <PackagePath>VOIP\Assets\call_status_missed.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.427</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\call_status_outgoing.png">
+      <PackagePath>VOIP\Assets\call_status_outgoing.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.429</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\bluetooth_off.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\bluetooth_off.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\bluetooth_on.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\bluetooth_on.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.384</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\camera.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\camera.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.386</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\dialpad.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\dialpad.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.388</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\micro_off.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\micro_off.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.390</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\micro_on.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\micro_on.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.392</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\pause.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\pause.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.394</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\play.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\play.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.396</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\speaker_off.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\speaker_off.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\speaker_on.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\speaker_on.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.407</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\stats.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\stats.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\video_off.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\video_off.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.410</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\video_on.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\video_on.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.412</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\led_connected.png">
+      <PackagePath>VOIP\Assets\led_connected.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\led_disconnected.png">
+      <PackagePath>VOIP\Assets\led_disconnected.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\led_error.png">
+      <PackagePath>VOIP\Assets\led_error.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.501</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\led_inprogress.png">
+      <PackagePath>VOIP\Assets\led_inprogress.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.503</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\linphone_logo_orange.png">
+      <PackagePath>VOIP\Assets\linphone_logo_orange.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.504</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\linphone_user.png">
+      <PackagePath>VOIP\Assets\linphone_user.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.506</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\logo-BC.png">
+      <PackagePath>VOIP\Assets\logo-BC.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.514</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\SplashScreen.scale-200.png">
+      <PackagePath>VOIP\Assets\SplashScreen.scale-200.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.414</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>VOIP\Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.416</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>VOIP\Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.417</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\StoreLogo.scale-200.png">
+      <PackagePath>VOIP\Assets\StoreLogo.scale-200.png</PackagePath>
+      <Modified>2019-09-09T08:33:16.419</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\Assets\genericfile.png">
+      <PackagePath>genericfile.png</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\Assets\person.png">
+      <PackagePath>person.png</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\Assets\photo.png">
+      <PackagePath>photo.png</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Html\ChartHtmlControl.html">
+      <PackagePath>Assets\Html\ChartHtmlControl.html</PackagePath>
+      <Modified>2019-09-09T08:33:13.624</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\PowerBIEmbedded\Embed\EmbedReportFrame.html">
+      <PackagePath>EmbedReportFrame.html</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\PowerBIEmbedded\Embed\ReportContainer.html">
+      <PackagePath>ReportContainer.html</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Images\LoginBackground.jpg">
+      <PackagePath>Assets\Images\LoginBackground.jpg</PackagePath>
+      <Modified>2019-09-09T08:33:13.641</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\nowebcamCIF.jpg">
+      <PackagePath>VOIP\Assets\nowebcamCIF.jpg</PackagePath>
+      <Modified>2019-09-09T08:33:16.526</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2019-09-09T08:33:16.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\dont_wait_too_long.mkv">
+      <PackagePath>VOIP\Assets\dont_wait_too_long.mkv</PackagePath>
+      <Modified>2019-09-09T08:33:16.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\notes_of_the_optimistic.mkv">
+      <PackagePath>VOIP\Assets\notes_of_the_optimistic.mkv</PackagePath>
+      <Modified>2019-09-09T08:33:16.524</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\four_hands_together.mkv">
+      <PackagePath>VOIP\Assets\rings\four_hands_together.mkv</PackagePath>
+      <Modified>2019-09-09T08:33:16.539</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\house_keeping.mkv">
+      <PackagePath>VOIP\Assets\rings\house_keeping.mkv</PackagePath>
+      <Modified>2019-09-09T08:33:16.553</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\its_a_game.mkv">
+      <PackagePath>VOIP\Assets\rings\its_a_game.mkv</PackagePath>
+      <Modified>2019-09-09T08:33:16.572</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\leaving_dreams.mkv">
+      <PackagePath>VOIP\Assets\rings\leaving_dreams.mkv</PackagePath>
+      <Modified>2019-09-09T08:33:16.578</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\notes_of_the_optimistic.mkv">
+      <PackagePath>VOIP\Assets\rings\notes_of_the_optimistic.mkv</PackagePath>
+      <Modified>2019-09-09T08:33:16.590</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\soft_as_snow.mkv">
+      <PackagePath>VOIP\Assets\rings\soft_as_snow.mkv</PackagePath>
+      <Modified>2019-09-09T08:33:16.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\LICENSE.txt">
+      <PackagePath>VOIP\Assets\Incall_Icons\LICENSE.txt</PackagePath>
+      <Modified>2019-09-09T08:33:16.382</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\incoming_chat.wav">
+      <PackagePath>VOIP\Assets\incoming_chat.wav</PackagePath>
+      <Modified>2019-09-09T08:33:16.496</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\ringback.wav">
+      <PackagePath>VOIP\Assets\ringback.wav</PackagePath>
+      <Modified>2019-09-09T08:33:16.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\oldphone-mono.wav">
+      <PackagePath>VOIP\Assets\rings\oldphone-mono.wav</PackagePath>
+      <Modified>2019-09-09T08:33:16.594</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\AppLog\AppLog.db">
+      <PackagePath>Assets\AppLog\AppLog.db</PackagePath>
+      <Modified>2019-09-09T08:33:13.605</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SQLiteBase\Delivery.2.02.db">
+      <PackagePath>Assets\SQLiteBase\Delivery.2.02.db</PackagePath>
+      <Modified>2019-09-09T08:33:16.068</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\linphonerc">
+      <PackagePath>VOIP\Assets\linphonerc</PackagePath>
+      <Modified>2019-09-09T08:33:16.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\linphonerc-factory">
+      <PackagePath>VOIP\Assets\linphonerc-factory</PackagePath>
+      <Modified>2019-09-09T08:33:16.509</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rootca.pem">
+      <PackagePath>VOIP\Assets\rootca.pem</PackagePath>
+      <Modified>2019-09-09T08:33:16.615</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\Assets\folder.svg">
+      <PackagePath>folder.svg</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\PowerBIEmbedded\Embed\powerbi.min.js">
+      <PackagePath>powerbi.min.js</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\antlr3c.dll">
+      <PackagePath>antlr3c.dll</PackagePath>
+      <Modified>2017-12-01T12:05:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\bctoolbox-tester.dll">
+      <PackagePath>bctoolbox-tester.dll</PackagePath>
+      <Modified>2017-12-01T12:05:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\bctoolbox.dll">
+      <PackagePath>bctoolbox.dll</PackagePath>
+      <Modified>2017-12-01T12:05:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\bcunit.dll">
+      <PackagePath>bcunit.dll</PackagePath>
+      <Modified>2017-12-01T12:05:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\belcard.dll">
+      <PackagePath>belcard.dll</PackagePath>
+      <Modified>2017-12-01T12:05:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\bellesip.dll">
+      <PackagePath>bellesip.dll</PackagePath>
+      <Modified>2017-12-01T12:05:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\belr.dll">
+      <PackagePath>belr.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\bzrtp.dll">
+      <PackagePath>bzrtp.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\gsm.dll">
+      <PackagePath>gsm.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\libbcg729.dll">
+      <PackagePath>libbcg729.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\libmswasapi.dll">
+      <PackagePath>libmswasapi.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\libmswebrtc.dll">
+      <PackagePath>libmswebrtc.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\libmswinrtvid.dll">
+      <PackagePath>libmswinrtvid.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\linphone.dll">
+      <PackagePath>linphone.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\mbedcrypto.dll">
+      <PackagePath>mbedcrypto.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\mbedtls.dll">
+      <PackagePath>mbedtls.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\mbedx509.dll">
+      <PackagePath>mbedx509.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\mediastreamer_base.dll">
+      <PackagePath>mediastreamer_base.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\mediastreamer_voip.dll">
+      <PackagePath>mediastreamer_voip.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\ortp.dll">
+      <PackagePath>ortp.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\speex.dll">
+      <PackagePath>speex.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\speexdsp.dll">
+      <PackagePath>speexdsp.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\srtp.dll">
+      <PackagePath>srtp.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\xml2.dll">
+      <PackagePath>xml2.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\zlib.dll">
+      <PackagePath>zlib.dll</PackagePath>
+      <Modified>2017-12-01T12:05:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Inventory.Sample.xr.xml">
+      <PackagePath>Inventory.Sample.xr.xml</PackagePath>
+      <Modified>2019-10-25T13:05:26.685</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
+      <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.794</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\DataGrid\DataGrid.xbf">
+      <PackagePath>Controls\DataGrid\DataGrid.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\DataList\DataList.xbf">
+      <PackagePath>Controls\DataList\DataList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\Details\Details.xbf">
+      <PackagePath>Controls\Details\Details.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\Search\Search.xbf">
+      <PackagePath>Controls\Search\Search.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\Toolbars\DetailToolbar.xbf">
+      <PackagePath>Controls\Toolbars\DetailToolbar.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\Toolbars\ListToolbar.xbf">
+      <PackagePath>Controls\Toolbars\ListToolbar.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\Buttons.xbf">
+      <PackagePath>Styles\Buttons.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\CalendarPicker.xbf">
+      <PackagePath>Styles\CalendarPicker.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.334</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\Cards.xbf">
+      <PackagePath>Styles\Cards.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\DataGrid.xbf">
+      <PackagePath>Styles\DataGrid.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\NavigationView.xbf">
+      <PackagePath>Styles\NavigationView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.360</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\PivotHeaderItem.xbf">
+      <PackagePath>Styles\PivotHeaderItem.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.368</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\Sections.xbf">
+      <PackagePath>Styles\Sections.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.796</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\TimePicker.xbf">
+      <PackagePath>Styles\TimePicker.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.385</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\ToolBar.xbf">
+      <PackagePath>Styles\ToolBar.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.454</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\Buttons.xbf">
+      <PackagePath>Themes\Controls\Buttons.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.466</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\FormCalendarDatePicker.xbf">
+      <PackagePath>Themes\Controls\FormCalendarDatePicker.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.473</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\FormComboBox.xbf">
+      <PackagePath>Themes\Controls\FormComboBox.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.495</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\FormAutoSuggestBox.xbf">
+      <PackagePath>Themes\Controls\FormAutoSuggestBox.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\FormTextBox.xbf">
+      <PackagePath>Themes\Controls\FormTextBox.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\FormTimePicker.xbf">
+      <PackagePath>Themes\Controls\FormTimePicker.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.523</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\Section.xbf">
+      <PackagePath>Themes\Controls\Section.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Generic.xbf">
+      <PackagePath>Themes\Generic.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\ThemeDictionaries.xbf">
+      <PackagePath>Themes\ThemeDictionaries.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\AppLogs\AppLogsView.xbf">
+      <PackagePath>Views\AppLogs\AppLogsView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\AppLogs\Details\AppLogsDetails.xbf">
+      <PackagePath>Views\AppLogs\Details\AppLogsDetails.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\AppLogs\List\AppLogsList.xbf">
+      <PackagePath>Views\AppLogs\List\AppLogsList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\ChangesDatabase\ChangesDatabaseDataView.xbf">
+      <PackagePath>Views\ChangesDatabase\ChangesDatabaseDataView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Communications\List\CommunicationList.xbf">
+      <PackagePath>Views\Communications\List\CommunicationList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Controls\CustomerSuggestBox.xbf">
+      <PackagePath>Views\Controls\CustomerSuggestBox.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Controls\DishSuggestBox.xbf">
+      <PackagePath>Views\Controls\DishSuggestBox.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Controls\StreetSuggestBox.xbf">
+      <PackagePath>Views\Controls\StreetSuggestBox.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\CustomerAddress\CustomerAddressList.xbf">
+      <PackagePath>Views\CustomerAddress\CustomerAddressList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customers\CustomersView.xbf">
+      <PackagePath>Views\Customers\CustomersView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customers\Details\CustomersCard.xbf">
+      <PackagePath>Views\Customers\Details\CustomersCard.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customers\Details\CustomersDetails.xbf">
+      <PackagePath>Views\Customers\Details\CustomersDetails.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customers\Details\CustomersOrders.xbf">
+      <PackagePath>Views\Customers\Details\CustomersOrders.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customers\List\CustomersList.xbf">
+      <PackagePath>Views\Customers\List\CustomersList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customer\CustomerView.xbf">
+      <PackagePath>Views\Customer\CustomerView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customer\Details\CustomerCard.xbf">
+      <PackagePath>Views\Customer\Details\CustomerCard.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customer\Details\CustomerDetails.xbf">
+      <PackagePath>Views\Customer\Details\CustomerDetails.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dashboard\DashboardView.xbf">
+      <PackagePath>Views\Dashboard\DashboardView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dashboard\Parts\ChartPane.xbf">
+      <PackagePath>Views\Dashboard\Parts\ChartPane.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dashboard\Parts\CustomersPane.xbf">
+      <PackagePath>Views\Dashboard\Parts\CustomersPane.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dashboard\Parts\OrdersPane.xbf">
+      <PackagePath>Views\Dashboard\Parts\OrdersPane.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dashboard\Parts\ProductsPane.xbf">
+      <PackagePath>Views\Dashboard\Parts\ProductsPane.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Login\LoginView.xbf">
+      <PackagePath>Views\Login\LoginView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Login\WindowsHelloControl.xbf">
+      <PackagePath>Views\Login\WindowsHelloControl.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Login\NamePasswordControl.xbf">
+      <PackagePath>Views\Login\NamePasswordControl.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishChoice\Details\OrderDishChoiceDishesFilter.xbf">
+      <PackagePath>Views\OrderDishChoice\Details\OrderDishChoiceDishesFilter.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishChoice\Dishes\OrderDishChoiceGrid.xbf">
+      <PackagePath>Views\OrderDishChoice\Dishes\OrderDishChoiceGrid.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishChoice\Dishes\OrderDishChoiceList.xbf">
+      <PackagePath>Views\OrderDishChoice\Dishes\OrderDishChoiceList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishChoice\OrderDishChoiceView.xbf">
+      <PackagePath>Views\OrderDishChoice\OrderDishChoiceView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishes\Details\OrderDishesCard.xbf">
+      <PackagePath>Views\OrderDishes\Details\OrderDishesCard.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishes\Details\OrderDishesDetails.xbf">
+      <PackagePath>Views\OrderDishes\Details\OrderDishesDetails.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishes\List\OrderDishesList.xbf">
+      <PackagePath>Views\OrderDishes\List\OrderDishesList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishes\OrderDishesView.xbf">
+      <PackagePath>Views\OrderDishes\OrderDishesView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDish\Details\OrderDishRecommendList.xbf">
+      <PackagePath>Views\OrderDish\Details\OrderDishRecommendList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\OrdersFilterPanel.xbf">
+      <PackagePath>Views\Orders\OrdersFilterPanel.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\AudioSetting\AudioCodecs.xbf">
+      <PackagePath>Views\Phone\AudioSetting\AudioCodecs.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\AudioSetting\AudioParameters.xbf">
+      <PackagePath>Views\Phone\AudioSetting\AudioParameters.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallConnectOrder.xbf">
+      <PackagePath>Views\Phone\PhoneCallConnectOrder.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallConnect\PhoneCallConnect.xbf">
+      <PackagePath>Views\Phone\PhoneCallConnect\PhoneCallConnect.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallConnect\PhoneCallConnectControl.xbf">
+      <PackagePath>Views\Phone\PhoneCallConnect\PhoneCallConnectControl.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.641</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallReceive\PhoneCallReceiveDetails\PhoneCallReceiveCustomerDetails.xbf">
+      <PackagePath>Views\Phone\PhoneCallReceive\PhoneCallReceiveDetails\PhoneCallReceiveCustomerDetails.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallReceive\PhoneCallReceiveView.xbf">
+      <PackagePath>Views\Phone\PhoneCallReceive\PhoneCallReceiveView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.647</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDish\Details\OrderDishCard.xbf">
+      <PackagePath>Views\OrderDish\Details\OrderDishCard.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDish\Details\OrderDishDetails.xbf">
+      <PackagePath>Views\OrderDish\Details\OrderDishDetails.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.652</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDish\OrderDishView.xbf">
+      <PackagePath>Views\OrderDish\OrderDishView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\Details\OrdersCard.xbf">
+      <PackagePath>Views\Orders\Details\OrdersCard.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\Details\OrdersDetails.xbf">
+      <PackagePath>Views\Orders\Details\OrdersDetails.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.659</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\Details\OrdersOrderDishes.xbf">
+      <PackagePath>Views\Orders\Details\OrdersOrderDishes.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\Details\OrdersOrderStatusHistory.xbf">
+      <PackagePath>Views\Orders\Details\OrdersOrderStatusHistory.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\List\OrdersListColor.xbf">
+      <PackagePath>Views\Orders\List\OrdersListColor.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\List\OrdersList.xbf">
+      <PackagePath>Views\Orders\List\OrdersList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\OrdersView.xbf">
+      <PackagePath>Views\Orders\OrdersView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Order\Details\OrderCard.xbf">
+      <PackagePath>Views\Order\Details\OrderCard.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Order\Details\OrderDetails.xbf">
+      <PackagePath>Views\Order\Details\OrderDetails.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.678</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Order\OrderView.xbf">
+      <PackagePath>Views\Order\OrderView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.818</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dishes\List\DishesList.xbf">
+      <PackagePath>Views\Dishes\List\DishesList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.818</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dishes\DishesView.xbf">
+      <PackagePath>Views\Dishes\DishesView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.818</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dish\Details\DishCard.xbf">
+      <PackagePath>Views\Dish\Details\DishCard.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.818</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dish\Details\DishDetails.xbf">
+      <PackagePath>Views\Dish\Details\DishDetails.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dish\DishView.xbf">
+      <PackagePath>Views\Dish\DishView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallReceive\PhoneCallReceiveList\PhoneCallReceiveOrdersList.xbf">
+      <PackagePath>Views\Phone\PhoneCallReceive\PhoneCallReceiveList\PhoneCallReceiveOrdersList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Settings\CreateDatabaseView.xbf">
+      <PackagePath>Views\Settings\CreateDatabaseView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Settings\SettingsView.xbf">
+      <PackagePath>Views\Settings\SettingsView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.694</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Settings\MigrationView.xbf">
+      <PackagePath>Views\Settings\MigrationView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.820</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Shell\MainShellView.xbf">
+      <PackagePath>Views\Shell\MainShellView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.708</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Shell\ShellView.xbf">
+      <PackagePath>Views\Shell\ShellView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.820</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Settings\ValidateConnectionView.xbf">
+      <PackagePath>Views\Settings\ValidateConnectionView.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.821</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\SplashScreen\ExtendedSplash.xbf">
+      <PackagePath>Views\SplashScreen\ExtendedSplash.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.821</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\AddressBox.xbf">
+      <PackagePath>VOIP\Controls\AddressBox.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.821</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\CallControlsP.xbf">
+      <PackagePath>VOIP\Controls\CallControlsP.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.719</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\ChatBubble.xbf">
+      <PackagePath>VOIP\Controls\ChatBubble.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\ContactAction.xbf">
+      <PackagePath>VOIP\Controls\ContactAction.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\IncomingChatBubble.xbf">
+      <PackagePath>VOIP\Controls\IncomingChatBubble.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\Numpad.xbf">
+      <PackagePath>VOIP\Controls\Numpad.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\OutgoingChatBubble.xbf">
+      <PackagePath>VOIP\Controls\OutgoingChatBubble.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\StatusBar.xbf">
+      <PackagePath>VOIP\Controls\StatusBar.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.823</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\TextBoxChatBubble.xbf">
+      <PackagePath>VOIP\Controls\TextBoxChatBubble.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.823</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\About.xbf">
+      <PackagePath>VOIP\Views\About.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.823</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\AccountSettings.xbf">
+      <PackagePath>VOIP\Views\AccountSettings.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.823</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\AdvancedSettings.xbf">
+      <PackagePath>VOIP\Views\AdvancedSettings.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.823</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\AudioSettings.xbf">
+      <PackagePath>VOIP\Views\AudioSettings.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\Chat.xbf">
+      <PackagePath>VOIP\Views\Chat.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\Chats.xbf">
+      <PackagePath>VOIP\Views\Chats.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\ContactDetail.xbf">
+      <PackagePath>VOIP\Views\ContactDetail.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\ContactList.xbf">
+      <PackagePath>VOIP\Views\ContactList.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.756</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\Dialer.xbf">
+      <PackagePath>VOIP\Views\Dialer.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\FullScreenPicture.xbf">
+      <PackagePath>VOIP\Views\FullScreenPicture.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.825</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\History.xbf">
+      <PackagePath>VOIP\Views\History.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.825</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\InCall.xbf">
+      <PackagePath>VOIP\Views\InCall.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.825</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\IncomingCall.xbf">
+      <PackagePath>VOIP\Views\IncomingCall.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.825</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\Launcher.xbf">
+      <PackagePath>VOIP\Views\Launcher.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.825</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\Settings.xbf">
+      <PackagePath>VOIP\Views\Settings.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\VideoSettings.xbf">
+      <PackagePath>VOIP\Views\VideoSettings.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\VOIPStyles\VOIPStyles.xbf">
+      <PackagePath>VOIP\VOIPStyles\VOIPStyles.xbf</PackagePath>
+      <Modified>2019-10-28T15:00:26.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.17763.0\\redist\Debug\X64\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+      <Modified>2018-10-22T23:10:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+      <Modified>2018-10-22T21:44:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
+      <Modified>2019-06-07T08:59:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</PackagePath>
+      <Modified>2019-03-15T20:44:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
+      <Modified>2019-02-12T20:29:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\Microsoft.Toolkit.Uwp.UI.Controls.Graph.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\Microsoft.Toolkit.Uwp.UI.Controls.Graph.xr.xml</PackagePath>
+      <Modified>2019-02-12T20:30:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\folder.svg">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\folder.svg</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\genericfile.png">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\genericfile.png</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\person.png">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\person.png</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\photo.png">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\photo.png</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\EmbedReportFrame.html">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\EmbedReportFrame.html</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\powerbi.min.js">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\powerbi.min.js</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\ReportContainer.html">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\ReportContainer.html</PackagePath>
+      <Modified>2019-02-12T20:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2019-10-28T15:00:30.626</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Core\Inventory.Sample.exe">
+      <PackagePath>Inventory.Sample.exe</PackagePath>
+      <Modified>2019-10-28T15:00:32.707</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.1.appx">
+      <Name>Microsoft.UI.Xaml.2.1</Name>
+      <Version>2.11906.6001.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.1, MinVersion = 2.11906.6001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.1.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

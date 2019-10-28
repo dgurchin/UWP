@@ -1,0 +1,1064 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>HURCHYN-PC</Machine>
+    <WindowsUser>Dmytro.Hurchyn</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>0b535621-4369-4594-8e33-d63161bc2b5f</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Integra, O=Integra ITS, C=UK</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\Delivery\src\Inventory.App\obj\x64\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>D:\Delivery\src\Inventory.App\bin\x64\Debug\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Inventory.Sample.exe">
+      <PackagePath>entrypoint\Inventory.Sample.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.appcenter.crashes\2.1.1\build\uap10.0\..\..\runtimes\win10-x64\native\WatsonRegistrationUtility.dll">
+      <PackagePath>WatsonRegistrationUtility.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
+      <PackagePath>ColorCode.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\colorcode.uwp\2.0.6\lib\uap10.0\ColorCode.UWP.dll">
+      <PackagePath>ColorCode.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\lib\uap10.0\CsWrapper.dll">
+      <PackagePath>CsWrapper.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.appcenter\2.1.1\lib\uap10.0\Microsoft.AppCenter.dll">
+      <PackagePath>Microsoft.AppCenter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.appcenter.analytics\2.1.1\lib\uap10.0\Microsoft.AppCenter.Analytics.dll">
+      <PackagePath>Microsoft.AppCenter.Analytics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.appcenter.crashes\2.1.1\runtimes\win10-x64\lib\uap10.0\Microsoft.AppCenter.Crashes.dll">
+      <PackagePath>Microsoft.AppCenter.Crashes.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.data.sqlite.core\2.2.6\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.dotnet.platformabstractions\2.1.0\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll">
+      <PackagePath>Microsoft.DotNet.PlatformAbstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.entityframeworkcore\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.entityframeworkcore.abstractions\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.entityframeworkcore.relational\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Relational.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.entityframeworkcore.sqlite.core\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Sqlite.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.entityframeworkcore.sqlserver\2.2.6\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.SqlServer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.caching.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Caching.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.caching.memory\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll">
+      <PackagePath>Microsoft.Extensions.Caching.Memory.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.configuration\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
+      <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.configuration.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Configuration.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.configuration.binder\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll">
+      <PackagePath>Microsoft.Extensions.Configuration.Binder.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.dependencyinjection\2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.dependencymodel\2.1.0\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll">
+      <PackagePath>Microsoft.Extensions.DependencyModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.logging\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.dll">
+      <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.logging.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.options\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll">
+      <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.extensions.primitives\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll">
+      <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.graph\1.8.1\lib\netstandard1.1\Microsoft.Graph.dll">
+      <PackagePath>Microsoft.Graph.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.graph.core\1.8.1\lib\netstandard1.1\Microsoft.Graph.Core.dll">
+      <PackagePath>Microsoft.Graph.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.identity.client\2.7.0\lib\uap10.0\Microsoft.Identity.Client.dll">
+      <PackagePath>Microsoft.Identity.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.identitymodel.clients.activedirectory\3.13.7\lib\netcore45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll">
+      <PackagePath>Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.identitymodel.clients.activedirectory\3.13.7\lib\netcore45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll">
+      <PackagePath>Microsoft.IdentityModel.Clients.ActiveDirectory.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.powerbi.api\2.0.12\lib\portable-net45+win+wpa81+MonoAndroid10+MonoTouch10+xamarinios10+xamarinmac20\Microsoft.PowerBI.Api.dll">
+      <PackagePath>Microsoft.PowerBI.Api.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.rest.clientruntime\2.0.1\lib\portable-net45+win+wpa81\Microsoft.Rest.ClientRuntime.dll">
+      <PackagePath>Microsoft.Rest.ClientRuntime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit\5.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
+      <PackagePath>Microsoft.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.parsers\5.1.1\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
+      <PackagePath>Microsoft.Toolkit.Parsers.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.services\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Services.dll">
+      <PackagePath>Microsoft.Toolkit.Services.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.animations\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Animations.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Animations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\remotion.linq\2.2.0\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
+      <PackagePath>Remotion.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\runtimes\win10-x64\native\Robmikh.CompositionSurfaceFactory.dll">
+      <PackagePath>Robmikh.CompositionSurfaceFactory.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlite-net-pcl\1.3.1\lib\netstandard1.1\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlitepclraw.bundle_green\1.1.12\lib\uap10.0\SQLitePCLRaw.batteries_green.dll">
+      <PackagePath>SQLitePCLRaw.batteries_green.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlitepclraw.bundle_green\1.1.12\lib\uap10.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlitepclraw.core\1.1.12\lib\uap10.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlitepclraw.lib.e_sqlite3.v140\1.1.12\runtimes\win10-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\sqlitepclraw.provider.e_sqlite3.uwp10\1.1.12\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\system.data.sqlclient\4.6.1\runtimes\win\lib\uap10.0.16299\System.Data.SqlClient.dll">
+      <PackagePath>System.Data.SqlClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\system.interactive.async\3.2.0\lib\netstandard2.0\System.Interactive.Async.dll">
+      <PackagePath>System.Interactive.Async.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\win2d.uwp\1.23.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\ExternalFiles\LoadingMonitor\Integra.LoadingMonitor.dll">
+      <PackagePath>Integra.LoadingMonitor.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\ExternalFiles\LoadingMonitor\Integra.LoadingMonitor.Web.dll">
+      <PackagePath>Integra.LoadingMonitor.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.Data\bin\Debug\netstandard2.0\Inventory.Data.dll">
+      <PackagePath>Inventory.Data.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.ViewModels\bin\Debug\netstandard2.0\Inventory.ViewModels.dll">
+      <PackagePath>Inventory.ViewModels.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.appcenter.crashes\2.1.1\runtimes\win10-x64\lib\uap10.0\WatsonRegistrationUtility.winmd">
+      <PackagePath>WatsonRegistrationUtility.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\lib\uap10.0\Robmikh.CompositionSurfaceFactory.winmd">
+      <PackagePath>Robmikh.CompositionSurfaceFactory.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\win2d.uwp\1.23.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\AppLogo.png">
+      <PackagePath>Assets\AppLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\BadgeLogo.scale-125.png">
+      <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\BadgeLogo.scale-150.png">
+      <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\BadgeLogo.scale-200.png">
+      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\BadgeLogo.scale-400.png">
+      <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\avatar.png">
+      <PackagePath>VOIP\Assets\avatar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\avatar2.png">
+      <PackagePath>VOIP\Assets\avatar2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\call_status_incoming.png">
+      <PackagePath>VOIP\Assets\call_status_incoming.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\call_status_missed.png">
+      <PackagePath>VOIP\Assets\call_status_missed.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\call_status_outgoing.png">
+      <PackagePath>VOIP\Assets\call_status_outgoing.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\bluetooth_off.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\bluetooth_off.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\bluetooth_on.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\bluetooth_on.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\camera.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\camera.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\dialpad.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\dialpad.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\micro_off.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\micro_off.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\micro_on.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\micro_on.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\pause.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\pause.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\play.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\play.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\speaker_off.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\speaker_off.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\speaker_on.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\speaker_on.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\stats.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\stats.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\video_off.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\video_off.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\video_on.png">
+      <PackagePath>VOIP\Assets\Incall_Icons\video_on.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\led_connected.png">
+      <PackagePath>VOIP\Assets\led_connected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\led_disconnected.png">
+      <PackagePath>VOIP\Assets\led_disconnected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\led_error.png">
+      <PackagePath>VOIP\Assets\led_error.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\led_inprogress.png">
+      <PackagePath>VOIP\Assets\led_inprogress.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\linphone_logo_orange.png">
+      <PackagePath>VOIP\Assets\linphone_logo_orange.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\linphone_user.png">
+      <PackagePath>VOIP\Assets\linphone_user.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\logo-BC.png">
+      <PackagePath>VOIP\Assets\logo-BC.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\SplashScreen.scale-200.png">
+      <PackagePath>VOIP\Assets\SplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>VOIP\Assets\Square150x150Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>VOIP\Assets\Square44x44Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\StoreLogo.scale-200.png">
+      <PackagePath>VOIP\Assets\StoreLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\Assets\genericfile.png">
+      <PackagePath>genericfile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\Assets\person.png">
+      <PackagePath>person.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\Assets\photo.png">
+      <PackagePath>photo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Html\ChartHtmlControl.html">
+      <PackagePath>Assets\Html\ChartHtmlControl.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\PowerBIEmbedded\Embed\EmbedReportFrame.html">
+      <PackagePath>EmbedReportFrame.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\PowerBIEmbedded\Embed\ReportContainer.html">
+      <PackagePath>ReportContainer.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\Images\LoginBackground.jpg">
+      <PackagePath>Assets\Images\LoginBackground.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\nowebcamCIF.jpg">
+      <PackagePath>VOIP\Assets\nowebcamCIF.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\dont_wait_too_long.mkv">
+      <PackagePath>VOIP\Assets\dont_wait_too_long.mkv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\notes_of_the_optimistic.mkv">
+      <PackagePath>VOIP\Assets\notes_of_the_optimistic.mkv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\four_hands_together.mkv">
+      <PackagePath>VOIP\Assets\rings\four_hands_together.mkv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\house_keeping.mkv">
+      <PackagePath>VOIP\Assets\rings\house_keeping.mkv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\its_a_game.mkv">
+      <PackagePath>VOIP\Assets\rings\its_a_game.mkv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\leaving_dreams.mkv">
+      <PackagePath>VOIP\Assets\rings\leaving_dreams.mkv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\notes_of_the_optimistic.mkv">
+      <PackagePath>VOIP\Assets\rings\notes_of_the_optimistic.mkv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\soft_as_snow.mkv">
+      <PackagePath>VOIP\Assets\rings\soft_as_snow.mkv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\Incall_Icons\LICENSE.txt">
+      <PackagePath>VOIP\Assets\Incall_Icons\LICENSE.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\incoming_chat.wav">
+      <PackagePath>VOIP\Assets\incoming_chat.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\ringback.wav">
+      <PackagePath>VOIP\Assets\ringback.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rings\oldphone-mono.wav">
+      <PackagePath>VOIP\Assets\rings\oldphone-mono.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\AppLog\AppLog.db">
+      <PackagePath>Assets\AppLog\AppLog.db</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\Assets\SQLiteBase\Delivery.2.02.db">
+      <PackagePath>Assets\SQLiteBase\Delivery.2.02.db</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\linphonerc">
+      <PackagePath>VOIP\Assets\linphonerc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\linphonerc-factory">
+      <PackagePath>VOIP\Assets\linphonerc-factory</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\VOIP\Assets\rootca.pem">
+      <PackagePath>VOIP\Assets\rootca.pem</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\Assets\folder.svg">
+      <PackagePath>folder.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\contentFiles\any\uap10.0.16299\PowerBIEmbedded\Embed\powerbi.min.js">
+      <PackagePath>powerbi.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\antlr3c.dll">
+      <PackagePath>antlr3c.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\bctoolbox-tester.dll">
+      <PackagePath>bctoolbox-tester.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\bctoolbox.dll">
+      <PackagePath>bctoolbox.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\bcunit.dll">
+      <PackagePath>bcunit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\belcard.dll">
+      <PackagePath>belcard.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\bellesip.dll">
+      <PackagePath>bellesip.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\belr.dll">
+      <PackagePath>belr.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\bzrtp.dll">
+      <PackagePath>bzrtp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\gsm.dll">
+      <PackagePath>gsm.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\libbcg729.dll">
+      <PackagePath>libbcg729.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\libmswasapi.dll">
+      <PackagePath>libmswasapi.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\libmswebrtc.dll">
+      <PackagePath>libmswebrtc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\libmswinrtvid.dll">
+      <PackagePath>libmswinrtvid.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\linphone.dll">
+      <PackagePath>linphone.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\mbedcrypto.dll">
+      <PackagePath>mbedcrypto.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\mbedtls.dll">
+      <PackagePath>mbedtls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\mbedx509.dll">
+      <PackagePath>mbedx509.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\mediastreamer_base.dll">
+      <PackagePath>mediastreamer_base.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\mediastreamer_voip.dll">
+      <PackagePath>mediastreamer_voip.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\ortp.dll">
+      <PackagePath>ortp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\speex.dll">
+      <PackagePath>speex.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\speexdsp.dll">
+      <PackagePath>speexdsp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\srtp.dll">
+      <PackagePath>srtp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\xml2.dll">
+      <PackagePath>xml2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\linphonesdk\3.12.0.273\build\uap10.0\x64\zlib.dll">
+      <PackagePath>zlib.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Inventory.Sample.xr.xml">
+      <PackagePath>Inventory.Sample.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
+      <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\DataGrid\DataGrid.xbf">
+      <PackagePath>Controls\DataGrid\DataGrid.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\DataList\DataList.xbf">
+      <PackagePath>Controls\DataList\DataList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\Details\Details.xbf">
+      <PackagePath>Controls\Details\Details.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\Search\Search.xbf">
+      <PackagePath>Controls\Search\Search.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\Toolbars\DetailToolbar.xbf">
+      <PackagePath>Controls\Toolbars\DetailToolbar.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Controls\Toolbars\ListToolbar.xbf">
+      <PackagePath>Controls\Toolbars\ListToolbar.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\Buttons.xbf">
+      <PackagePath>Styles\Buttons.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\CalendarPicker.xbf">
+      <PackagePath>Styles\CalendarPicker.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\Cards.xbf">
+      <PackagePath>Styles\Cards.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\DataGrid.xbf">
+      <PackagePath>Styles\DataGrid.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\NavigationView.xbf">
+      <PackagePath>Styles\NavigationView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\PivotHeaderItem.xbf">
+      <PackagePath>Styles\PivotHeaderItem.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\Sections.xbf">
+      <PackagePath>Styles\Sections.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\TimePicker.xbf">
+      <PackagePath>Styles\TimePicker.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Styles\ToolBar.xbf">
+      <PackagePath>Styles\ToolBar.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\Buttons.xbf">
+      <PackagePath>Themes\Controls\Buttons.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\FormCalendarDatePicker.xbf">
+      <PackagePath>Themes\Controls\FormCalendarDatePicker.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\FormComboBox.xbf">
+      <PackagePath>Themes\Controls\FormComboBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\FormAutoSuggestBox.xbf">
+      <PackagePath>Themes\Controls\FormAutoSuggestBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\FormTextBox.xbf">
+      <PackagePath>Themes\Controls\FormTextBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\FormTimePicker.xbf">
+      <PackagePath>Themes\Controls\FormTimePicker.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Controls\Section.xbf">
+      <PackagePath>Themes\Controls\Section.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\Generic.xbf">
+      <PackagePath>Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Themes\ThemeDictionaries.xbf">
+      <PackagePath>Themes\ThemeDictionaries.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\AppLogs\AppLogsView.xbf">
+      <PackagePath>Views\AppLogs\AppLogsView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\AppLogs\Details\AppLogsDetails.xbf">
+      <PackagePath>Views\AppLogs\Details\AppLogsDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\AppLogs\List\AppLogsList.xbf">
+      <PackagePath>Views\AppLogs\List\AppLogsList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\ChangesDatabase\ChangesDatabaseDataView.xbf">
+      <PackagePath>Views\ChangesDatabase\ChangesDatabaseDataView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Communications\List\CommunicationList.xbf">
+      <PackagePath>Views\Communications\List\CommunicationList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Controls\CustomerSuggestBox.xbf">
+      <PackagePath>Views\Controls\CustomerSuggestBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Controls\DishSuggestBox.xbf">
+      <PackagePath>Views\Controls\DishSuggestBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Controls\StreetSuggestBox.xbf">
+      <PackagePath>Views\Controls\StreetSuggestBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\CustomerAddress\CustomerAddressList.xbf">
+      <PackagePath>Views\CustomerAddress\CustomerAddressList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customers\CustomersView.xbf">
+      <PackagePath>Views\Customers\CustomersView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customers\Details\CustomersCard.xbf">
+      <PackagePath>Views\Customers\Details\CustomersCard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customers\Details\CustomersDetails.xbf">
+      <PackagePath>Views\Customers\Details\CustomersDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customers\Details\CustomersOrders.xbf">
+      <PackagePath>Views\Customers\Details\CustomersOrders.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customers\List\CustomersList.xbf">
+      <PackagePath>Views\Customers\List\CustomersList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customer\CustomerView.xbf">
+      <PackagePath>Views\Customer\CustomerView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customer\Details\CustomerCard.xbf">
+      <PackagePath>Views\Customer\Details\CustomerCard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Customer\Details\CustomerDetails.xbf">
+      <PackagePath>Views\Customer\Details\CustomerDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dashboard\DashboardView.xbf">
+      <PackagePath>Views\Dashboard\DashboardView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dashboard\Parts\ChartPane.xbf">
+      <PackagePath>Views\Dashboard\Parts\ChartPane.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dashboard\Parts\CustomersPane.xbf">
+      <PackagePath>Views\Dashboard\Parts\CustomersPane.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dashboard\Parts\OrdersPane.xbf">
+      <PackagePath>Views\Dashboard\Parts\OrdersPane.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dashboard\Parts\ProductsPane.xbf">
+      <PackagePath>Views\Dashboard\Parts\ProductsPane.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Login\LoginView.xbf">
+      <PackagePath>Views\Login\LoginView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Login\WindowsHelloControl.xbf">
+      <PackagePath>Views\Login\WindowsHelloControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Login\NamePasswordControl.xbf">
+      <PackagePath>Views\Login\NamePasswordControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishChoice\Details\OrderDishChoiceDishesFilter.xbf">
+      <PackagePath>Views\OrderDishChoice\Details\OrderDishChoiceDishesFilter.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishChoice\Dishes\OrderDishChoiceGrid.xbf">
+      <PackagePath>Views\OrderDishChoice\Dishes\OrderDishChoiceGrid.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishChoice\Dishes\OrderDishChoiceList.xbf">
+      <PackagePath>Views\OrderDishChoice\Dishes\OrderDishChoiceList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishChoice\OrderDishChoiceView.xbf">
+      <PackagePath>Views\OrderDishChoice\OrderDishChoiceView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishes\Details\OrderDishesCard.xbf">
+      <PackagePath>Views\OrderDishes\Details\OrderDishesCard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishes\Details\OrderDishesDetails.xbf">
+      <PackagePath>Views\OrderDishes\Details\OrderDishesDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishes\List\OrderDishesList.xbf">
+      <PackagePath>Views\OrderDishes\List\OrderDishesList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDishes\OrderDishesView.xbf">
+      <PackagePath>Views\OrderDishes\OrderDishesView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDish\Details\OrderDishRecommendList.xbf">
+      <PackagePath>Views\OrderDish\Details\OrderDishRecommendList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\OrdersFilterPanel.xbf">
+      <PackagePath>Views\Orders\OrdersFilterPanel.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\AudioSetting\AudioCodecs.xbf">
+      <PackagePath>Views\Phone\AudioSetting\AudioCodecs.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\AudioSetting\AudioParameters.xbf">
+      <PackagePath>Views\Phone\AudioSetting\AudioParameters.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallConnectOrder.xbf">
+      <PackagePath>Views\Phone\PhoneCallConnectOrder.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallConnect\PhoneCallConnect.xbf">
+      <PackagePath>Views\Phone\PhoneCallConnect\PhoneCallConnect.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallConnect\PhoneCallConnectControl.xbf">
+      <PackagePath>Views\Phone\PhoneCallConnect\PhoneCallConnectControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallReceive\PhoneCallReceiveDetails\PhoneCallReceiveCustomerDetails.xbf">
+      <PackagePath>Views\Phone\PhoneCallReceive\PhoneCallReceiveDetails\PhoneCallReceiveCustomerDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallReceive\PhoneCallReceiveView.xbf">
+      <PackagePath>Views\Phone\PhoneCallReceive\PhoneCallReceiveView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDish\Details\OrderDishCard.xbf">
+      <PackagePath>Views\OrderDish\Details\OrderDishCard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDish\Details\OrderDishDetails.xbf">
+      <PackagePath>Views\OrderDish\Details\OrderDishDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\OrderDish\OrderDishView.xbf">
+      <PackagePath>Views\OrderDish\OrderDishView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\Details\OrdersCard.xbf">
+      <PackagePath>Views\Orders\Details\OrdersCard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\Details\OrdersDetails.xbf">
+      <PackagePath>Views\Orders\Details\OrdersDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\Details\OrdersOrderDishes.xbf">
+      <PackagePath>Views\Orders\Details\OrdersOrderDishes.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\Details\OrdersOrderStatusHistory.xbf">
+      <PackagePath>Views\Orders\Details\OrdersOrderStatusHistory.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\List\OrdersListColor.xbf">
+      <PackagePath>Views\Orders\List\OrdersListColor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\List\OrdersList.xbf">
+      <PackagePath>Views\Orders\List\OrdersList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Orders\OrdersView.xbf">
+      <PackagePath>Views\Orders\OrdersView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Order\Details\OrderCard.xbf">
+      <PackagePath>Views\Order\Details\OrderCard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Order\Details\OrderDetails.xbf">
+      <PackagePath>Views\Order\Details\OrderDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Order\OrderView.xbf">
+      <PackagePath>Views\Order\OrderView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dishes\List\DishesList.xbf">
+      <PackagePath>Views\Dishes\List\DishesList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dishes\DishesView.xbf">
+      <PackagePath>Views\Dishes\DishesView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dish\Details\DishCard.xbf">
+      <PackagePath>Views\Dish\Details\DishCard.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dish\Details\DishDetails.xbf">
+      <PackagePath>Views\Dish\Details\DishDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Dish\DishView.xbf">
+      <PackagePath>Views\Dish\DishView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Phone\PhoneCallReceive\PhoneCallReceiveList\PhoneCallReceiveOrdersList.xbf">
+      <PackagePath>Views\Phone\PhoneCallReceive\PhoneCallReceiveList\PhoneCallReceiveOrdersList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Settings\CreateDatabaseView.xbf">
+      <PackagePath>Views\Settings\CreateDatabaseView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Settings\SettingsView.xbf">
+      <PackagePath>Views\Settings\SettingsView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Settings\MigrationView.xbf">
+      <PackagePath>Views\Settings\MigrationView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Shell\MainShellView.xbf">
+      <PackagePath>Views\Shell\MainShellView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Shell\ShellView.xbf">
+      <PackagePath>Views\Shell\ShellView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\Settings\ValidateConnectionView.xbf">
+      <PackagePath>Views\Settings\ValidateConnectionView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Views\SplashScreen\ExtendedSplash.xbf">
+      <PackagePath>Views\SplashScreen\ExtendedSplash.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\AddressBox.xbf">
+      <PackagePath>VOIP\Controls\AddressBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\CallControlsP.xbf">
+      <PackagePath>VOIP\Controls\CallControlsP.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\ChatBubble.xbf">
+      <PackagePath>VOIP\Controls\ChatBubble.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\ContactAction.xbf">
+      <PackagePath>VOIP\Controls\ContactAction.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\IncomingChatBubble.xbf">
+      <PackagePath>VOIP\Controls\IncomingChatBubble.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\Numpad.xbf">
+      <PackagePath>VOIP\Controls\Numpad.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\OutgoingChatBubble.xbf">
+      <PackagePath>VOIP\Controls\OutgoingChatBubble.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\StatusBar.xbf">
+      <PackagePath>VOIP\Controls\StatusBar.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Controls\TextBoxChatBubble.xbf">
+      <PackagePath>VOIP\Controls\TextBoxChatBubble.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\About.xbf">
+      <PackagePath>VOIP\Views\About.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\AccountSettings.xbf">
+      <PackagePath>VOIP\Views\AccountSettings.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\AdvancedSettings.xbf">
+      <PackagePath>VOIP\Views\AdvancedSettings.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\AudioSettings.xbf">
+      <PackagePath>VOIP\Views\AudioSettings.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\Chat.xbf">
+      <PackagePath>VOIP\Views\Chat.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\Chats.xbf">
+      <PackagePath>VOIP\Views\Chats.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\ContactDetail.xbf">
+      <PackagePath>VOIP\Views\ContactDetail.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\ContactList.xbf">
+      <PackagePath>VOIP\Views\ContactList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\Dialer.xbf">
+      <PackagePath>VOIP\Views\Dialer.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\FullScreenPicture.xbf">
+      <PackagePath>VOIP\Views\FullScreenPicture.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\History.xbf">
+      <PackagePath>VOIP\Views\History.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\InCall.xbf">
+      <PackagePath>VOIP\Views\InCall.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\IncomingCall.xbf">
+      <PackagePath>VOIP\Views\IncomingCall.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\Launcher.xbf">
+      <PackagePath>VOIP\Views\Launcher.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\Settings.xbf">
+      <PackagePath>VOIP\Views\Settings.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\Views\VideoSettings.xbf">
+      <PackagePath>VOIP\Views\VideoSettings.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\VOIP\VOIPStyles\VOIPStyles.xbf">
+      <PackagePath>VOIP\VOIPStyles\VOIPStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.17763.0\\redist\Debug\X64\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\Microsoft.Toolkit.Uwp.UI.Controls.Graph.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\Microsoft.Toolkit.Uwp.UI.Controls.Graph.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\folder.svg">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\folder.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\genericfile.png">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\genericfile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\person.png">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\person.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\photo.png">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\Assets\photo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\EmbedReportFrame.html">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\EmbedReportFrame.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\powerbi.min.js">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\powerbi.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.toolkit.uwp.ui.controls.graph\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\ReportContainer.html">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Graph\PowerBIEmbedded\Embed\ReportContainer.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Delivery\src\Inventory.App\bin\x64\Debug\Core\Inventory.Sample.exe">
+      <PackagePath>Inventory.Sample.exe</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.1.appx">
+      <Name>Microsoft.UI.Xaml.2.1</Name>
+      <Version>2.11906.6001.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.1, MinVersion = 2.11906.6001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Dmytro.Hurchyn\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.1.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

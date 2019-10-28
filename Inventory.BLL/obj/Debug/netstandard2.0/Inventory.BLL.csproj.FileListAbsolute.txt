@@ -1,0 +1,11 @@
+D:\Delivery\src\Inventory.BLL\bin\Debug\netstandard2.0\Inventory.BLL.deps.json
+D:\Delivery\src\Inventory.BLL\bin\Debug\netstandard2.0\Inventory.BLL.dll
+D:\Delivery\src\Inventory.BLL\bin\Debug\netstandard2.0\Inventory.BLL.pdb
+D:\Delivery\src\Inventory.BLL\bin\Debug\netstandard2.0\Inventory.Data.dll
+D:\Delivery\src\Inventory.BLL\bin\Debug\netstandard2.0\Inventory.Data.pdb
+D:\Delivery\src\Inventory.BLL\obj\Debug\netstandard2.0\Inventory.BLL.csprojAssemblyReference.cache
+D:\Delivery\src\Inventory.BLL\obj\Debug\netstandard2.0\Inventory.BLL.AssemblyInfoInputs.cache
+D:\Delivery\src\Inventory.BLL\obj\Debug\netstandard2.0\Inventory.BLL.AssemblyInfo.cs
+D:\Delivery\src\Inventory.BLL\obj\Debug\netstandard2.0\Inventory.BLL.csproj.CopyComplete
+D:\Delivery\src\Inventory.BLL\obj\Debug\netstandard2.0\Inventory.BLL.dll
+D:\Delivery\src\Inventory.BLL\obj\Debug\netstandard2.0\Inventory.BLL.pdb

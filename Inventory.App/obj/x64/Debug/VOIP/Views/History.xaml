@@ -1,0 +1,114 @@
+﻿<Page
+    x:Class="Linphone.VOIP.Views.History"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:linphone="clr-namespace:Linphone"
+    xmlns:controls="clr-namespace:Linphone.Controls"
+    xmlns:model="using:Linphone.Model"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <model:BoolToAccentBrushConverter x:Key="BoolToAccentBrushConverter"/>
+
+        <DataTemplate x:ConnectionId='2' x:Name="CallLogListViewTemplate">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15"/>
+                    <ColumnDefinition Width="27.4"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Ellipse Width="32" Height="32" VerticalAlignment="Center" Grid.RowSpan="2" Margin="0,11,10.4,9" Grid.ColumnSpan="2">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="/Assets/avatar.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+
+                <TextBlock Grid.Column="1" Padding="0,5,0,0"
+                            Text="{Binding DisplayedName}" 
+                            Style="{StaticResource ListItemHeaderStyle}" Grid.ColumnSpan="2" Margin="27,0,-0.4,0.6"/>
+                <TextBlock  Grid.Column="2" Padding="0,0,0,5"
+                                Grid.Row="1" Style="{StaticResource ListItemStyle}" Foreground="{Binding IsMissed, Converter={StaticResource BoolToAccentBrushConverter}}" Height="22" Margin="0.6,0,-0.4,0" VerticalAlignment="Bottom">
+                    <Run Text="{Binding StatusText}"></Run>
+                    <Run Text=","></Run>
+                    <Run Text="{Binding DetailsText}"></Run>
+                </TextBlock>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid x:ConnectionId='4' x:Name="LayoutRoot" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12,12,12,0">
+            <TextBlock x:Uid="HistoryMenu" Text="HISTORY" Style="{StaticResource HeaderTextStyle}" />
+        </StackPanel>
+
+        <TextBlock x:ConnectionId='5' 
+            x:Name="EmptyText"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Visibility="Collapsed"
+            Grid.Row="1"
+            x:Uid="EmptyHistory"/>
+
+        <Grid x:ConnectionId='6' x:Name="ContentPanel" Grid.Row="1">
+            <Pivot x:ConnectionId='12'                            >
+                <PivotItem x:Uid="HistoryAll">
+                    <ListView x:ConnectionId='14' x:Name="Calls" 
+                              Margin="-12,0,-12,0"
+                              ItemsSource="{Binding}"
+                              ItemTemplate="{StaticResource CallLogListViewTemplate}"
+                              IsItemClickEnabled="True"
+                              IsMultiSelectCheckBoxEnabled="True"
+                                                       
+                                                          UseLayoutRounding="True">
+                    </ListView>
+                </PivotItem>
+
+                <PivotItem x:Uid="HistoryMissedTitle">
+                    <ListView x:ConnectionId='13' x:Name="MissedCalls"
+                              Margin="-12,0,-12,0"
+                              ItemsSource="{Binding}"
+                              ItemTemplate="{StaticResource CallLogListViewTemplate}"
+                              IsItemClickEnabled="True"
+                              IsMultiSelectCheckBoxEnabled="True"
+                                                       
+                                                          UseLayoutRounding="True">
+                    </ListView>
+                </PivotItem>
+            </Pivot>
+        </Grid>
+
+        <CommandBar Grid.Row="2" VerticalAlignment="Bottom" >
+            <AppBarButton x:ConnectionId='7' x:Name="SelectItems" FontFamily="OverflowCheckGlyph" x:Uid="SelectItem" Label="Select Items"                          >
+                <AppBarButton.Icon>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xe762;" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:ConnectionId='8' Label="Delete" Icon="Delete" x:Uid="Delete"                          x:Name="DeleteItem" />
+            <AppBarButton x:ConnectionId='9' Label="Cancel" Icon="Cancel" x:Uid="Cancel"                         x:Name="CancelBtn"/>
+
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:ConnectionId='10' x:Name="SelectAll" x:Uid="SelectAll"                         />
+                <AppBarButton x:ConnectionId='11' Visibility="Collapsed" x:Name="DeselectAll" x:Uid="DeselectAll"                           />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Grid>
+</Page>
+

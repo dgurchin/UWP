@@ -1,0 +1,136 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="Inventory.Views.SettingsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:views="using:Inventory.Views"
+    mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800">
+    <ScrollViewer Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" VerticalScrollBarVisibility="Auto">
+        <ContentControl x:ConnectionId='2'                                                                                                     >
+            <StackPanel Margin="24,12" MaxWidth="1200">
+                <controls:WindowTitle Title="Настройки" />
+                <Image Width="320" 
+               HorizontalAlignment="Left"
+               Source="ms-appx:///Assets/AppLogo.png" 
+               Stretch="UniformToFill" />
+
+                <StackPanel Margin="0,12">
+                    <TextBlock FontWeight="Bold" FontSize="40" Text="Настройки приложения"/>
+                    <!--<TextBlock Text="{x:Bind ViewModel.Version}" />
+                    <TextBlock><Hyperlink NavigateUri="https://github.com/Microsoft/InventorySample">https://github.com/Microsoft/InventorySample</Hyperlink></TextBlock>-->
+                </StackPanel>
+
+                <Pivot>
+                    <PivotItem Header="Подключение">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Margin="0,12,0,0">
+                                <TextBlock Margin="0,12" Text="Поставщики данных" Style="{StaticResource TitleTextBlockStyle}"  />
+                                <TextBlock Text="Выберите и настройте провайдера данных" />
+                                <RadioButton x:ConnectionId='18' Margin="0,12" GroupName="providers"                                                             
+                                             Visibility="Collapsed">
+                                    <ContentControl x:ConnectionId='25'                                                            >
+                                        <StackPanel>
+                                            <TextBlock Text="Локальный поставщик данных" LineHeight="26" />
+                                            <TextBlock Text="Пример поставщика данных на основе локальной базы данных SQLite." TextWrapping="Wrap" Foreground="Gray" />
+                                            <Border Margin="8" />
+                                            <Button x:ConnectionId='26' Content="Сбросить данные"                                                    />
+                                        </StackPanel>
+                                    </ContentControl>
+                                </RadioButton>
+                                <RadioButton x:ConnectionId='19' Margin="0,0,0,20" GroupName="providers"                                                          >
+                                    <ContentControl x:ConnectionId='20'                                                          >
+                                        <StackPanel>
+                                            <TextBlock Text="Поставщик данных SQL" LineHeight="26" />
+                                            <TextBlock Text="Пример поставщика данных, обращающегося к Microsoft SQL Server или Microsoft Azure SQL Database." TextWrapping="Wrap" Foreground="Gray" />
+                                            <Border Margin="4" />
+                                            <TextBlock Text="Строка подключения" LineHeight="26" />
+                                            <TextBox x:ConnectionId='21'                                                            IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" />
+                                            <Border Margin="8" />
+                                            <StackPanel Orientation="Horizontal" Spacing="24">
+                                                <Button x:ConnectionId='22' Content="Проверить соединение"                                                           />
+                                                <!--
+                                                <Button Content="Создать базу данных" Command="{x:Bind ViewModel.CreateDatabaseCommand}" />
+                                                -->
+                                                <Button x:ConnectionId='23' Content="Выполнить миграцию"                                                    />
+                                                <Button x:ConnectionId='24' Content="Картинки продуктов"                                                       />
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </ContentControl>
+                                </RadioButton>
+                            </StackPanel>
+                            <StackPanel >
+                                <Button x:ConnectionId='17' Content="Сохранить изменения" HorizontalAlignment="Left"                                                 />
+                            </StackPanel>
+                            <StackPanel x:ConnectionId='15' Margin="0,12"                                                                                                        >
+                                <TextBlock Margin="0,12" Text="Тестирование" Style="{StaticResource TitleTextBlockStyle}"  />
+                                <ToggleSwitch x:ConnectionId='16' Header="Включить генерацию случайных ошибок для тестирования журнала активности" 
+                                                                                                           />
+                            </StackPanel>
+                        </StackPanel>
+                    </PivotItem>
+                    <PivotItem Header="Настройки SIP клиента">
+                        <StackPanel Margin="0,12,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0"  Padding="5" BorderBrush="LightGray" BorderThickness="1">
+                                    <TextBlock Text="Имя" LineHeight="26" />
+                                    <TextBox x:ConnectionId='10'                                                     IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" />
+                                    <TextBlock Text="Пароль" LineHeight="26" />
+                                    <PasswordBox x:ConnectionId='11'                                                             FontSize="10"/>
+                                    <TextBlock Text="Домен" LineHeight="26" />
+                                    <TextBox x:ConnectionId='12'                                                       IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" />
+                                    <TextBlock Text="Порт" LineHeight="26" />
+                                    <TextBox x:ConnectionId='13'                                                     IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" />
+                                    <TextBlock Text="Транспортный протокол" LineHeight="26" />
+                                    <ComboBox x:ConnectionId='14'                                                                         >
+                                        <x:String>UDP</x:String>
+                                        <x:String>TCP</x:String>
+                                        <x:String>TLS</x:String>
+                                    </ComboBox>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1" Padding="5,0,0,0"  BorderBrush="LightGray" BorderThickness="1">
+                                    <TextBlock Text="Пробный звонок" Style="{StaticResource TitleTextBlockStyle}"  />
+                                    <controls:Section Style="{StaticResource DetailsViewSection}" HorizontalAlignment="Left">
+                                        <views:PhoneCallConnect x:ConnectionId='9'  x:Name="phoneView"/>
+                                    </controls:Section>
+                                </StackPanel>
+                            </Grid>
+                            <StackPanel Orientation="Horizontal" Spacing="24" Padding="5,10,5,5" HorizontalAlignment="Left">
+                                <!--<Button Content="Подключить" Command="{x:Bind ViewModel.SipPhoneEnableCommand}" />
+                                <Button Content="Отключить" Command="{x:Bind ViewModel.SipPhoneDisconnectCommand}" />-->
+                                <!--<Button Content="Сохранить изменения SIP" HorizontalAlignment="Right" Command="{x:Bind ViewModel.SaveSipChangesCommand}" />-->
+                                <Button x:ConnectionId='8' x:Name="SaveSettingSIP" Content="Сохранить изменения SIP" HorizontalAlignment="Right"                             />
+                            </StackPanel>
+                        </StackPanel>
+                    </PivotItem>
+                    <PivotItem Header="Настройки параметров звука.">
+                        <StackPanel Grid.Column="1" Padding="5,0,0,0"  BorderBrush="LightGray" BorderThickness="1"  Spacing="4" MaxWidth="1200">
+                            <controls:Section Style="{StaticResource DetailsViewSection}" HorizontalAlignment="Left">
+                                <views:AudioParameters x:ConnectionId='7' x:Name="audioParameters"/>
+                            </controls:Section>
+                            <controls:Section Style="{StaticResource DetailsViewSection}" HorizontalAlignment="Left">
+                                <views:AudioCodecs x:ConnectionId='6' x:Name="audioCodecs"/>
+                            </controls:Section>
+                        </StackPanel>
+                    </PivotItem>
+                    <PivotItem Header="Loading Monitor">
+                        <StackPanel Margin="0,12,0,0">
+                            <TextBlock Text="Домен" LineHeight="26" />
+                            <TextBox x:ConnectionId='3'                                                    IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" />
+                            <TextBlock Text="Имя" LineHeight="26" />
+                            <TextBox x:ConnectionId='4'                                                        IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" />
+                            <TextBlock Text="Пароль" LineHeight="26" />
+                            <PasswordBox x:ConnectionId='5'                                                           />
+                        </StackPanel>
+                    </PivotItem>
+                </Pivot>
+            </StackPanel>
+        </ContentControl>
+    </ScrollViewer>
+</Page>
+

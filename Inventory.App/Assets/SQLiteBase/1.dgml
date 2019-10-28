@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Database" Label="Delivery.2.02.db" Category="Database" Group="Expanded" />
+    <Node Id="Address" Label="Address" Category="Table" Group="Collapsed" />
+    <Node Id="Address_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="Address_DateCreate" Label="DateCreate" Category="Field" Description="text" />
+    <Node Id="Address_User" Label="User" Category="Field Optional" Description="text" />
+    <Node Id="Address_HouseNumber" Label="HouseNumber" Category="Field Optional" Description="text" />
+    <Node Id="Address_Apartment" Label="Apartment" Category="Field Optional" Description="text" />
+    <Node Id="Address_Comment" Label="Comment" Category="Field Optional" Description="text" />
+    <Node Id="Address_StreetId" Label="StreetId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Categories" Label="Categories" Category="Table" Group="Collapsed" />
+    <Node Id="Categories_CategoryID" Label="CategoryID" Category="Field Primary" Description="bigint" />
+    <Node Id="Categories_Parent_ID" Label="Parent_ID" Category="Field Foreign" Description="bigint" />
+    <Node Id="Categories_SequenceNumber" Label="SequenceNumber" Category="Field Optional" Description="bigint" />
+    <Node Id="Categories_Description" Label="Description" Category="Field Optional" Description="text" />
+    <Node Id="Categories_Name" Label="Name" Category="Field" Description="text" />
+    <Node Id="Categories_Picture" Label="Picture" Category="Field Optional" Description="image" />
+    <Node Id="Categories_Thumbnail" Label="Thumbnail" Category="Field Optional" Description="image" />
+    <Node Id="City" Label="City" Category="Table" Group="Collapsed" />
+    <Node Id="City_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="City_DateCreate" Label="DateCreate" Category="Field Optional" Description="datetime" />
+    <Node Id="City_User" Label="User" Category="Field Optional" Description="text" />
+    <Node Id="City_Name" Label="Name" Category="Field Optional" Description="text" />
+    <Node Id="CountryCodes" Label="CountryCodes" Category="Table" Group="Collapsed" />
+    <Node Id="CountryCodes_CountryCodeID" Label="CountryCodeID" Category="Field Primary" Description="text" />
+    <Node Id="CountryCodes_Name" Label="Name" Category="Field" Description="text" />
+    <Node Id="Customers" Label="Customers" Category="Table" Group="Collapsed" />
+    <Node Id="Customers_CustomerID" Label="CustomerID" Category="Field Primary" Description="bigint" />
+    <Node Id="Customers_AddressLine1" Label="AddressLine1" Category="Field" Description="text" />
+    <Node Id="Customers_AddressLine2" Label="AddressLine2" Category="Field Optional" Description="text" />
+    <Node Id="Customers_BirthDate" Label="BirthDate" Category="Field Optional" Description="text" />
+    <Node Id="Customers_ChildrenAtHome" Label="ChildrenAtHome" Category="Field Optional" Description="bigint" />
+    <Node Id="Customers_City" Label="City" Category="Field" Description="text" />
+    <Node Id="Customers_CountryCode" Label="CountryCode" Category="Field" Description="text" />
+    <Node Id="Customers_CreatedOn" Label="CreatedOn" Category="Field" Description="text" />
+    <Node Id="Customers_Education" Label="Education" Category="Field Optional" Description="text" />
+    <Node Id="Customers_EmailAddress" Label="EmailAddress" Category="Field" Description="text" />
+    <Node Id="Customers_FirstName" Label="FirstName" Category="Field" Description="text" />
+    <Node Id="Customers_Gender" Label="Gender" Category="Field Optional" Description="text" />
+    <Node Id="Customers_IsHouseOwner" Label="IsHouseOwner" Category="Field Optional" Description="bigint" />
+    <Node Id="Customers_LastModifiedOn" Label="LastModifiedOn" Category="Field" Description="text" />
+    <Node Id="Customers_LastName" Label="LastName" Category="Field" Description="text" />
+    <Node Id="Customers_MaritalStatus" Label="MaritalStatus" Category="Field Optional" Description="text" />
+    <Node Id="Customers_MiddleName" Label="MiddleName" Category="Field Optional" Description="text" />
+    <Node Id="Customers_NumberCarsOwned" Label="NumberCarsOwned" Category="Field Optional" Description="bigint" />
+    <Node Id="Customers_Occupation" Label="Occupation" Category="Field Optional" Description="text" />
+    <Node Id="Customers_Phone" Label="Phone" Category="Field Optional" Description="text" />
+    <Node Id="Customers_Picture" Label="Picture" Category="Field Optional" Description="image" />
+    <Node Id="Customers_PostalCode" Label="PostalCode" Category="Field" Description="text" />
+    <Node Id="Customers_Region" Label="Region" Category="Field" Description="text" />
+    <Node Id="Customers_SearchTerms" Label="SearchTerms" Category="Field Optional" Description="text" />
+    <Node Id="Customers_Suffix" Label="Suffix" Category="Field Optional" Description="text" />
+    <Node Id="Customers_Thumbnail" Label="Thumbnail" Category="Field Optional" Description="image" />
+    <Node Id="Customers_Title" Label="Title" Category="Field Optional" Description="text" />
+    <Node Id="Customers_TotalChildren" Label="TotalChildren" Category="Field Optional" Description="bigint" />
+    <Node Id="Customers_YearlyIncome" Label="YearlyIncome" Category="Field Optional" Description="text" />
+    <Node Id="Customers_Comment" Label="Comment" Category="Field Optional" Description="text" />
+    <Node Id="DbVersion" Label="DbVersion" Category="Table" Group="Collapsed" />
+    <Node Id="DbVersion_Version" Label="Version" Category="Field Primary" Description="text" />
+    <Node Id="OrderItems" Label="OrderItems" Category="Table" Group="Collapsed" />
+    <Node Id="OrderItems_OrderID" Label="OrderID" Category="Field Primary" Description="bigint" />
+    <Node Id="OrderItems_OrderLine" Label="OrderLine" Category="Field Primary" Description="bigint" />
+    <Node Id="OrderItems_Discount" Label="Discount" Category="Field" Description="text" />
+    <Node Id="OrderItems_ProductID" Label="ProductID" Category="Field Foreign" Description="text" />
+    <Node Id="OrderItems_Quantity" Label="Quantity" Category="Field" Description="bigint" />
+    <Node Id="OrderItems_TaxType" Label="TaxType" Category="Field" Description="bigint" />
+    <Node Id="OrderItems_UnitPrice" Label="UnitPrice" Category="Field" Description="text" />
+    <Node Id="Orders" Label="Orders" Category="Table" Group="Collapsed" />
+    <Node Id="Orders_OrderID" Label="OrderID" Category="Field Primary" Description="bigint" />
+    <Node Id="Orders_CustomerID" Label="CustomerID" Category="Field Foreign" Description="bigint" />
+    <Node Id="Orders_DeliveredDate" Label="DeliveredDate" Category="Field Optional" Description="datetime" />
+    <Node Id="Orders_DeliveredCityId" Label="DeliveredCityId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Orders_DeliveredStreetId" Label="DeliveredStreetId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Orders_DeliveredHouseNumber" Label="DeliveredHouseNumber" Category="Field Optional" Description="text" />
+    <Node Id="Orders_DeliveredApartment" Label="DeliveredApartment" Category="Field Optional" Description="text" />
+    <Node Id="Orders_LastModifiedOn" Label="LastModifiedOn" Category="Field" Description="text" />
+    <Node Id="Orders_OrderDate" Label="OrderDate" Category="Field" Description="datetime" />
+    <Node Id="Orders_PaymentType" Label="PaymentType" Category="Field Optional" Description="bigint" />
+    <Node Id="Orders_SearchTerms" Label="SearchTerms" Category="Field Optional" Description="text" />
+    <Node Id="Orders_RestaurantId" Label="RestaurantId" Category="Field Optional" Description="bigint" />
+    <Node Id="Orders_Status" Label="Status" Category="Field" Description="bigint" />
+    <Node Id="Orders_StatusUser" Label="StatusUser" Category="Field Optional" Description="text" />
+    <Node Id="Orders_StatusDate" Label="StatusDate" Category="Field Optional" Description="datetime" />
+    <Node Id="Orders_TrackingNumber" Label="TrackingNumber" Category="Field Optional" Description="text" />
+    <Node Id="Orders_OrderTypeId" Label="OrderTypeId" Category="Field Optional" Description="bigint" />
+    <Node Id="Orders_OrderSourceId" Label="OrderSourceId" Category="Field Optional" Description="bigint" />
+    <Node Id="Orders_PhoneNumber" Label="PhoneNumber" Category="Field Optional" Description="text" />
+    <Node Id="Orders_NumOfPeople" Label="NumOfPeople" Category="Field Optional" Description="bigint" />
+    <Node Id="Orders_Comment" Label="Comment" Category="Field Optional" Description="text" />
+    <Node Id="Orders_AddressId" Label="AddressId" Category="Field Optional" Description="bigint" />
+    <Node Id="Orders_CallOnArrival" Label="CallOnArrival" Category="Field Optional" Description="bit" />
+    <Node Id="Orders_SignOfConsent" Label="SignOfConsent" Category="Field Optional" Description="bit" />
+    <Node Id="OrderSource" Label="OrderSource" Category="Table" Group="Collapsed" />
+    <Node Id="OrderSource_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="OrderSource_Name" Label="Name" Category="Field Optional" Description="text" />
+    <Node Id="OrderStatus" Label="OrderStatus" Category="Table" Group="Collapsed" />
+    <Node Id="OrderStatus_Status" Label="Status" Category="Field Primary" Description="bigint" />
+    <Node Id="OrderStatus_Name" Label="Name" Category="Field" Description="text" />
+    <Node Id="OrderStatus_ColorStatus" Label="ColorStatus" Category="Field Optional" Description="text" />
+    <Node Id="OrderStatusHistory" Label="OrderStatusHistory" Category="Table" Group="Collapsed" />
+    <Node Id="OrderStatusHistory_OrderID" Label="OrderID" Category="Field Primary" Description="bigint" />
+    <Node Id="OrderStatusHistory_OrderLine" Label="OrderLine" Category="Field Primary" Description="bigint" />
+    <Node Id="OrderStatusHistory_StatusIdBeginning" Label="StatusIdBeginning" Category="Field Optional" Description="bigint" />
+    <Node Id="OrderStatusHistory_StatusIdEnd" Label="StatusIdEnd" Category="Field Optional" Description="bigint" />
+    <Node Id="OrderStatusHistory_StatusUser" Label="StatusUser" Category="Field Optional" Description="text" />
+    <Node Id="OrderStatusHistory_StatusDate" Label="StatusDate" Category="Field Optional" Description="datetime" />
+    <Node Id="OrderStatusHistory_Comment" Label="Comment" Category="Field Optional" Description="text" />
+    <Node Id="OrderStatusSequence" Label="OrderStatusSequence" Category="Table" Group="Collapsed" />
+    <Node Id="OrderStatusSequence_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="OrderStatusSequence_StatusIdBeginning" Label="StatusIdBeginning" Category="Field Optional" Description="bigint" />
+    <Node Id="OrderStatusSequence_StatusIdEnd" Label="StatusIdEnd" Category="Field Optional" Description="bigint" />
+    <Node Id="OrderStatusSequence_Direction" Label="Direction" Category="Field Optional" Description="text" />
+    <Node Id="OrderStatusSequence_Algorithm" Label="Algorithm" Category="Field Optional" Description="text" />
+    <Node Id="OrderStatusSequence_Comment" Label="Comment" Category="Field Optional" Description="text" />
+    <Node Id="OrderType" Label="OrderType" Category="Table" Group="Collapsed" />
+    <Node Id="OrderType_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="OrderType_Name" Label="Name" Category="Field Optional" Description="text" />
+    <Node Id="PaymentTypes" Label="PaymentTypes" Category="Table" Group="Collapsed" />
+    <Node Id="PaymentTypes_PaymentTypeID" Label="PaymentTypeID" Category="Field Primary" Description="bigint" />
+    <Node Id="PaymentTypes_Name" Label="Name" Category="Field" Description="text" />
+    <Node Id="Products" Label="Products" Category="Table" Group="Collapsed" />
+    <Node Id="Products_ProductID" Label="ProductID" Category="Field Primary" Description="text" />
+    <Node Id="Products_CategoryID" Label="CategoryID" Category="Field" Description="bigint" />
+    <Node Id="Products_Color" Label="Color" Category="Field Optional" Description="text" />
+    <Node Id="Products_CreatedOn" Label="CreatedOn" Category="Field" Description="text" />
+    <Node Id="Products_DealerPrice" Label="DealerPrice" Category="Field" Description="text" />
+    <Node Id="Products_Description" Label="Description" Category="Field Optional" Description="text" />
+    <Node Id="Products_Discount" Label="Discount" Category="Field" Description="text" />
+    <Node Id="Products_DiscountEndDate" Label="DiscountEndDate" Category="Field Optional" Description="text" />
+    <Node Id="Products_DiscountStartDate" Label="DiscountStartDate" Category="Field Optional" Description="text" />
+    <Node Id="Products_LastModifiedOn" Label="LastModifiedOn" Category="Field" Description="text" />
+    <Node Id="Products_ListPrice" Label="ListPrice" Category="Field" Description="text" />
+    <Node Id="Products_Name" Label="Name" Category="Field" Description="text" />
+    <Node Id="Products_Picture" Label="Picture" Category="Field Optional" Description="image" />
+    <Node Id="Products_SafetyStockLevel" Label="SafetyStockLevel" Category="Field" Description="bigint" />
+    <Node Id="Products_SearchTerms" Label="SearchTerms" Category="Field Optional" Description="text" />
+    <Node Id="Products_Size" Label="Size" Category="Field Optional" Description="text" />
+    <Node Id="Products_StockUnits" Label="StockUnits" Category="Field" Description="bigint" />
+    <Node Id="Products_TaxType" Label="TaxType" Category="Field" Description="bigint" />
+    <Node Id="Products_Thumbnail" Label="Thumbnail" Category="Field Optional" Description="image" />
+    <Node Id="Restaurants" Label="Restaurants" Category="Table" Group="Collapsed" />
+    <Node Id="Restaurants_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="Restaurants_Manufacturer" Label="Manufacturer" Category="Field Optional" Description="text" />
+    <Node Id="Restaurants_Name" Label="Name" Category="Field" Description="text" />
+    <Node Id="Restaurants_Phone" Label="Phone" Category="Field Optional" Description="text" />
+    <Node Id="Street" Label="Street" Category="Table" Group="Collapsed" />
+    <Node Id="Street_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="Street_DateCreate" Label="DateCreate" Category="Field Optional" Description="datetime" />
+    <Node Id="Street_User" Label="User" Category="Field Optional" Description="text" />
+    <Node Id="Street_Name" Label="Name" Category="Field Optional" Description="text" />
+    <Node Id="Street_TypeStreetId" Label="TypeStreetId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Street_CityId" Label="CityId" Category="Field Foreign" Description="bigint" />
+    <Node Id="TaxTypes" Label="TaxTypes" Category="Table" Group="Collapsed" />
+    <Node Id="TaxTypes_TaxTypeID" Label="TaxTypeID" Category="Field Primary" Description="bigint" />
+    <Node Id="TaxTypes_Name" Label="Name" Category="Field" Description="text" />
+    <Node Id="TaxTypes_Rate" Label="Rate" Category="Field" Description="text" />
+    <Node Id="TypeStreet" Label="TypeStreet" Category="Table" Group="Collapsed" />
+    <Node Id="TypeStreet_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="TypeStreet_DateCreate" Label="DateCreate" Category="Field Optional" Description="datetime" />
+    <Node Id="TypeStreet_User" Label="User" Category="Field Optional" Description="text" />
+    <Node Id="TypeStreet_Name" Label="Name" Category="Field Optional" Description="text" />
+    <Node Id="TypeStreet_NameShort" Label="NameShort" Category="Field Optional" Description="text" />
+  </Nodes>
+  <Links>
+    <Link Source="Database" Target="Address" Category="Contains" />
+    <Link Source="Address" Target="Address_Id" Category="Contains" />
+    <Link Source="Address" Target="Address_DateCreate" Category="Contains" />
+    <Link Source="Address" Target="Address_User" Category="Contains" />
+    <Link Source="Address" Target="Address_HouseNumber" Category="Contains" />
+    <Link Source="Address" Target="Address_Apartment" Category="Contains" />
+    <Link Source="Address" Target="Address_Comment" Category="Contains" />
+    <Link Source="Address" Target="Address_StreetId" Category="Contains" />
+    <Link Source="Address_StreetId" Target="Street_Id" Label="FK_Address_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Categories" Category="Contains" />
+    <Link Source="Categories" Target="Categories_CategoryID" Category="Contains" />
+    <Link Source="Categories" Target="Categories_Parent_ID" Category="Contains" />
+    <Link Source="Categories" Target="Categories_SequenceNumber" Category="Contains" />
+    <Link Source="Categories" Target="Categories_Description" Category="Contains" />
+    <Link Source="Categories" Target="Categories_Name" Category="Contains" />
+    <Link Source="Categories" Target="Categories_Picture" Category="Contains" />
+    <Link Source="Categories" Target="Categories_Thumbnail" Category="Contains" />
+    <Link Source="Categories_Parent_ID" Target="Categories_CategoryID" Label="FK_Categories_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="City" Category="Contains" />
+    <Link Source="City" Target="City_Id" Category="Contains" />
+    <Link Source="City" Target="City_DateCreate" Category="Contains" />
+    <Link Source="City" Target="City_User" Category="Contains" />
+    <Link Source="City" Target="City_Name" Category="Contains" />
+    <Link Source="Database" Target="CountryCodes" Category="Contains" />
+    <Link Source="CountryCodes" Target="CountryCodes_CountryCodeID" Category="Contains" />
+    <Link Source="CountryCodes" Target="CountryCodes_Name" Category="Contains" />
+    <Link Source="Database" Target="Customers" Category="Contains" />
+    <Link Source="Customers" Target="Customers_CustomerID" Category="Contains" />
+    <Link Source="Customers" Target="Customers_AddressLine1" Category="Contains" />
+    <Link Source="Customers" Target="Customers_AddressLine2" Category="Contains" />
+    <Link Source="Customers" Target="Customers_BirthDate" Category="Contains" />
+    <Link Source="Customers" Target="Customers_ChildrenAtHome" Category="Contains" />
+    <Link Source="Customers" Target="Customers_City" Category="Contains" />
+    <Link Source="Customers" Target="Customers_CountryCode" Category="Contains" />
+    <Link Source="Customers" Target="Customers_CreatedOn" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Education" Category="Contains" />
+    <Link Source="Customers" Target="Customers_EmailAddress" Category="Contains" />
+    <Link Source="Customers" Target="Customers_FirstName" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Gender" Category="Contains" />
+    <Link Source="Customers" Target="Customers_IsHouseOwner" Category="Contains" />
+    <Link Source="Customers" Target="Customers_LastModifiedOn" Category="Contains" />
+    <Link Source="Customers" Target="Customers_LastName" Category="Contains" />
+    <Link Source="Customers" Target="Customers_MaritalStatus" Category="Contains" />
+    <Link Source="Customers" Target="Customers_MiddleName" Category="Contains" />
+    <Link Source="Customers" Target="Customers_NumberCarsOwned" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Occupation" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Phone" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Picture" Category="Contains" />
+    <Link Source="Customers" Target="Customers_PostalCode" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Region" Category="Contains" />
+    <Link Source="Customers" Target="Customers_SearchTerms" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Suffix" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Thumbnail" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Title" Category="Contains" />
+    <Link Source="Customers" Target="Customers_TotalChildren" Category="Contains" />
+    <Link Source="Customers" Target="Customers_YearlyIncome" Category="Contains" />
+    <Link Source="Customers" Target="Customers_Comment" Category="Contains" />
+    <Link Source="Database" Target="DbVersion" Category="Contains" />
+    <Link Source="DbVersion" Target="DbVersion_Version" Category="Contains" />
+    <Link Source="Database" Target="OrderItems" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_OrderID" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_OrderLine" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_Discount" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_ProductID" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_Quantity" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_TaxType" Category="Contains" />
+    <Link Source="OrderItems" Target="OrderItems_UnitPrice" Category="Contains" />
+    <Link Source="OrderItems_ProductID" Target="Products_ProductID" Label="FK_OrderItems_0_0" Category="Foreign Key" />
+    <Link Source="OrderItems_OrderID" Target="Orders_OrderID" Label="FK_OrderItems_1_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Orders" Category="Contains" />
+    <Link Source="Orders" Target="Orders_OrderID" Category="Contains" />
+    <Link Source="Orders" Target="Orders_CustomerID" Category="Contains" />
+    <Link Source="Orders" Target="Orders_DeliveredDate" Category="Contains" />
+    <Link Source="Orders" Target="Orders_DeliveredCityId" Category="Contains" />
+    <Link Source="Orders" Target="Orders_DeliveredStreetId" Category="Contains" />
+    <Link Source="Orders" Target="Orders_DeliveredHouseNumber" Category="Contains" />
+    <Link Source="Orders" Target="Orders_DeliveredApartment" Category="Contains" />
+    <Link Source="Orders" Target="Orders_LastModifiedOn" Category="Contains" />
+    <Link Source="Orders" Target="Orders_OrderDate" Category="Contains" />
+    <Link Source="Orders" Target="Orders_PaymentType" Category="Contains" />
+    <Link Source="Orders" Target="Orders_SearchTerms" Category="Contains" />
+    <Link Source="Orders" Target="Orders_RestaurantId" Category="Contains" />
+    <Link Source="Orders" Target="Orders_Status" Category="Contains" />
+    <Link Source="Orders" Target="Orders_StatusUser" Category="Contains" />
+    <Link Source="Orders" Target="Orders_StatusDate" Category="Contains" />
+    <Link Source="Orders" Target="Orders_TrackingNumber" Category="Contains" />
+    <Link Source="Orders" Target="Orders_OrderTypeId" Category="Contains" />
+    <Link Source="Orders" Target="Orders_OrderSourceId" Category="Contains" />
+    <Link Source="Orders" Target="Orders_PhoneNumber" Category="Contains" />
+    <Link Source="Orders" Target="Orders_NumOfPeople" Category="Contains" />
+    <Link Source="Orders" Target="Orders_Comment" Category="Contains" />
+    <Link Source="Orders" Target="Orders_AddressId" Category="Contains" />
+    <Link Source="Orders" Target="Orders_CallOnArrival" Category="Contains" />
+    <Link Source="Orders" Target="Orders_SignOfConsent" Category="Contains" />
+    <Link Source="Orders_CustomerID" Target="Customers_CustomerID" Label="FK_Orders_0_0" Category="Foreign Key" />
+    <Link Source="Orders_DeliveredStreetId" Target="Street_Id" Label="FK_Orders_1_0" Category="Foreign Key" />
+    <Link Source="Orders_DeliveredCityId" Target="City_Id" Label="FK_Orders_2_0" Category="Foreign Key" />
+    <Link Source="Database" Target="OrderSource" Category="Contains" />
+    <Link Source="OrderSource" Target="OrderSource_Id" Category="Contains" />
+    <Link Source="OrderSource" Target="OrderSource_Name" Category="Contains" />
+    <Link Source="Database" Target="OrderStatus" Category="Contains" />
+    <Link Source="OrderStatus" Target="OrderStatus_Status" Category="Contains" />
+    <Link Source="OrderStatus" Target="OrderStatus_Name" Category="Contains" />
+    <Link Source="OrderStatus" Target="OrderStatus_ColorStatus" Category="Contains" />
+    <Link Source="Database" Target="OrderStatusHistory" Category="Contains" />
+    <Link Source="OrderStatusHistory" Target="OrderStatusHistory_OrderID" Category="Contains" />
+    <Link Source="OrderStatusHistory" Target="OrderStatusHistory_OrderLine" Category="Contains" />
+    <Link Source="OrderStatusHistory" Target="OrderStatusHistory_StatusIdBeginning" Category="Contains" />
+    <Link Source="OrderStatusHistory" Target="OrderStatusHistory_StatusIdEnd" Category="Contains" />
+    <Link Source="OrderStatusHistory" Target="OrderStatusHistory_StatusUser" Category="Contains" />
+    <Link Source="OrderStatusHistory" Target="OrderStatusHistory_StatusDate" Category="Contains" />
+    <Link Source="OrderStatusHistory" Target="OrderStatusHistory_Comment" Category="Contains" />
+    <Link Source="OrderStatusHistory_OrderID" Target="Orders_OrderID" Label="FK_OrderStatusHistory_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="OrderStatusSequence" Category="Contains" />
+    <Link Source="OrderStatusSequence" Target="OrderStatusSequence_Id" Category="Contains" />
+    <Link Source="OrderStatusSequence" Target="OrderStatusSequence_StatusIdBeginning" Category="Contains" />
+    <Link Source="OrderStatusSequence" Target="OrderStatusSequence_StatusIdEnd" Category="Contains" />
+    <Link Source="OrderStatusSequence" Target="OrderStatusSequence_Direction" Category="Contains" />
+    <Link Source="OrderStatusSequence" Target="OrderStatusSequence_Algorithm" Category="Contains" />
+    <Link Source="OrderStatusSequence" Target="OrderStatusSequence_Comment" Category="Contains" />
+    <Link Source="Database" Target="OrderType" Category="Contains" />
+    <Link Source="OrderType" Target="OrderType_Id" Category="Contains" />
+    <Link Source="OrderType" Target="OrderType_Name" Category="Contains" />
+    <Link Source="Database" Target="PaymentTypes" Category="Contains" />
+    <Link Source="PaymentTypes" Target="PaymentTypes_PaymentTypeID" Category="Contains" />
+    <Link Source="PaymentTypes" Target="PaymentTypes_Name" Category="Contains" />
+    <Link Source="Database" Target="Products" Category="Contains" />
+    <Link Source="Products" Target="Products_ProductID" Category="Contains" />
+    <Link Source="Products" Target="Products_CategoryID" Category="Contains" />
+    <Link Source="Products" Target="Products_Color" Category="Contains" />
+    <Link Source="Products" Target="Products_CreatedOn" Category="Contains" />
+    <Link Source="Products" Target="Products_DealerPrice" Category="Contains" />
+    <Link Source="Products" Target="Products_Description" Category="Contains" />
+    <Link Source="Products" Target="Products_Discount" Category="Contains" />
+    <Link Source="Products" Target="Products_DiscountEndDate" Category="Contains" />
+    <Link Source="Products" Target="Products_DiscountStartDate" Category="Contains" />
+    <Link Source="Products" Target="Products_LastModifiedOn" Category="Contains" />
+    <Link Source="Products" Target="Products_ListPrice" Category="Contains" />
+    <Link Source="Products" Target="Products_Name" Category="Contains" />
+    <Link Source="Products" Target="Products_Picture" Category="Contains" />
+    <Link Source="Products" Target="Products_SafetyStockLevel" Category="Contains" />
+    <Link Source="Products" Target="Products_SearchTerms" Category="Contains" />
+    <Link Source="Products" Target="Products_Size" Category="Contains" />
+    <Link Source="Products" Target="Products_StockUnits" Category="Contains" />
+    <Link Source="Products" Target="Products_TaxType" Category="Contains" />
+    <Link Source="Products" Target="Products_Thumbnail" Category="Contains" />
+    <Link Source="Database" Target="Restaurants" Category="Contains" />
+    <Link Source="Restaurants" Target="Restaurants_Id" Category="Contains" />
+    <Link Source="Restaurants" Target="Restaurants_Manufacturer" Category="Contains" />
+    <Link Source="Restaurants" Target="Restaurants_Name" Category="Contains" />
+    <Link Source="Restaurants" Target="Restaurants_Phone" Category="Contains" />
+    <Link Source="Database" Target="Street" Category="Contains" />
+    <Link Source="Street" Target="Street_Id" Category="Contains" />
+    <Link Source="Street" Target="Street_DateCreate" Category="Contains" />
+    <Link Source="Street" Target="Street_User" Category="Contains" />
+    <Link Source="Street" Target="Street_Name" Category="Contains" />
+    <Link Source="Street" Target="Street_TypeStreetId" Category="Contains" />
+    <Link Source="Street" Target="Street_CityId" Category="Contains" />
+    <Link Source="Street_TypeStreetId" Target="TypeStreet_Id" Label="FK_Street_0_0" Category="Foreign Key" />
+    <Link Source="Street_CityId" Target="City_Id" Label="FK_Street_1_0" Category="Foreign Key" />
+    <Link Source="Database" Target="TaxTypes" Category="Contains" />
+    <Link Source="TaxTypes" Target="TaxTypes_TaxTypeID" Category="Contains" />
+    <Link Source="TaxTypes" Target="TaxTypes_Name" Category="Contains" />
+    <Link Source="TaxTypes" Target="TaxTypes_Rate" Category="Contains" />
+    <Link Source="Database" Target="TypeStreet" Category="Contains" />
+    <Link Source="TypeStreet" Target="TypeStreet_Id" Category="Contains" />
+    <Link Source="TypeStreet" Target="TypeStreet_DateCreate" Category="Contains" />
+    <Link Source="TypeStreet" Target="TypeStreet_User" Category="Contains" />
+    <Link Source="TypeStreet" Target="TypeStreet_Name" Category="Contains" />
+    <Link Source="TypeStreet" Target="TypeStreet_NameShort" Category="Contains" />
+  </Links>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Table" ValueLabel="True">
+      <Condition Expression="HasCategory('Table')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Schema" ValueLabel="True">
+      <Condition Expression="HasCategory('Schema')" />
+      <Setter Property="Background" Value="#FF7F9169" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="True">
+      <Condition Expression="HasCategory('Field')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Database" ValueLabel="True">
+      <Condition Expression="HasCategory('Database')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>

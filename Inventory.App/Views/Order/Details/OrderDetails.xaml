@@ -1,0 +1,179 @@
+﻿<UserControl
+    x:Class="Inventory.Views.OrderDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:converters="using:Inventory.Converters"
+    xmlns:views="using:Inventory.Views"
+    xmlns:viewmodels="using:Inventory.ViewModels"
+    mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800">
+
+    <UserControl.Resources>
+        <converters:BindingTypeConverter x:Key="BindingTypeConverter"/>
+        <DataTemplate x:Key="DetailsTemplate" x:DataType="viewmodels:OrderDetailsViewModel">
+            <controls:FluidGrid Margin="12" Columns="3" ColumnSpacing="12" RowSpacing="12">
+                <TextBlock controls:FluidGrid.ColumnSpan="3">OrderDetails.xaml</TextBlock>
+
+                <!-- БЛОК: ИНФОРМАЦИЯ О КЛИЕНТЕ -->
+                <controls:FluidGrid Columns="3" controls:FluidGrid.ColumnSpan="3" ColumnSpacing="12" RowSpacing="12" 
+                                    Visibility="{x:Bind CanEditPhone, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay}">
+                    <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="3" Text="Информация о клиенте" />
+                    <controls:FormTextBox Header="Телефон" Text="{x:Bind EditableItem.PhoneNumber, Mode=TwoWay}"
+                                      Visibility="{x:Bind CanEditPhone, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay}"
+                                      IsRequired="True" />
+                    <controls:CustomerSuggestBox DisplayText="{x:Bind EditableItem.EditableCustomerName, Mode=TwoWay}"
+                                             CustomerSelectedCommand="{x:Bind CustomerSelectedCommand}"
+                                             PhoneQuery="{x:Bind EditableItem.PhoneNumber, Mode=OneWay}"
+                                             Visibility="{x:Bind CanEditCustomer, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay}"
+                                             IsRequired="True" />
+                </controls:FluidGrid>
+
+                <!-- БЛОК: ЗАКАЗ -->
+                <controls:FluidGrid Columns="3" controls:FluidGrid.ColumnSpan="3" ColumnSpacing="12" RowSpacing="12">
+                    <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="3" Text="Заказ" />
+                    <controls:FormComboBox Header="Тип заказа" ItemsSource="{x:Bind LookupTables.OrderTypes}"
+                                        SelectedValue="{x:Bind EditableItem.OrderTypeId, Mode=TwoWay, Converter={StaticResource Int32Converter}}"
+                                        SelectedValuePath="Id" DisplayMemberPath="Name" />
+                    <controls:FormComboBox Header="Тип оплаты" ItemsSource="{x:Bind LookupTables.PaymentTypes}"
+                                    SelectedValue="{x:Bind EditableItem.PaymentTypeId, Mode=TwoWay, Converter={StaticResource Int32Converter}}"
+                                    SelectedValuePath="Id" DisplayMemberPath="Name" />
+                    <controls:FormTextBox Header="Сдача с" DataType="Decimal" Text="{x:Bind EditableItem.Change, Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Visibility="{x:Bind EditableItem.IsChangeVisible, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay}"></controls:FormTextBox>
+                    <controls:FormComboBox Header="Статус" ItemsSource="{x:Bind OrderStatuses, Mode=OneWay}"
+                                       SelectedValue="{x:Bind EditableItem.StatusId, Mode=TwoWay, Converter={StaticResource Int32Converter}}"
+                                       SelectedValuePath="Id" DisplayMemberPath="Name" />
+                    <controls:FormTextBox Header="Количество персон" Text="{x:Bind EditableItem.NumOfPeople, Mode=TwoWay, Converter={StaticResource BindingTypeConverter}}" DataType="Integer" IsRequired="True" />
+                    <controls:FormComboBox Header="Источник информации" ItemsSource="{x:Bind LookupTables.OrderSources}" 
+                                           SelectedValue="{x:Bind EditableItem.SourceId, Mode=TwoWay, Converter={StaticResource Int32Converter}}"
+                                           SelectedValuePath="Id" DisplayMemberPath="Name" />
+                    <ToggleSwitch OnContent="Да" OffContent="Нет" IsOn="{x:Bind EditableItem.IsConfirmation, Mode=TwoWay, Converter={StaticResource NullableBoolConverter}}"
+                              PointerReleased="ToggleSwitch_PointerReleased" IsEnabled="False">
+                        <ToggleSwitch.Header>
+                            <TextBlock Foreground="{StaticResource SystemAccentColor}">Заказ с подтверждением</TextBlock>
+                        </ToggleSwitch.Header>
+                    </ToggleSwitch>
+                    <controls:FormTextBox Header="Причина уточнения" Text="{x:Bind EditableItem.Reason, Mode=TwoWay}" MinHeight="100"
+                                          IsRequired="{x:Bind EditableItem.IsReasonVisible, Mode=OneWay}"
+                                          Visibility="{x:Bind EditableItem.IsReasonVisible, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}" />
+                </controls:FluidGrid>
+
+                <!-- БЛОК: ДОСТАВКА -->
+                <controls:FluidGrid Columns="3" controls:FluidGrid.ColumnSpan="3" ColumnSpacing="12" RowSpacing="12">
+                    <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="4" Text="Доставка" />
+                    <controls:FormComboBox Header="Тип доставки" ItemsSource="{x:Bind LookupTables.DeliveryTypes}"
+                                        SelectedValue="{x:Bind EditableItem.DeliveryTypeId, Mode=TwoWay, Converter={StaticResource Int32Converter}}"
+                                        SelectedValuePath="Id" DisplayMemberPath="Name" />
+                    <!-- Конкретное время -->
+                    <controls:FormCalendarDatePicker Header="Дата доставки" Date="{x:Bind EditableItem.DeliveryDate, Mode=TwoWay}" 
+                                                 MinDate="{x:Bind EditableItem.CreatedOn, Mode=OneWay, Converter={StaticResource DateTimeOffsetConverter}}"
+                                                 IsEnabled="{x:Bind EditableItem.IsDeliveryDateReadOnly, Mode=OneWay, Converter={StaticResource BoolNegationConverter}}"/>
+                    <controls:FormTimePicker Header="Время доставки" Time="{x:Bind EditableItem.DeliveryTime, Mode=TwoWay}" 
+                                         ClockIdentifier="24HourClock" MinuteIncrement="10"
+                                         IsEnabled="{x:Bind EditableItem.IsDeliveryDateReadOnly, Mode=OneWay, Converter={StaticResource BoolNegationConverter}}">
+                    </controls:FormTimePicker>
+
+                    <controls:FormComboBox Header="Ресторан приготовления" ItemsSource="{x:Bind LookupTables.Restaurants}" 
+                                        SelectedValue="{x:Bind EditableItem.RestaurantId, Mode=TwoWay, Converter={StaticResource Int32Converter}}" 
+                                        SelectedValuePath="Id" DisplayMemberPath="Name" IsRequired="True"
+                                        IsEnabled="{x:Bind EditableItem.CanEditRestaurant, Mode=OneWay}" />
+                </controls:FluidGrid>
+
+                <!-- БЛОК: Адрес доставки -->
+                <controls:FluidGrid Columns="3" controls:FluidGrid.ColumnSpan="3" ColumnSpacing="12" RowSpacing="12"
+                                    Visibility="{x:Bind EditableItem.IsAddressRequired, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay}">
+                    <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="3" Text="Адрес доставки" />
+                    <controls:FormComboBox Header="Город" ItemsSource="{x:Bind LookupTables.Cities}" VerticalAlignment="Top"
+                                       SelectedValue="{x:Bind EditableItem.CityId, Mode=TwoWay, Converter={StaticResource Int32Converter}}" 
+                                       SelectedValuePath="Id" 
+                                       DisplayMemberPath="Name" />
+                    <controls:StreetSuggestBox DisplayText="{x:Bind EditableItem.Street.DisplayName, Mode=OneWay}" 
+                                           CityQuery="{x:Bind EditableItem.CityId, Mode=OneWay}" 
+                                           StreetSelectedCommand="{x:Bind StreetSelectedCommand}"
+                                           IsRequired="True"/>
+                    <controls:FluidGrid ColumnSpacing="6" RowSpacing="12" MinColumnWidth="60">
+                        <controls:FormTextBox Header="№ Дома" Text="{x:Bind EditableItem.House, Mode=TwoWay}" IsRequired="True"/>
+                        <controls:FormTextBox Header="Квартира/офис" Text="{x:Bind EditableItem.Apartment, Mode=TwoWay}" IsRequired="True"/>
+                    </controls:FluidGrid>
+                    <controls:FluidGrid controls:FluidGrid.ColumnSpan="3" Columns="4" ColumnSpacing="12" RowSpacing="12">
+                        <controls:FormTextBox Header="Домофон" Text="{x:Bind EditableItem.Intercom, Mode=TwoWay}"></controls:FormTextBox>
+                        <controls:FormTextBox Header="Этаж" Text="{x:Bind EditableItem.Floor, Mode=TwoWay}"></controls:FormTextBox>
+                        <controls:FormTextBox Header="Подъезд" Text="{x:Bind EditableItem.Entrance, Mode=TwoWay}"></controls:FormTextBox>
+                        <controls:FormTextBox Header="Корпус" Text="{x:Bind EditableItem.Housing, Mode=TwoWay}"></controls:FormTextBox>
+                    </controls:FluidGrid>
+
+                    <ToggleSwitch OnContent="Да" OffContent="Нет" IsOn="{x:Bind EditableItem.CallOnArrival, Mode=TwoWay, Converter={StaticResource NullableBoolConverter}}"
+                              PointerReleased="ToggleSwitch_PointerReleased">
+                        <ToggleSwitch.Header>
+                            <TextBlock Foreground="{StaticResource SystemAccentColor}">Набрать по прибытии</TextBlock>
+                        </ToggleSwitch.Header>
+                    </ToggleSwitch>
+                </controls:FluidGrid>
+
+                <!-- БЛОК: Комментарии -->
+                <controls:FluidGrid Columns="3" controls:FluidGrid.ColumnSpan="3" ColumnSpacing="12" RowSpacing="12">
+                    <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="3" Text="Комментарии" />
+                    <controls:FluidGrid Columns="3" ColumnSpacing="12" RowSpacing="12" controls:FluidGrid.ColumnSpan="3">
+                        <controls:FormTextBox Header="Комментарии к заказу" Text="{x:Bind EditableItem.Comment, Mode=TwoWay}" MinHeight="100" />
+                        <controls:FormTextBox Header="Комментарии к заказчику" Text="{x:Bind EditableItem.CommentCustomer, Mode=TwoWay}" MinHeight="100"/>
+                        <controls:FormTextBox Header="Комментарии к адресу" Text="{x:Bind EditableItem.CommentAddress, Mode=TwoWay}" MinHeight="100"
+                                              Visibility="{x:Bind EditableItem.IsAddressRequired, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay}" />
+                    </controls:FluidGrid>
+                </controls:FluidGrid>
+            </controls:FluidGrid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="320"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <!--<RowDefinition Height="*"/>-->
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" BorderBrush="LightGray" BorderThickness="0,1,1,0" Background="{StaticResource DetailsViewBackgroundColor}">
+                <views:OrderCard Margin="6" Item="{x:Bind ViewModel.OrderDetails.EditableItem, Mode=OneWay}" />
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Grid.RowSpan="{x:Bind GetRowSpan(ViewModel.OrderDetails.ItemIsNew), Mode=OneWay}" -->
+            <controls:Details x:Name="details" Margin="6"
+                          DetailsContent="{x:Bind ViewModel.OrderDetails, Mode=OneWay}"
+                          DetailsTemplate="{StaticResource DetailsTemplate}"
+                          CanGoBack="{x:Bind ViewModel.OrderDetails.CanGoBack}"
+                          IsEditMode="{x:Bind ViewModel.OrderDetails.IsEditMode, Mode=OneWay}"
+                          BackCommand="{x:Bind ViewModel.OrderDetails.BackCommand}"
+                          EditCommand="{x:Bind ViewModel.OrderDetails.EditCommand}"
+                          DeleteCommand="{x:Bind ViewModel.OrderDetails.DeleteCommand}"
+                          SaveCommand="{x:Bind ViewModel.OrderDetails.SaveCommand}"
+                          CancelCommand="{x:Bind ViewModel.OrderDetails.CancelCommand}" />
+
+            <!--Details-->
+            <!-- Visibility="{x:Bind ViewModel.OrderDetails.ItemIsNew, Mode=OneWay, Converter={StaticResource InverseBoolToVisibilityConverter}}" -->
+            <Border Grid.Row="1" BorderBrush="LightGray" BorderThickness="0,1,0,0">
+                <controls:Section Background="{StaticResource DetailsViewBackgroundColor}">
+                    <Pivot>
+                        <PivotItem Header="Блюда">
+                            <views:OrdersOrderDishes ViewModel="{x:Bind ViewModel.OrderItemList}" />
+                        </PivotItem>
+                        <PivotItem Header="Заказы клиента">
+                            <Grid>
+                                <views:CustomersOrders ViewModel="{x:Bind ViewModel.CustomerOrders}" Visibility="{x:Bind ViewModel.IsCustomerOrdersVisible, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                                <controls:Section Header="Не выбран клиент" Visibility="{x:Bind ViewModel.IsCustomerOrdersVisible, Mode=OneWay, Converter={StaticResource InverseBoolToVisibilityConverter}}"/>
+                            </Grid>
+                        </PivotItem>
+                    </Pivot>
+                </controls:Section>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

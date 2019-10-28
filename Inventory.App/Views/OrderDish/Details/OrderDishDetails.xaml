@@ -1,0 +1,125 @@
+﻿<UserControl
+    x:Class="Inventory.Views.OrderDishDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:models="using:Inventory.Models"
+    xmlns:viewmodels="using:Inventory.ViewModels"
+    xmlns:views="using:Inventory.Views"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600">
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="NormalItemTemplate" x:DataType="models:DishIngredientModel">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{x:Bind ThumbnailSource, Mode=OneWay, Converter={StaticResource ObjectToImageConverter}}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" x:Phase="2" />
+                <TextBlock Text="{x:Bind Name}" Foreground="Teal" FontSize="15" Grid.Column="1"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="DetailsTemplate" x:DataType="viewmodels:OrderDishDetailsViewModel">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <controls:FluidGrid Grid.Row="0" Margin="12,18,6,6" Columns="2" ColumnSpacing="12" RowSpacing="12">
+                    <TextBlock controls:FluidGrid.ColumnSpan="2">OrderDishDetails.xaml</TextBlock>
+                    <controls:FormTextBox Header="Блюдо" Text="{x:Bind EditableItem.Dish.Name, Mode=OneWay}" IsReadOnly="True"></controls:FormTextBox>
+                    <controls:FormComboBox Header="Основа" Visibility="{x:Bind EditableItem.HasGarnishes, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}"
+                                       ItemsSource="{x:Bind EditableItem.Garnishes, Mode=OneWay}" 
+                                       SelectedValue="{x:Bind EditableItem.SelectedGarnish, Mode=TwoWay}" 
+                                       DisplayMemberPath="Name" IsRequired="True">
+                    </controls:FormComboBox>
+                    <controls:FormTextBox Header="Цена за единицу" Text="{x:Bind EditableItem.Price, Mode=OneWay, Converter={StaticResource DecimalConverter}}" DataType="Decimal" Format="0.00" Mode="ReadOnly" />
+                    <controls:FormTextBox Header="Количество" Text="{x:Bind EditableItem.Quantity, Mode=TwoWay, Converter={StaticResource DecimalConverter}}" DataType="Decimal" Format="0.00" />
+
+                    <controls:FormTextBox Header="Описание" Text="{x:Bind EditableItem.Dish.Description, Mode=OneWay}" 
+                                          controls:FluidGrid.ColumnSpan="2" MinHeight="100" IsReadOnly="True" TextWrapping="Wrap">
+                    </controls:FormTextBox>
+                </controls:FluidGrid>
+
+                <Grid Grid.Row="1" Margin="12, 18, 6, 6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    
+                    <TextBlock Grid.Row="1" Grid.Column="0" Visibility="{x:Bind EditableItem.HasIngredients, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}" Text="Ингредиенты" Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="4" />
+                    <muxc:ItemsRepeater Grid.Row="2" Grid.Column="0" Margin="0 0 18 0" Visibility="{x:Bind EditableItem.HasIngredients, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}" ItemsSource="{x:Bind EditableItem.Ingredients, Mode=OneWay}">
+                        <!--
+                        <muxc:StackLayout x:Key="VerticalStackLayout" Orientation="Vertical" Spacing="8"/>
+                        <muxc:StackLayout x:Key="HorizontalStackLayout" Orientation="Horizontal" Spacing="8"/>
+                        <muxc:UniformGridLayout x:Key="UniformGridLayout" MinRowSpacing="12" MinColumnSpacing="12"/>
+                        -->
+                        <muxc:ItemsRepeater.Layout>
+                            <muxc:StackLayout Orientation="Vertical" Spacing="8"/>
+                        </muxc:ItemsRepeater.Layout>
+                        <DataTemplate x:DataType="models:OrderIngredientModel">
+                            <ToggleButton Height="52" IsChecked="{x:Bind IsSelected, Mode=TwoWay}" Click="ToggleButton_Click">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="48"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Border Grid.Column="0" Padding="1" HorizontalAlignment="Left">
+                                        <Image Source="{x:Bind Ingredient.ThumbnailSource, Mode=OneWay, Converter={StaticResource ObjectToImageConverter}}" 
+                                                Stretch="UniformToFill" 
+                                                HorizontalAlignment="Center" 
+                                                VerticalAlignment="Center" x:Phase="2" />
+                                    </Border>
+                                    <Grid Grid.Column="1" Margin="8 0 0 0" HorizontalAlignment="Left">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0" Text="{x:Bind Ingredient.Name}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                        <TextBlock Grid.Row="1" Text="{x:Bind Ingredient.Price}"></TextBlock>
+                                    </Grid>
+                                </Grid>
+                            </ToggleButton>
+                        </DataTemplate>
+                    </muxc:ItemsRepeater>
+
+                    <TextBlock Grid.Row="1" Grid.Column="1" Text="Рекомендуемые блюда" Visibility="{x:Bind RecommendViewModel.HasItems, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}" Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="4" />
+                    <views:OrderDishRecommendList Grid.Row="2" Grid.Column="1" ViewModel="{x:Bind RecommendViewModel, Mode=OneWay}"></views:OrderDishRecommendList>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="320"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid BorderBrush="LightGray" 
+              BorderThickness="0,1,1,0"                                   
+              Background="{StaticResource DetailsViewBackgroundColor}">
+            <views:OrderDishCard Margin="6" Item="{x:Bind ViewModel.EditableItem, Mode=OneWay}" />
+        </Grid>
+
+        <controls:Details x:Name="details" Grid.Column="1" Margin="6"
+                          DetailsContent="{x:Bind ViewModel}"
+                          DetailsTemplate="{StaticResource DetailsTemplate}"
+                          CanGoBack="{x:Bind ViewModel.CanGoBack}"
+                          IsEditMode="{x:Bind ViewModel.IsEditMode, Mode=OneWay}"
+                          BackCommand="{x:Bind ViewModel.BackCommand}"
+                          EditCommand="{x:Bind ViewModel.EditCommand}"
+                          DeleteCommand="{x:Bind ViewModel.DeleteCommand}"
+                          SaveCommand="{x:Bind ViewModel.SaveCommand}"
+                          CancelCommand="{x:Bind ViewModel.CancelCommand}" />
+    </Grid>
+</UserControl>

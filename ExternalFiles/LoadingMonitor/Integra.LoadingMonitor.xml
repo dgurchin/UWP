@@ -1,0 +1,798 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Integra.LoadingMonitor</name>
+    </assembly>
+    <members>
+        <member name="T:Integra.LoadingMonitor.DataProviders.DataProviderType">
+            <summary>
+            Тип источника данных
+            </summary>
+        </member>
+        <member name="F:Integra.LoadingMonitor.DataProviders.DataProviderType.WinService">
+            <summary>
+            Windows Service (служба)
+            </summary>
+        </member>
+        <member name="F:Integra.LoadingMonitor.DataProviders.DataProviderType.WebService">
+            <summary>
+            Web Service (удаленнный сервер)
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.DataProviders.IDataProvider">
+            <summary>
+            Источник данных
+            </summary>
+        </member>
+        <member name="M:Integra.LoadingMonitor.DataProviders.IDataProvider.InitProviderAsync">
+            <summary>
+            Инициализация источника данных
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.DataProviders.IDataProvider.Restaurants">
+            <summary>
+            Рестораны
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.DataProviders.IDataProvider.Departments">
+            <summary>
+            Отделы
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.DataProviders.IDataProvider.OrderStates">
+            <summary>
+            Состояние заказов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.DataProviders.IDataProvider.Orders">
+            <summary>
+            Заказы
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.AbstractModel">
+            <summary>
+            Базовая модель содержащая поле Id
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.AbstractModel.Id">
+            <summary>
+            Уникальный ключ
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.AuthUser">
+            <summary>
+            Пользователь авторизации
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.AuthUser.UserName">
+            <summary>
+            Имя пользователя
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.AuthUser.Password">
+            <summary>
+            Пароль
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.AuthUser.Token">
+            <summary>
+            Ключ авторизации
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.BaseModel">
+            <summary>
+            Базовая модель содержащая поле Name
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.BaseModel.Name">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Department">
+            <summary>
+            Отдел
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Department.IsAutoStart">
+            <summary>
+            Автостарт блю для отдела
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.DepartmentStateSummary">
+            <summary>
+            Отделы по состояниям
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.DepartmentStateSummary.Summary">
+            <summary>
+            Итоги состояний
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.DepartmentWithDishes">
+            <summary>
+            Отдел с бдюдами
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.DepartmentWithDishes.Dishes">
+            <summary>
+            Блюда
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.DishModel">
+            <summary>
+            Блюда
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.DishModel.DepartmentName">
+            <summary>
+            Имя отдела <see cref="P:Integra.LoadingMonitor.Models.BaseModel.Name"/>
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.DishModel.RestaurantId">
+            <summary>
+            ID ресторана <see cref="P:Integra.LoadingMonitor.Models.AbstractModel.Id"/>
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.DishModel.RestaurantName">
+            <summary>
+            Имя ресторана <see cref="P:Integra.LoadingMonitor.Models.BaseModel.Name"/>
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.ItemCount">
+            <summary>
+            Кол-во объектов по названию
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.ItemCount.Name">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.ItemCount.Count">
+            <summary>
+            Количество
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentDishGroup">
+            <summary>
+            Групировка отедлов по блюдам
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentDishGroup.DepartmentName">
+            <summary>
+            Отдел
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentDishGroup.DishStates">
+            <summary>
+            Состояние блюд
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentDishState">
+            <summary>
+            Группировка отделов блюд по состояниям
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentDishState.DepartmentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentDishState.DepartmentName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentDishState.DishId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentDishState.DishName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentDishState.StateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentDishState.StateName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentStateGroup">
+            <summary>
+            Группировка отделов состояний
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentStateGroup.DepartmentName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DepartmentStateGroup.StateDishes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.Order.DishStateGroup">
+            <summary>
+            Состояние блюда
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DishStateGroup.DishName">
+            <summary>
+            Блюдо
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.DishStateGroup.States">
+            <summary>
+            Состояния
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.Order.OrderGrouping">
+            <summary>
+            Группировка заказа
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.OrderGrouping.DepartmentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.OrderGrouping.DepartmentName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.OrderGrouping.DishId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.OrderGrouping.DishName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.OrderGrouping.StateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.OrderGrouping.StateName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.Order.RestaurantDishStateSummary">
+            <summary>
+            Группировка по ресторанам -> DishState Summary
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.Order.RestaurantGrouping">
+            <summary>
+            Группировка заказов по ресторану
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.RestaurantGrouping.Groups">
+            <summary>
+            Заказы
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.Order.RestaurantStateDishSummary">
+            <summary>
+            Группировка по ресторанам -> StateDish Summary
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.Order.StateDishGroup">
+            <summary>
+            Группировка состоний по блюдам
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.StateDishGroup.StateName">
+            <summary>
+            Состояние
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.Order.StateDishGroup.Dishes">
+            <summary>
+            Блюда
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.RestaurantSummary`1">
+            <summary>
+            Итоги по ресторану
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.RestaurantSummary`1.Summary">
+            <summary>
+            Итоги
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Grouping.SummaryGroup`1">
+            <summary>
+            Группировка итогов
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.SummaryGroup`1.SumItems">
+            <summary>
+            Элементы группировки
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Grouping.SummaryGroup`1.Grouping">
+            <summary>
+            Группировка
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Order">
+            <summary>
+            Заказы
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Order.Uid">
+            <summary>
+            Уникальный идентификатор
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Order.Number">
+            <summary>
+            Номер заказа
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Order.StartDate">
+            <summary>
+            Дата начала
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Order.DepartmentId">
+            <summary>
+            Отдел
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Order.StatusId">
+            <summary>
+            Статус
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Order.Dishes">
+            <summary>
+            Блюда заказа
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Order.RestaurantName">
+            <summary>
+            Имя ресторана к которому относится заказ
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.OrderDish">
+            <summary>
+            Блюдо заказа
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderDish.Uid">
+            <summary>
+            Уникальный ключ <see cref="T:System.Guid"/>
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderDish.ParentUid">
+            <summary>
+            Ключ родительской записи <see cref="T:System.Guid"/>
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderDish.OrderId">
+            <summary>
+            Ссылка на заказ <see cref="T:Integra.LoadingMonitor.Models.Order"/>
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderDish.DishStateId">
+            <summary>
+            Ссылка на состояние <see cref="T:Integra.LoadingMonitor.Models.OrderState"/>
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderDish.DishStateName">
+            <summary>
+            Название состояния
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderDish.DepartmentId">
+            <summary>
+            Ссылка на отдел <see cref="T:Integra.LoadingMonitor.Models.Department"/>
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderDish.FilingNumber">
+            <summary>
+            Номер подачи
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderDish.Quantity">
+            <summary>
+            Количество
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderDish.StartDate">
+            <summary>
+            Дата начала
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.OrderFilter">
+            <summary>
+            Фильтры заказа
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderFilter.Restaurants">
+            <summary>
+            Список ресторанов для фильтрации
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderFilter.DepartmentIds">
+            <summary>
+            Список ID отделов для фильтрации
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.OrderFilter.OrderStateIds">
+            <summary>
+            Список ID стутсов для фильтрации
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.OrderState">
+            <summary>
+            Состояние заказа
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.Restaurant">
+            <summary>
+            Ресторан
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.Restaurant.Code">
+            <summary>
+            Код ресторана - используется для идентификации
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Models.StateSummary">
+            <summary>
+            Класс для подведения итогов по статусам
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.State0">
+            <summary>
+            Ожидает
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.State1">
+            <summary>
+            Готовится
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.State2">
+            <summary>
+            Готово
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.State3">
+            <summary>
+            Забрали
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.State4">
+            <summary>
+            Отменён
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.State5">
+            <summary>
+            Зафиксирован
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.State6">
+            <summary>
+            Подтв. отмены
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.State7">
+            <summary>
+            Перемещен
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.State8">
+            <summary>
+            Подтв. готово
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.State9">
+            <summary>
+            Вчерашний не забран
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.RestaurantId">
+            <summary>
+            ID Ресторана
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.RestaurantName">
+            <summary>
+            Ресторан
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.DepartmentId">
+            <summary>
+            ID отдела
+            </summary>
+        </member>
+        <member name="P:Integra.LoadingMonitor.Models.StateSummary.DepartmentName">
+            <summary>
+            Отдел
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Repositories.IDepartmentRepository">
+            <summary>
+            Хранилище отделов
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Repositories.IOrderRepository">
+            <summary>
+            Хранилище заказов
+            </summary>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Repositories.IOrderRepository.GetOrdersAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить все заказы
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Repositories.IOrderRepository.GetOrderDishesAsync(System.Int32)">
+            <summary>
+            Получить блюда заказа
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Repositories.IOrderRepository.GetDishModelsAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить блюда
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Repositories.IOrderRepository.GetRestaurantGroupings(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить группировку по ресторанам
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Repositories.IOrderRepository.GetStateSummaryAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить группировку по состояниям
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Repositories.IOrderRepository.GetDepartmentStateSummaries(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить группировку по отделам
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Repositories.IOrderStateRepository">
+            <summary>
+            Хранилище состояний
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Repositories.IRepository`1">
+            <summary>
+            Хранилище данных
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Repositories.IRepository`1.GetAllAsync">
+            <summary>
+            Получение всех записей
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Repositories.IRestaurantRepository">
+            <summary>
+            Хранилище ресторанов
+            </summary>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Services.ILoadMonitor">
+            <summary>
+            Монитор загруженности
+            </summary>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.ApplyProvider(Integra.LoadingMonitor.DataProviders.IDataProvider)">
+            <summary>
+            Apply data provider and call <seealso cref="M:Integra.LoadingMonitor.DataProviders.IDataProvider.InitProviderAsync"/> method
+            </summary>
+            <param name="provider"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetStatesAsync">
+            <summary>
+            Получить все состояния
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetActiveStatesAsync">
+            <summary>
+            Получить все активные состояния
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetDepartmentsAsync">
+            <summary>
+            Получить отделы
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetRestaurantsAsync">
+            <summary>
+            Получить рестораны
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetOrdersAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить заказы
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetDepartmentWithDishesAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить отделы с блюдами
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetRestaurantGroupings(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить группировку по ресторанам
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetDishStateGroupAsync(System.Collections.Generic.IList{Integra.LoadingMonitor.Models.Grouping.Order.RestaurantGrouping})">
+            <summary>
+            Получить группировку ресторана по блюдам
+            </summary>
+            <param name="groupings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetStateDishGroup(System.Collections.Generic.IList{Integra.LoadingMonitor.Models.Grouping.Order.RestaurantGrouping})">
+            <summary>
+            Получить группировку ресторана по состояниям
+            </summary>
+            <param name="groupings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetDishModelsAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить блюда
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetStateSummaryAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить состояния
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.ILoadMonitor.GetDepartmentStateSummaries(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            Получить группировку по отделам
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Integra.LoadingMonitor.Services.LoadMonitor">
+            <summary>
+            Стандартный монитор загрузки
+            </summary>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.ApplyProvider(Integra.LoadingMonitor.DataProviders.IDataProvider)">
+            <summary>
+            
+            </summary>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetStatesAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetActiveStatesAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetDepartmentsAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetRestaurantsAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetOrdersAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetDepartmentWithDishesAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetRestaurantGroupings(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetDishStateGroupAsync(System.Collections.Generic.IList{Integra.LoadingMonitor.Models.Grouping.Order.RestaurantGrouping})">
+            <summary>
+            
+            </summary>
+            <param name="restGroupings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetStateDishGroup(System.Collections.Generic.IList{Integra.LoadingMonitor.Models.Grouping.Order.RestaurantGrouping})">
+            <summary>
+            
+            </summary>
+            <param name="restGroupings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetDishModelsAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetStateSummaryAsync(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Integra.LoadingMonitor.Services.LoadMonitor.GetDepartmentStateSummaries(Integra.LoadingMonitor.Models.OrderFilter)">
+            <summary>
+            
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

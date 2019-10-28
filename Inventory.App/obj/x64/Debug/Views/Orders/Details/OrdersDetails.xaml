@@ -1,0 +1,166 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="Inventory.Views.OrdersDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:converters="using:Inventory.Converters"
+    xmlns:views="using:Inventory.Views"
+    xmlns:viewmodels="using:Inventory.ViewModels"
+    mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800">
+
+    <UserControl.Resources>
+        <converters:BindingTypeConverter x:Key="BindingTypeConverter"/>
+        <DataTemplate x:Key="DetailsTemplate"                                              >
+            <controls:FluidGrid x:ConnectionId='2' Margin="12" Columns="3" ColumnSpacing="12" RowSpacing="12">
+                <TextBlock controls:FluidGrid.ColumnSpan="3">OrderDetails.xaml</TextBlock>
+
+                <!-- БЛОК: ИНФОРМАЦИЯ О КЛИЕНТЕ -->
+                <controls:FluidGrid x:ConnectionId='3' Columns="3" controls:FluidGrid.ColumnSpan="3" ColumnSpacing="12" RowSpacing="12" 
+                                                                                                                                         >
+                    <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="3" Text="Информация о клиенте" />
+                    <controls:FormTextBox x:ConnectionId='29' Header="Телефон"                                                      
+                                                                                                                                           
+                                      IsRequired="True" />
+                    <controls:CustomerSuggestBox x:ConnectionId='30'                                                                      
+                                                                                                       
+                                                                                                        
+                                                                                                                                                     
+                                             IsRequired="True" />
+                </controls:FluidGrid>
+
+                <!-- БЛОК: ЗАКАЗ -->
+                <controls:FluidGrid Columns="3" controls:FluidGrid.ColumnSpan="3" ColumnSpacing="12" RowSpacing="12">
+                    <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="3" Text="Заказ" />
+                    <controls:FormComboBox x:ConnectionId='21' Header="Тип заказа"                                               
+                                                                                                                                                 
+                                        SelectedValuePath="Id" DisplayMemberPath="Name" />
+                    <controls:FormComboBox x:ConnectionId='22' Header="Тип оплаты"                                                 
+                                                                                                                                               
+                                    SelectedValuePath="Id" DisplayMemberPath="Name" />
+                    <controls:FormTextBox x:ConnectionId='23' Header="Сдача с" DataType="Decimal"                                                                                                                                                                                                                    ></controls:FormTextBox>
+                    <controls:FormComboBox x:ConnectionId='24' Header="Статус"                                                  
+                                                                                                                                             
+                                       SelectedValuePath="Id" DisplayMemberPath="Name" />
+                    <controls:FormTextBox x:ConnectionId='25' Header="Количество персон"                                                                                                        DataType="Integer" IsRequired="True" />
+                    <controls:FormComboBox x:ConnectionId='26' Header="Источник информации"                                                  
+                                                                                                                                                 
+                                           SelectedValuePath="Id" DisplayMemberPath="Name" />
+                    <ToggleSwitch x:ConnectionId='27' OnContent="Да" OffContent="Нет"                                                                                                           
+                                                                             IsEnabled="False">
+                        <ToggleSwitch.Header>
+                            <TextBlock Foreground="{StaticResource SystemAccentColor}">Заказ с подтверждением</TextBlock>
+                        </ToggleSwitch.Header>
+                    </ToggleSwitch>
+                    <controls:FormTextBox x:ConnectionId='28' Header="Причина уточнения"                                                  MinHeight="100"
+                                                                                                         
+                                                                                                                                                                />
+                </controls:FluidGrid>
+
+                <!-- БЛОК: ДОСТАВКА -->
+                <controls:FluidGrid Columns="3" controls:FluidGrid.ColumnSpan="3" ColumnSpacing="12" RowSpacing="12">
+                    <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="4" Text="Доставка" />
+                    <controls:FormComboBox x:ConnectionId='17' Header="Тип доставки"                                                  
+                                                                                                                                                    
+                                        SelectedValuePath="Id" DisplayMemberPath="Name" />
+                    <!-- Конкретное время -->
+                    <controls:FormCalendarDatePicker x:ConnectionId='18' Header="Дата доставки"                                                        
+                                                                                                                                                           
+                                                                                                                                                                        />
+                    <controls:FormTimePicker x:ConnectionId='19' Header="Время доставки"                                                        
+                                         ClockIdentifier="24HourClock" MinuteIncrement="10"
+                                                                                                                                                                >
+                    </controls:FormTimePicker>
+
+                    <controls:FormComboBox x:ConnectionId='20' Header="Ресторан приготовления"                                                 
+                                                                                                                                                   
+                                        SelectedValuePath="Id" DisplayMemberPath="Name" IsRequired="True"
+                                                                                                         />
+                </controls:FluidGrid>
+
+                <!-- БЛОК: Адрес доставки -->
+                <controls:FluidGrid x:ConnectionId='4' Columns="3" controls:FluidGrid.ColumnSpan="3" ColumnSpacing="12" RowSpacing="12"
+                                                                                                                                                           >
+                    <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="3" Text="Адрес доставки" />
+                    <controls:FormComboBox x:ConnectionId='8' Header="Город"                                            VerticalAlignment="Top"
+                                                                                                                                            
+                                       SelectedValuePath="Id" 
+                                       DisplayMemberPath="Name" />
+                    <controls:StreetSuggestBox x:ConnectionId='9'                                                                     
+                                                                                                 
+                                                                                                 
+                                           IsRequired="True"/>
+                    <controls:FluidGrid ColumnSpacing="6" RowSpacing="12" MinColumnWidth="60">
+                        <controls:FormTextBox x:ConnectionId='15' Header="№ Дома"                                                 IsRequired="True"/>
+                        <controls:FormTextBox x:ConnectionId='16' Header="Квартира/офис"                                                     IsRequired="True"/>
+                    </controls:FluidGrid>
+                    <controls:FluidGrid controls:FluidGrid.ColumnSpan="3" Columns="4" ColumnSpacing="12" RowSpacing="12">
+                        <controls:FormTextBox x:ConnectionId='11' Header="Домофон"                                                   ></controls:FormTextBox>
+                        <controls:FormTextBox x:ConnectionId='12' Header="Этаж"                                                ></controls:FormTextBox>
+                        <controls:FormTextBox x:ConnectionId='13' Header="Подъезд"                                                   ></controls:FormTextBox>
+                        <controls:FormTextBox x:ConnectionId='14' Header="Корпус"                                                  ></controls:FormTextBox>
+                    </controls:FluidGrid>
+
+                    <ToggleSwitch x:ConnectionId='10' OnContent="Да" OffContent="Нет"                                                                                                          
+                                                                            >
+                        <ToggleSwitch.Header>
+                            <TextBlock Foreground="{StaticResource SystemAccentColor}">Набрать по прибытии</TextBlock>
+                        </ToggleSwitch.Header>
+                    </ToggleSwitch>
+                </controls:FluidGrid>
+
+                <!-- БЛОК: Комментарии -->
+                <controls:FluidGrid Columns="3" controls:FluidGrid.ColumnSpan="3" ColumnSpacing="12" RowSpacing="12">
+                    <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="3" Text="Комментарии" />
+                    <controls:FluidGrid Columns="3" ColumnSpacing="12" RowSpacing="12" controls:FluidGrid.ColumnSpan="3">
+                        <controls:FormTextBox x:ConnectionId='5' Header="Комментарии к заказу"                                                   MinHeight="100" />
+                        <controls:FormTextBox x:ConnectionId='6' Header="Комментарии к заказчику"                                                           MinHeight="100"/>
+                        <controls:FormTextBox x:ConnectionId='7' Header="Комментарии к адресу"                                                          MinHeight="100"
+                                                                                                                                                                      />
+                    </controls:FluidGrid>
+                </controls:FluidGrid>
+            </controls:FluidGrid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid x:ConnectionId='31'                                                                                                                       >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid BorderBrush="LightGray" 
+              BorderThickness="0,0,1,0"                                   
+              Background="{StaticResource DetailsViewBackgroundColor}">
+            <StackPanel>
+                <Button x:ConnectionId='33'                                                                                                                                                             Background="{ThemeResource AppBarButtonRevealBackground}" Foreground="{ThemeResource AppBarButtonForeground}" Width="auto" Height="36" >
+                <Button.ContentTemplate >
+                    <DataTemplate>
+                        <Grid Width="130">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Повторить заказ" Grid.Column="1" HorizontalAlignment="Center" FontSize="12"/>
+                            <FontIcon Grid.Column="0" FontFamily="Segoe MDL2 Assets" Glyph="&#xF413;" RenderTransformOrigin="0.5,0.5">
+                            </FontIcon>
+                        </Grid>
+                    </DataTemplate>
+                </Button.ContentTemplate>
+            </Button>
+            <views:OrdersCard x:ConnectionId='34' Margin="6,12"                                             />
+            </StackPanel>
+        </Grid>
+
+        <controls:Details x:ConnectionId='32' x:Name="details" Grid.Column="1" Margin="12,6,6,6"
+                                                             
+                          DetailsTemplate="{StaticResource DetailsTemplate}"
+                                                                                 
+                                                                      
+                                                                          
+                                                                      
+                                                                           />
+    </Grid>
+</UserControl>
+

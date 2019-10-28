@@ -1,0 +1,97 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="Inventory.Views.OrdersView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:controlsUWP="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:maps="using:Windows.UI.Xaml.Controls.Maps"
+    xmlns:views="using:Inventory.Views"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="ListHeaderTemplate">
+            <StackPanel Margin="6,4,0,0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <TextBlock Text="Заказы" FontSize="18" />
+                <TextBlock Text="{Binding}" FontSize="18" Foreground="Gray" />
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid Background="WhiteSmoke"
+          BorderBrush="LightGray"
+          BorderThickness="1,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <controls:WindowTitle x:ConnectionId='3' Prefix="Заказы"                                                         />
+
+        <SplitView x:ConnectionId='4' x:Name="splitView" PaneBackground="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}"
+                                                                                            
+                   OpenPaneLength="192" DisplayMode="Inline">
+            <SplitView.Pane>
+                <controls:Section Header="Фильтры">
+                    <views:OrdersFilterPanel x:ConnectionId='5'                                           ></views:OrdersFilterPanel>
+                </controls:Section>
+            </SplitView.Pane>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!--Orders-->
+                <Grid x:ConnectionId='6' Grid.Row="0"                                                                                         >
+                    <controls:Section x:ConnectionId='16'                                                          
+                                HeaderTemplate="{StaticResource ListHeaderTemplate}" 
+                                HeaderButtonGlyph="&#xE2B4;"                                   
+                                                                               >
+                        <views:OrdersListColor x:ConnectionId='17'                                          />
+                    </controls:Section>
+                </Grid>
+
+                <!--Details-->
+                <Grid x:ConnectionId='7' Grid.Row="1" BorderBrush="LightGray" BorderThickness="0,1,0,0" 
+                                                                                                                                                             >
+                    <controls:Section x:ConnectionId='8'                                                                    
+                            Background="{StaticResource DetailsViewBackgroundColor}"
+                            HeaderButtonGlyph="&#xE2B4;" 
+                                                                     
+                                                                                                     >
+
+                        <Pivot x:ConnectionId='10' x:Name="pivot">
+                            <PivotItem Header="Заказ">
+                                <views:OrdersDetails x:ConnectionId='15' Grid.Row="1"                                             />
+                            </PivotItem>
+                            <PivotItem Header="Блюда">
+                                <views:OrdersOrderDishes x:ConnectionId='14' Grid.Row="1"                                              />
+                            </PivotItem>
+                            <PivotItem Header="Заказы клиента">
+                                <views:CustomersOrders x:ConnectionId='13'                                              />
+                            </PivotItem>
+                            <PivotItem Header="Ход выполнения заказа">
+                                <views:OrdersOrderStatusHistory x:ConnectionId='12' Grid.Row="1"                                                       />
+                            </PivotItem>
+                            <PivotItem Header="Карта/Адрес">
+                                <Grid>
+                                    <maps:MapControl x:ConnectionId='11' Grid.Row="1" Grid.Column="0" x:Name="mapControl" 
+                                                                                                       
+                                                                                               />
+                                    <TickBar/>
+                                    <!--<Rectangle RadiusX="20" RadiusY="20" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="LightSkyBlue" Margin="10"/>-->
+                                </Grid>
+                            </PivotItem>
+                        </Pivot>
+                    </controls:Section>
+
+                    <!--Empty Details-->
+                    <controls:Section x:ConnectionId='9' Header="Не выбрано" 
+                                                                                                        />
+                </Grid>
+            </Grid>
+        </SplitView>
+        <TextBlock Grid.Row="1">OrdersView.xaml</TextBlock>
+    </Grid>
+</Page>
+

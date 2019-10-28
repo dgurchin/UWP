@@ -1,0 +1,70 @@
+﻿<UserControl
+    x:Class="Inventory.Views.OrdersOrderStatusHistory"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:Inventory.Models"
+    xmlns:controls="using:Inventory.Controls"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="400">
+    <UserControl.Resources>
+        <DataTemplate x:Key="HeaderTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Id" Style="{StaticResource ColumnHeaderStyle}" />
+                <TextBlock Grid.Column="1" Text="№п/п" Style="{StaticResource ColumnHeaderStyle}" />
+                <TextBlock Grid.Column="2" Text="Статус(до)" Style="{StaticResource ColumnHeaderStyle}" />
+                <TextBlock Grid.Column="3" Text="Статус(после)" Style="{StaticResource ColumnHeaderStyle}" />
+                <TextBlock Grid.Column="4" Text="Дата/время" Style="{StaticResource ColumnHeaderStyle}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ItemTemplate" x:DataType="models:OrderStatusHistoryModel">
+            <Grid Height="32" Name="GridRow" Background="{x:Bind StatusIdEnd, Mode=OneWay, Converter={StaticResource OrderStatusColorConverter}}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="{x:Bind Id, Mode=OneWay}" Style="{StaticResource ColumnValueStyle}" />
+                    <TextBlock Grid.Column="1" Text="{x:Bind OrderLine, Mode=OneWay}" Style="{StaticResource ColumnValueStyle}" />
+                    <TextBlock Grid.Column="2" Text="{x:Bind StatusIdBeginningName, Mode=OneWay}" Style="{StaticResource ColumnValueStyle}" />
+                    <TextBlock Grid.Column="3" Text="{x:Bind StatusIdEndName, Mode=OneWay}" Style="{StaticResource ColumnValueStyle}"/>
+                    <TextBlock Grid.Column="4" Text="{x:Bind StatusDateString}" Style="{StaticResource ColumnValueStyle}"/>
+                    <!--<TextBlock Grid.Column="2" Text="{x:Bind StatusIdBeginning, Mode=OneWay}" Style="{StaticResource ColumnValueRightStyle}" />
+                    <TextBlock Grid.Column="3" Text="{x:Bind StatusIdEnd, Mode=OneWay}" Style="{StaticResource ColumnValueRightStyle}"/>
+                    <TextBlock Grid.Column="4" Text="{x:Bind StatusDate}"/>-->
+                </Grid>
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <controls:DataList ItemsSource="{x:Bind ViewModel.Items, Mode=OneWay}"
+                           NewLabel="История выполнения заказа"
+                           DefaultCommands="refresh"
+                           SelectedItem="{x:Bind ViewModel.SelectedItem, Mode=TwoWay}"
+                           HeaderTemplate="{StaticResource HeaderTemplate}"
+                           ItemTemplate="{StaticResource ItemTemplate}"
+                           IsMultipleSelection="{x:Bind ViewModel.IsMultipleSelection, Mode=TwoWay}"
+                           ItemsCount="{x:Bind ViewModel.ItemsCount, Mode=OneWay}"
+                           NewCommand="{x:Bind ViewModel.NewCommand}"
+                           RefreshCommand="{x:Bind ViewModel.RefreshCommand}"
+                           Query="{x:Bind ViewModel.Query, Mode=TwoWay}"
+                           QuerySubmittedCommand="{x:Bind ViewModel.RefreshCommand}"
+                           StartSelectionCommand="{x:Bind ViewModel.StartSelectionCommand}"
+                           CancelSelectionCommand="{x:Bind ViewModel.CancelSelectionCommand}"
+                           SelectItemsCommand="{x:Bind ViewModel.SelectItemsCommand}"
+                           DeselectItemsCommand="{x:Bind ViewModel.DeselectItemsCommand}"
+                           DeleteCommand="{x:Bind ViewModel.DeleteSelectionCommand}" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,58 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="Inventory.Views.PhoneCallReceiveCustomerDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:views="using:Inventory.Views"
+    xmlns:viewmodels="using:Inventory.ViewModels"
+    xmlns:converters="using:Inventory.Converters"
+    mc:Ignorable="d" d:DesignWidth="350" d:DesignHeight="600">
+
+    <UserControl.Resources>
+        <converters:BindingTypeConverter x:Key="BindingTypeConverter"/>
+        <DataTemplate x:Key="DetailsTemplate"                                                 >
+            <controls:FluidGrid x:ConnectionId='2' Columns="2" ColumnSpacing="12" Margin="12,18,6,6" RowSpacing="12">
+                <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="2" Text="Персональная информация"/>
+                <controls:FormTextBox x:ConnectionId='3' Header="Имя"                                                     IsRequired="True"/>
+                <controls:FormTextBox x:ConnectionId='4' Header="Фамилия"                                                    />
+                <controls:FormTextBox x:ConnectionId='5' Header="Отчество"                                                      />
+                <controls:FormCalendarDatePicker x:ConnectionId='6' Header="Дата рождения"                                                     />
+
+                <TextBlock  Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="2" Text="Данные клиента"/>
+
+                <controls:FormComboBox x:ConnectionId='7' Header="Источник информации"                                                 
+                                                                                                                                              
+                                        SelectedValuePath="Id" DisplayMemberPath="Name" />
+                <ToggleSwitch x:ConnectionId='8' OnContent="Да" OffContent="Нет"                                                                                                          
+                                                                            >
+                    <ToggleSwitch.Header>
+                        <TextBlock Foreground="{StaticResource SystemAccentColor}">Согл. обработка информации</TextBlock>
+                    </ToggleSwitch.Header>
+                </ToggleSwitch>
+
+                <ToggleSwitch x:ConnectionId='9' OnContent="Да" OffContent="Нет"                                                                                                        
+                                                                            >
+                    <ToggleSwitch.Header>
+                        <TextBlock Foreground="{StaticResource SystemAccentColor}">В черном списке</TextBlock>
+                    </ToggleSwitch.Header>
+                </ToggleSwitch>
+            </controls:FluidGrid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <controls:Details x:ConnectionId='10' x:Name="details" Margin="6"
+                                                             
+                          DetailsTemplate="{StaticResource DetailsTemplate}"
+                                                                  
+                                                                                 
+                                                                      
+                                                                      
+                                                                          
+                                                                      
+                                                                           />
+    </Grid>
+    </UserControl>
+

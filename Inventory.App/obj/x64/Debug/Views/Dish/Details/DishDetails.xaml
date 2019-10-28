@@ -1,0 +1,50 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="Inventory.Views.DishDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:views="using:Inventory.Views"
+    xmlns:viewmodels="using:Inventory.ViewModels"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600">
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="DetailsTemplate"                                             >
+            <controls:FluidGrid x:ConnectionId='2' Margin="12,18,6,6" Columns="2" ColumnSpacing="12" RowSpacing="12">
+                <TextBlock controls:FluidGrid.ColumnSpan="2">DishDetails.xaml</TextBlock>
+                <!-- <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="2" Text="General" /> -->
+                <controls:FormTextBox x:ConnectionId='3' Header="Наименование"                                                />
+                <controls:FormComboBox x:ConnectionId='4' Header="Группа"                                                                                                                   SelectedValuePath="RowGuid" DisplayMemberPath="Name" />
+
+                <controls:FormTextBox x:ConnectionId='5' Header="Цена"                                                                                              DataType="Decimal" Format="0.00" />
+                <controls:FormTextBox x:ConnectionId='6' controls:FluidGrid.ColumnSpan="2" Header="Описание"                                                       TextWrapping="Wrap" AcceptsReturn="True" MinHeight="150" />
+            </controls:FluidGrid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="320"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid BorderBrush="LightGray" 
+              BorderThickness="0,1,1,0"                                   
+              Background="{StaticResource DetailsViewBackgroundColor}">
+            <views:DishCard x:ConnectionId='8' Margin="6"                                                                            />
+        </Grid>
+
+        <controls:Details x:ConnectionId='7' x:Name="details" Grid.Column="1" Margin="6"
+                                                             
+                          DetailsTemplate="{StaticResource DetailsTemplate}"
+                                                                  
+                                                                                 
+                                                                      
+                                                                      
+                                                                          
+                                                                      
+                                                                           />
+    </Grid>
+</UserControl>
+

@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "гр",
+    "RowGuid": "469c41dd-e878-11e6-80cb-6431504f2928",
+    "Dishes": null,
+    "Id": 1
+  },
+  {
+    "Name": "шт",
+    "RowGuid": "5a6e9970-fb78-11e3-8273-6036ddd98f18",
+    "Dishes": null,
+    "Id": 2
+  },
+  {
+    "Name": "мл",
+    "RowGuid": "85abe2a5-fb7d-11e3-8273-6036ddd98f18",
+    "Dishes": null,
+    "Id": 3
+  }
+]

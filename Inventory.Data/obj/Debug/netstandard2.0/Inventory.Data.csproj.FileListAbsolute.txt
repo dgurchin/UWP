@@ -1,0 +1,10 @@
+D:\Delivery\src\Inventory.Data\bin\Debug\netstandard2.0\Inventory.Data.deps.json
+D:\Delivery\src\Inventory.Data\bin\Debug\netstandard2.0\Inventory.Data.runtimeconfig.json
+D:\Delivery\src\Inventory.Data\bin\Debug\netstandard2.0\Inventory.Data.runtimeconfig.dev.json
+D:\Delivery\src\Inventory.Data\bin\Debug\netstandard2.0\Inventory.Data.dll
+D:\Delivery\src\Inventory.Data\bin\Debug\netstandard2.0\Inventory.Data.pdb
+D:\Delivery\src\Inventory.Data\obj\Debug\netstandard2.0\Inventory.Data.csprojAssemblyReference.cache
+D:\Delivery\src\Inventory.Data\obj\Debug\netstandard2.0\Inventory.Data.AssemblyInfoInputs.cache
+D:\Delivery\src\Inventory.Data\obj\Debug\netstandard2.0\Inventory.Data.AssemblyInfo.cs
+D:\Delivery\src\Inventory.Data\obj\Debug\netstandard2.0\Inventory.Data.dll
+D:\Delivery\src\Inventory.Data\obj\Debug\netstandard2.0\Inventory.Data.pdb

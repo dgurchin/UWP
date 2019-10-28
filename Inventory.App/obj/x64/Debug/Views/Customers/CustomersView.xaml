@@ -1,0 +1,76 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="Inventory.Views.CustomersView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:views="using:Inventory.Views"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="ListHeaderTemplate">
+            <StackPanel Margin="6,4,0,0" Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Text="Клиенты" FontSize="18" />
+                <TextBlock Text="{Binding}" FontSize="18" Foreground="Gray" />
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid Background="WhiteSmoke"
+          BorderBrush="LightGray"
+          BorderThickness="1,0,0,0">
+        <controls:WindowTitle x:ConnectionId='3' Prefix="Клиенты"                                                            />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--Customers-->
+            <Grid x:ConnectionId='4'                                                                                            >
+                <controls:Section x:ConnectionId='13'                                                             
+                                  HeaderTemplate="{StaticResource ListHeaderTemplate}"
+                                  HeaderButtonGlyph="&#xE2B4;" 
+                                                                   
+                                                                                 >
+                    <views:CustomersList x:ConnectionId='14'                                             />
+                </controls:Section>
+            </Grid>
+
+            <!--Details-->
+            <Grid x:ConnectionId='5' Grid.Row="1" 
+                  BorderBrush="LightGray"
+                  BorderThickness="0,1,0,0"
+                                                                                                                                                            >
+                <controls:Section x:ConnectionId='6'                                                                       
+                                  HeaderButtonGlyph="&#xE2B4;" 
+                                                                           
+                                  Background="{StaticResource DetailsViewBackgroundColor}"
+                                                                                                              >
+
+                    <Pivot x:ConnectionId='8' x:Name="pivot">
+                        <PivotItem Header="Клиент">
+                            <views:CustomersDetails x:ConnectionId='12'                                                />
+                        </PivotItem>
+                        <PivotItem Header="Ср. связи">
+                            <views:CommunicationList x:ConnectionId='11'                                                 ></views:CommunicationList>
+                        </PivotItem>
+                        <PivotItem Header="Адреса">
+                            <views:CustomerAddressList x:ConnectionId='10'                                           ></views:CustomerAddressList>
+                        </PivotItem>
+                        <PivotItem Header="Заказы">
+                            <views:CustomersOrders x:ConnectionId='9'                                               />
+                        </PivotItem>
+                    </Pivot>
+                </controls:Section>
+
+                <!--Empty Details-->
+                <controls:Section x:ConnectionId='7' Header="Не выбрано" 
+                                                                                                                 />
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
+

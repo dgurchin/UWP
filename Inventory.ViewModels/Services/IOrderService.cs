@@ -1,0 +1,44 @@
+﻿#region copyright
+// ******************************************************************
+// Copyright (c) Microsoft. All rights reserved.
+// This code is licensed under the MIT License (MIT).
+// THE CODE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+// INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+// TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+// THE CODE OR THE USE OR OTHER DEALINGS IN THE CODE.
+// ******************************************************************
+#endregion
+
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+using Inventory.Data;
+using Inventory.Models;
+using Inventory.Models.Enums;
+
+namespace Inventory.Services
+{
+    public interface IOrderService
+    {
+        OrderStatusEnum DefaultOrderStatus { get; }
+        SourceEnum DefaultSource { get; }
+        decimal DefaultMinimumOrderSum { get; }
+
+        Task<OrderModel> GetOrderAsync(Guid orderGuid);
+        Task<IList<OrderModel>> GetOrdersAsync(DataRequest<Order> request);
+        Task<IList<OrderModel>> GetOrdersAsync(int skip, int take, DataRequest<Order> request);
+        Task<int> GetOrdersCountAsync(DataRequest<Order> request);
+
+        Task<OrderModel> CreateNewOrderAsync(int customerId = 0, string phoneNumber = null);
+        Task<int> UpdateOrderAsync(OrderModel model);
+
+        Task<int> DeleteOrderAsync(OrderModel model);
+        Task<int> DeleteOrderRangeAsync(int index, int length, DataRequest<Order> request);
+
+        Task<int> BindDishesToOrderAsync(OrderModel model);
+    }
+}

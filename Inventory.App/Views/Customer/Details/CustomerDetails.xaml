@@ -1,0 +1,88 @@
+﻿<UserControl
+    x:Class="Inventory.Views.CustomerDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:views="using:Inventory.Views"
+    xmlns:viewmodels="using:Inventory.ViewModels"
+    xmlns:converters="using:Inventory.Converters"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600">
+
+    <UserControl.Resources>
+        <converters:BindingTypeConverter x:Key="BindingTypeConverter"/>
+        <DataTemplate x:Key="DetailsTemplate" x:DataType="viewmodels:CustomerDetailsViewModel">
+            <controls:FluidGrid Columns="2" ColumnSpacing="12" Margin="12,18,6,6" RowSpacing="12">
+                <TextBlock Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="2" Text="Персональная информация"/>
+                <controls:FormTextBox Header="Имя" Text="{x:Bind EditableItem.FirstName, Mode=TwoWay}" IsRequired="True" />
+                <controls:FormTextBox Header="Фамилия" Text="{x:Bind EditableItem.LastName, Mode=TwoWay}" />
+                <controls:FormTextBox Header="Отчество" Text="{x:Bind EditableItem.MiddleName, Mode=TwoWay}" />
+                <controls:FormCalendarDatePicker Header="Дата рождения" Date="{x:Bind EditableItem.BirthDate, Mode=TwoWay}" />
+
+                <TextBlock  Style="{StaticResource FormsSection}" controls:FluidGrid.ColumnSpan="2" Text="Данные клиента"/>
+
+                <controls:FormComboBox Header="Источник информации" ItemsSource="{x:Bind LookupTables.OrderSources}"
+                                        SelectedValue="{x:Bind EditableItem.SourceId, Mode=TwoWay, Converter={StaticResource Int32Converter}}"
+                                        SelectedValuePath="Id" DisplayMemberPath="Name" />
+                <ToggleSwitch OnContent="Да" OffContent="Нет" IsOn="{x:Bind EditableItem.SignOfConsent, Mode=TwoWay, Converter={StaticResource NullableBoolConverter}}"
+                              PointerReleased="ToggleSwitch_PointerReleased">
+                    <ToggleSwitch.Header>
+                        <TextBlock Foreground="{StaticResource SystemAccentColor}">Согл. обработка информации</TextBlock>
+                    </ToggleSwitch.Header>
+                </ToggleSwitch>
+
+                <ToggleSwitch OnContent="Да" OffContent="Нет" IsOn="{x:Bind EditableItem.IsBlockList, Mode=TwoWay, Converter={StaticResource NullableBoolConverter}}"
+                              PointerReleased="ToggleSwitch_PointerReleased">
+                    <ToggleSwitch.Header>
+                        <TextBlock Foreground="{StaticResource SystemAccentColor}">В черном списке</TextBlock>
+                    </ToggleSwitch.Header>
+                </ToggleSwitch>
+            </controls:FluidGrid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="320"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Border BorderBrush="LightGray" BorderThickness="0,1,1,0" Background="{StaticResource DetailsViewBackgroundColor}">
+                <views:CustomerCard Margin="6" ViewModel="{x:Bind ViewModel}" Item="{x:Bind ViewModel.Item, Mode=OneWay}" />
+            </Border>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="0.8*"/>
+            </Grid.RowDefinitions>
+            
+            <controls:Details x:Name="details" Grid.Column="1" Margin="6" Grid.RowSpan="{x:Bind GetRowSpan(ViewModel.ItemIsNew), Mode=OneWay}"
+                          DetailsContent="{x:Bind ViewModel}"
+                          DetailsTemplate="{StaticResource DetailsTemplate}"
+                          CanGoBack="{x:Bind ViewModel.CanGoBack}"
+                          IsEditMode="{x:Bind ViewModel.IsEditMode, Mode=OneWay}"
+                          BackCommand="{x:Bind ViewModel.BackCommand}"
+                          EditCommand="{x:Bind ViewModel.EditCommand}"
+                          DeleteCommand="{x:Bind ViewModel.DeleteCommand}"
+                          SaveCommand="{x:Bind ViewModel.SaveCommand}"
+                          CancelCommand="{x:Bind ViewModel.CancelCommand}" />
+            
+            <!--Details-->
+            <Border Grid.Row="1" BorderBrush="LightGray" BorderThickness="0,1,0,0" Visibility="{x:Bind ViewModel.EditableItem.IsNew, Mode=OneWay, Converter={StaticResource InverseBoolToVisibilityConverter}}">
+                <controls:Section Background="{StaticResource DetailsViewBackgroundColor}">
+                    <Pivot>
+                        <PivotItem Header="Ср. связи">
+                            <views:CommunicationList ViewModel="{x:Bind ViewModel.CommunicationList}"/>
+                        </PivotItem>
+                        <PivotItem Header="Адреса">
+                            <views:CustomerAddressList ViewModel="{x:Bind ViewModel.AddressList}"/>
+                        </PivotItem>
+                    </Pivot>
+                </controls:Section>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

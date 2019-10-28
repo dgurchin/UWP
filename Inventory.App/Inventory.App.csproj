@@ -1,0 +1,1175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{88F4FCC9-4783-491E-BEF7-CA1C07DD18A8}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inventory</RootNamespace>
+    <AssemblyName>Inventory.Sample</AssemblyName>
+    <DefaultLanguage>ru-ru</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateThumbprint>1DA722F13AED51221D5C6C5452BEA23B84207896</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppInstallerUpdateFrequency>0</AppInstallerUpdateFrequency>
+    <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <PackageCertificateKeyFile />
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GridLengths.cs" />
+    <Compile Include="Common\VirtualCollection\VirtualCollection.cs" />
+    <Compile Include="Common\VirtualCollection\VirtualCollection.IList.cs" />
+    <Compile Include="Common\VirtualCollection\VirtualCollection.Selection.cs" />
+    <Compile Include="Configuration\AppSettings.cs" />
+    <Compile Include="Configuration\ServiceLocator.cs" />
+    <Compile Include="Configuration\Startup.cs" />
+    <Compile Include="Controls\AdaptiveGridView\AdaptiveGridView.cs" />
+    <Compile Include="Controls\AdaptiveGridView\AdaptiveGridView.Properties.cs" />
+    <Compile Include="Controls\AdaptiveGridView\AdaptiveHeightValueConverter.cs" />
+    <Compile Include="Controls\Buttons\IconButton.cs" />
+    <Compile Include="Controls\Buttons\IconLabel.cs" />
+    <Compile Include="Controls\Buttons\IconLabelButton.cs" />
+    <Compile Include="Controls\Buttons\RoundButton.cs" />
+    <Compile Include="Controls\DataGrid\DataGrid.xaml.cs">
+      <DependentUpon>DataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DataList\DataList.xaml.cs">
+      <DependentUpon>DataList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Details\Details.xaml.cs">
+      <DependentUpon>Details.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FluidGrid\FluidGrid.cs" />
+    <Compile Include="Controls\Forms\FormCalendarDatePicker.cs" />
+    <Compile Include="Controls\Forms\FormComboBox.cs" />
+    <Compile Include="Controls\Forms\FormTimePicker.cs" />
+    <Compile Include="Controls\Forms\FormTypes.cs" />
+    <Compile Include="Controls\Forms\FormTextBox.cs" />
+    <Compile Include="Controls\Search\Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Section\Section.cs" />
+    <Compile Include="Controls\Toolbars\DetailToolbar.xaml.cs">
+      <DependentUpon>DetailToolbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Toolbars\ListToolbar.xaml.cs">
+      <DependentUpon>ListToolbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Toolbars\ToolbarCommon.cs" />
+    <Compile Include="Controls\WindowTitle\WindowTitle.cs" />
+    <Compile Include="Controls\WrapPanel\WrapPanel.cs" />
+    <Compile Include="Converters\BindingTypeConverter.cs" />
+    <Compile Include="Converters\BoolNegationConverter.cs" />
+    <Compile Include="Converters\BoolToTextConverter.cs" />
+    <Compile Include="Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converters\CommunicationTypeConverter.cs" />
+    <Compile Include="Converters\DateTimeFormatConverter.cs" />
+    <Compile Include="Converters\DateTimeOffsetConverter.cs" />
+    <Compile Include="Converters\DateTimeOffsetToStringConverter.cs" />
+    <Compile Include="Converters\DateTimeOffsetToTimeSpanConverter.cs" />
+    <Compile Include="Converters\DateTimeToDateTimeOffsetConverter.cs" />
+    <Compile Include="Converters\DateTimeToTimeSpanConverter.cs" />
+    <Compile Include="Converters\DecimalConverter.cs" />
+    <Compile Include="Converters\DoubleConverter.cs" />
+    <Compile Include="Converters\Int16Converter.cs" />
+    <Compile Include="Converters\Int32Converter.cs" />
+    <Compile Include="Converters\Int64Converter.cs" />
+    <Compile Include="Converters\LogTypeConverter.cs" />
+    <Compile Include="Converters\NullableBoolConverter.cs" />
+    <Compile Include="Converters\NullToVisibilityConverter.cs" />
+    <Compile Include="Converters\ObjectToImageConverter.cs" />
+    <Compile Include="Converters\OrderStatusColorConverter.cs" />
+    <Compile Include="Extensions\AnimationExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\ICommandExtensions.cs" />
+    <Compile Include="Extensions\ItemIndexRangeExtensions.cs" />
+    <Compile Include="Extensions\UriExtensions.cs" />
+    <Compile Include="Services\DishGarnishService.cs" />
+    <Compile Include="Services\DishIngredientService.cs" />
+    <Compile Include="Services\ImageService.cs" />
+    <Compile Include="Services\OrderDishModifierService.cs" />
+    <Compile Include="Services\OrderLoadingMonitor.cs" />
+    <Compile Include="Services\VOIP\LinphoneManagerService.cs" />
+    <Compile Include="Services\DishRecommendService.cs" />
+    <Compile Include="Services\LocationService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CustomerService.cs" />
+    <Compile Include="Services\DataServiceFactory\DataServiceFactory.cs" />
+    <Compile Include="Services\DataServiceFactory\IDataServiceFactory.cs" />
+    <Compile Include="Services\Infrastructure\ActivationService.cs" />
+    <Compile Include="Services\Infrastructure\CommonServices.cs" />
+    <Compile Include="Services\Infrastructure\ContextService.cs" />
+    <Compile Include="Services\Infrastructure\DialogService.cs" />
+    <Compile Include="Services\Infrastructure\FilePickerService.cs" />
+    <Compile Include="Services\Infrastructure\LoginService.cs" />
+    <Compile Include="Services\Infrastructure\LogService\LogCollection.cs" />
+    <Compile Include="Services\Infrastructure\LogService\LogService.cs" />
+    <Compile Include="Services\Infrastructure\MessageService.cs" />
+    <Compile Include="Services\Infrastructure\NavigationService.cs" />
+    <Compile Include="Services\Infrastructure\SettingsService.cs" />
+    <Compile Include="Services\LookupTables.cs" />
+    <Compile Include="Services\OrderDishGarnishService.cs" />
+    <Compile Include="Services\OrderDishIngredientService.cs" />
+    <Compile Include="Services\OrderDishService.cs" />
+    <Compile Include="Services\OrderService.cs" />
+    <Compile Include="Services\OrderStatusHistoryService.cs" />
+    <Compile Include="Services\DishService.cs" />
+    <Compile Include="Services\StreetService.cs" />
+    <Compile Include="Services\VariableService.cs" />
+    <Compile Include="Services\VirtualCollections\CustomerCollection.cs" />
+    <Compile Include="Services\VirtualCollections\OrderCollection.cs" />
+    <Compile Include="Services\VirtualCollections\DishCollection.cs" />
+    <Compile Include="Controls\Forms\FormAutoSuggestBox.cs" />
+    <Compile Include="Services\VOIP\Phone\AudioCodecsViewModel.cs" />
+    <Compile Include="Services\VOIP\Phone\AudioParametersViewModel.cs" />
+    <Compile Include="Services\VOIP\Phone\PhoneCallReceiveViewModel.cs" />
+    <Compile Include="Services\VOIP\Phone\PhoneCallViewModel.cs" />
+    <Compile Include="Tools\BitmapTools.cs" />
+    <Compile Include="Tools\DependencyExpressions\DependencyExpression.cs" />
+    <Compile Include="Tools\DependencyExpressions\DependencyExpressions.cs" />
+    <Compile Include="Tools\DependencyExpressions\INotifyExpressionChanged.cs" />
+    <Compile Include="Tools\ElementSet\ElementExtensions.cs" />
+    <Compile Include="Tools\ElementSet\ElementSet.cs" />
+    <Compile Include="Tools\ElementSet\ElementSet.Events.cs" />
+    <Compile Include="Tools\ElementSet\ElementSet.Methods.cs" />
+    <Compile Include="Tools\ElementSet\ElementSet.Properties.cs" />
+    <Compile Include="Views\AppLogs\AppLogsView.xaml.cs">
+      <DependentUpon>AppLogsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppLogs\Details\AppLogsDetails.xaml.cs">
+      <DependentUpon>AppLogsDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppLogs\List\AppLogsList.xaml.cs">
+      <DependentUpon>AppLogsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChangesDatabase\ChangesDatabaseDataView.xaml.cs">
+      <DependentUpon>ChangesDatabaseDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Communications\List\CommunicationList.xaml.cs">
+      <DependentUpon>CommunicationList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\CustomerSuggestBox.xaml.cs">
+      <DependentUpon>CustomerSuggestBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\DishSuggestBox.xaml.cs">
+      <DependentUpon>DishSuggestBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\StreetSuggestBox.xaml.cs">
+      <DependentUpon>StreetSuggestBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerAddress\CustomerAddressList.xaml.cs">
+      <DependentUpon>CustomerAddressList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customers\CustomersView.xaml.cs">
+      <DependentUpon>CustomersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customers\Details\CustomersCard.xaml.cs">
+      <DependentUpon>CustomersCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customers\Details\CustomersDetails.xaml.cs">
+      <DependentUpon>CustomersDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customers\Details\CustomersOrders.xaml.cs">
+      <DependentUpon>CustomersOrders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customers\List\CustomersList.xaml.cs">
+      <DependentUpon>CustomersList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customer\CustomerView.xaml.cs">
+      <DependentUpon>CustomerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customer\Details\CustomerCard.xaml.cs">
+      <DependentUpon>CustomerCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customer\Details\CustomerDetails.xaml.cs">
+      <DependentUpon>CustomerDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\DashboardView.xaml.cs">
+      <DependentUpon>DashboardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\Parts\ChartPane.xaml.cs">
+      <DependentUpon>ChartPane.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\Parts\CustomersPane.xaml.cs">
+      <DependentUpon>CustomersPane.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\Parts\OrdersPane.xaml.cs">
+      <DependentUpon>OrdersPane.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\Parts\ProductsPane.xaml.cs">
+      <DependentUpon>ProductsPane.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\WindowsHelloControl.xaml.cs">
+      <DependentUpon>WindowsHelloControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\NamePasswordControl.xaml.cs">
+      <DependentUpon>NamePasswordControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDishChoice\Details\OrderDishChoiceDishesFilter.xaml.cs">
+      <DependentUpon>OrderDishChoiceDishesFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDishChoice\Dishes\OrderDishChoiceGrid.xaml.cs">
+      <DependentUpon>OrderDishChoiceGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDishChoice\Dishes\OrderDishChoiceList.xaml.cs">
+      <DependentUpon>OrderDishChoiceList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDishChoice\OrderDishChoiceView.xaml.cs">
+      <DependentUpon>OrderDishChoiceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDishes\Details\OrderDishesCard.xaml.cs">
+      <DependentUpon>OrderDishesCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDishes\Details\OrderDishesDetails.xaml.cs">
+      <DependentUpon>OrderDishesDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDishes\List\OrderDishesList.xaml.cs">
+      <DependentUpon>OrderDishesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDishes\OrderDishesView.xaml.cs">
+      <DependentUpon>OrderDishesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDish\Details\OrderDishRecommendList.xaml.cs">
+      <DependentUpon>OrderDishRecommendList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Orders\OrdersFilterPanel.xaml.cs">
+      <DependentUpon>OrdersFilterPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Phone\AudioSetting\AudioCodecs.xaml.cs">
+      <DependentUpon>AudioCodecs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Phone\AudioSetting\AudioParameters.xaml.cs">
+      <DependentUpon>AudioParameters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Phone\PhoneCallConnectOrder.xaml.cs">
+      <DependentUpon>PhoneCallConnectOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Phone\PhoneCallConnect\PhoneCallConnect.xaml.cs">
+      <DependentUpon>PhoneCallConnect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Phone\PhoneCallConnect\PhoneCallConnectControl.xaml.cs">
+      <DependentUpon>PhoneCallConnectControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Phone\PhoneCallReceive\PhoneCallReceiveDetails\PhoneCallReceiveCustomerDetails.xaml.cs">
+      <DependentUpon>PhoneCallReceiveCustomerDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Phone\PhoneCallReceive\PhoneCallReceiveView.xaml.cs">
+      <DependentUpon>PhoneCallReceiveView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDish\Details\OrderDishCard.xaml.cs">
+      <DependentUpon>OrderDishCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDish\Details\OrderDishDetails.xaml.cs">
+      <DependentUpon>OrderDishDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderDish\OrderDishView.xaml.cs">
+      <DependentUpon>OrderDishView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Orders\Details\OrdersCard.xaml.cs">
+      <DependentUpon>OrdersCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Orders\Details\OrdersDetails.xaml.cs">
+      <DependentUpon>OrdersDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Orders\Details\OrdersOrderDishes.xaml.cs">
+      <DependentUpon>OrdersOrderDishes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Orders\Details\OrdersOrderStatusHistory.xaml.cs">
+      <DependentUpon>OrdersOrderStatusHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Orders\List\OrdersListColor.xaml.cs">
+      <DependentUpon>OrdersListColor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Orders\List\OrdersList.xaml.cs">
+      <DependentUpon>OrdersList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Orders\OrdersView.xaml.cs">
+      <DependentUpon>OrdersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Order\Details\OrderCard.xaml.cs">
+      <DependentUpon>OrderCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Order\Details\OrderDetails.xaml.cs">
+      <DependentUpon>OrderDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Order\OrderView.xaml.cs">
+      <DependentUpon>OrderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dishes\List\DishesList.xaml.cs">
+      <DependentUpon>DishesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dishes\DishesView.xaml.cs">
+      <DependentUpon>DishesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dish\Details\DishCard.xaml.cs">
+      <DependentUpon>DishCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dish\Details\DishDetails.xaml.cs">
+      <DependentUpon>DishDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dish\DishView.xaml.cs">
+      <DependentUpon>DishView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Phone\PhoneCallReceive\PhoneCallReceiveList\PhoneCallReceiveOrdersList.xaml.cs">
+      <DependentUpon>PhoneCallReceiveOrdersList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\CreateDatabaseView.xaml.cs">
+      <DependentUpon>CreateDatabaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\MigrationView.xaml.cs">
+      <DependentUpon>MigrationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shell\MainShellView.xaml.cs">
+      <DependentUpon>MainShellView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shell\ShellView.xaml.cs">
+      <DependentUpon>ShellView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\ValidateConnectionView.xaml.cs">
+      <DependentUpon>ValidateConnectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SplashScreen\ExtendedSplash.xaml.cs">
+      <DependentUpon>ExtendedSplash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Controls\AddressBox.xaml.cs">
+      <DependentUpon>AddressBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Controls\CallControlsP.xaml.cs">
+      <DependentUpon>CallControlsP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Controls\ChatBubble.xaml.cs">
+      <DependentUpon>ChatBubble.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Controls\ContactAction.xaml.cs">
+      <DependentUpon>ContactAction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Controls\IncomingChatBubble.xaml.cs">
+      <DependentUpon>IncomingChatBubble.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Controls\Numpad.xaml.cs">
+      <DependentUpon>Numpad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Controls\OutgoingChatBubble.xaml.cs">
+      <DependentUpon>OutgoingChatBubble.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Controls\StatusBar.xaml.cs">
+      <DependentUpon>StatusBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Controls\TextBoxChatBubble.xaml.cs">
+      <DependentUpon>TextBoxChatBubble.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\CurrentOperation.cs" />
+    <Compile Include="VOIP\Model\AlphaKeyGroup.cs" />
+    <Compile Include="VOIP\Model\BaseModel.cs" />
+    <Compile Include="VOIP\Model\BoolToAccentBrushConverter.cs" />
+    <Compile Include="VOIP\Model\BugCollector.cs" />
+    <Compile Include="VOIP\Model\CallControllerListener.cs" />
+    <Compile Include="VOIP\Model\CallLogModel.cs" />
+    <Compile Include="VOIP\Model\ContactItem.cs" />
+    <Compile Include="VOIP\Model\ContactPictureConverter.cs" />
+    <Compile Include="VOIP\Model\ContactsManager.cs" />
+    <Compile Include="VOIP\Model\Conversation.cs" />
+    <Compile Include="VOIP\Model\InCallModel.cs" />
+    <Compile Include="VOIP\Model\LinphoneManager.cs" />
+    <Compile Include="VOIP\Model\SettingsManager.cs" />
+    <Compile Include="VOIP\Model\SipUriToUsernameConverter.cs" />
+    <Compile Include="VOIP\Model\Utils.cs" />
+    <Compile Include="VOIP\PhoneCallTask.cs" />
+    <Compile Include="VOIP\Views\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\AccountSettings.xaml.cs">
+      <DependentUpon>AccountSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\AdvancedSettings.xaml.cs">
+      <DependentUpon>AdvancedSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\AudioSettings.xaml.cs">
+      <DependentUpon>AudioSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\BasePage.cs" />
+    <Compile Include="VOIP\Views\Chat.xaml.cs">
+      <DependentUpon>Chat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\Chats.xaml.cs">
+      <DependentUpon>Chats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\ContactDetail.xaml.cs">
+      <DependentUpon>ContactDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\ContactList.xaml.cs">
+      <DependentUpon>ContactList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\Dialer.xaml.cs">
+      <DependentUpon>Dialer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\FullScreenPicture.xaml.cs">
+      <DependentUpon>FullScreenPicture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\History.xaml.cs">
+      <DependentUpon>History.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\InCall.xaml.cs">
+      <DependentUpon>InCall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\IncomingCall.xaml.cs">
+      <DependentUpon>IncomingCall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\Launcher.xaml.cs">
+      <DependentUpon>Launcher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VOIP\Views\VideoSettings.xaml.cs">
+      <DependentUpon>VideoSettings.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AppLogo.png" />
+    <Content Include="Assets\BadgeLogo.scale-100.png" />
+    <Content Include="Assets\BadgeLogo.scale-125.png" />
+    <Content Include="Assets\BadgeLogo.scale-150.png" />
+    <Content Include="Assets\BadgeLogo.scale-200.png" />
+    <Content Include="Assets\BadgeLogo.scale-400.png" />
+    <Content Include="Assets\Html\ChartHtmlControl.html" />
+    <Content Include="Assets\Images\LoginBackground.jpg" />
+    <Content Include="Assets\LargeTile.scale-100.png" />
+    <Content Include="Assets\LargeTile.scale-125.png" />
+    <Content Include="Assets\LargeTile.scale-150.png" />
+    <Content Include="Assets\LargeTile.scale-200.png" />
+    <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-100.png" />
+    <Content Include="Assets\SmallTile.scale-125.png" />
+    <Content Include="Assets\SmallTile.scale-150.png" />
+    <Content Include="Assets\SmallTile.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-400.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="VOIP\Assets\avatar.png" />
+    <Content Include="VOIP\Assets\avatar2.png" />
+    <Content Include="VOIP\Assets\call_status_incoming.png" />
+    <Content Include="VOIP\Assets\call_status_missed.png" />
+    <Content Include="VOIP\Assets\call_status_outgoing.png" />
+    <Content Include="VOIP\Assets\dont_wait_too_long.mkv" />
+    <Content Include="VOIP\Assets\Incall_Icons\bluetooth_off.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\bluetooth_on.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\camera.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\dialpad.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\LICENSE.txt" />
+    <Content Include="VOIP\Assets\Incall_Icons\micro_off.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\micro_on.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\pause.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\play.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\speaker_off.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\speaker_on.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\stats.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\video_off.png" />
+    <Content Include="VOIP\Assets\Incall_Icons\video_on.png" />
+    <Content Include="VOIP\Assets\incoming_chat.wav" />
+    <Content Include="VOIP\Assets\led_connected.png" />
+    <Content Include="VOIP\Assets\led_disconnected.png" />
+    <Content Include="VOIP\Assets\led_error.png" />
+    <Content Include="VOIP\Assets\led_inprogress.png" />
+    <Content Include="VOIP\Assets\linphone_logo_orange.png" />
+    <Content Include="VOIP\Assets\linphone_user.png" />
+    <Content Include="VOIP\Assets\logo-BC.png" />
+    <Content Include="VOIP\Assets\notes_of_the_optimistic.mkv" />
+    <Content Include="VOIP\Assets\nowebcamCIF.jpg" />
+    <Content Include="VOIP\Assets\ringback.wav" />
+    <Content Include="VOIP\Assets\rings\four_hands_together.mkv" />
+    <Content Include="VOIP\Assets\rings\house_keeping.mkv" />
+    <Content Include="VOIP\Assets\rings\its_a_game.mkv" />
+    <Content Include="VOIP\Assets\rings\leaving_dreams.mkv" />
+    <Content Include="VOIP\Assets\rings\notes_of_the_optimistic.mkv" />
+    <Content Include="VOIP\Assets\rings\oldphone-mono.wav" />
+    <Content Include="VOIP\Assets\rings\soft_as_snow.mkv" />
+    <Content Include="VOIP\Assets\SplashScreen.scale-200.png" />
+    <Content Include="VOIP\Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="VOIP\Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="VOIP\Assets\StoreLogo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LinphoneSDK">
+      <Version>3.12.0.273</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Analytics">
+      <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Crashes">
+      <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore">
+      <Version>2.2.6</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite">
+      <Version>2.2.6</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer">
+      <Version>2.2.6</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI">
+      <Version>5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
+      <Version>5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
+      <Version>5.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.Graph">
+      <Version>5.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.1.190606001</Version>
+    </PackageReference>
+    <PackageReference Include="NETStandard.Library">
+      <Version>2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Remotion.Linq">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Win2D.uwp">
+      <Version>1.23.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inventory.Data\Inventory.Data.csproj">
+      <Project>{515a0883-d2d9-4b97-8d73-ee6fe9bc3f2b}</Project>
+      <Name>Inventory.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inventory.ViewModels\Inventory.ViewModels.csproj">
+      <Project>{9cee6144-0377-4f95-ac2d-fdc599b82ed9}</Project>
+      <Name>Inventory.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AppLog\AppLog.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\DataGrid\DataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\DataList\DataList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Details\Details.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Search\Search.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Toolbars\DetailToolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Toolbars\ListToolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Buttons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\CalendarPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Cards.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\DataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\NavigationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\PivotHeaderItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Sections.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\TimePicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ToolBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Controls\Buttons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Controls\FormCalendarDatePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Controls\FormComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Controls\FormAutoSuggestBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Controls\FormTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Controls\FormTimePicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Controls\Section.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ThemeDictionaries.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AppLogs\AppLogsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AppLogs\Details\AppLogsDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AppLogs\List\AppLogsList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ChangesDatabase\ChangesDatabaseDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Communications\List\CommunicationList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\CustomerSuggestBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Controls\DishSuggestBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Controls\StreetSuggestBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CustomerAddress\CustomerAddressList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Customers\CustomersView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Customers\Details\CustomersCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Customers\Details\CustomersDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Customers\Details\CustomersOrders.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Customers\List\CustomersList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Customer\CustomerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Customer\Details\CustomerCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Customer\Details\CustomerDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Dashboard\DashboardView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Dashboard\Parts\ChartPane.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Dashboard\Parts\CustomersPane.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Dashboard\Parts\OrdersPane.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Dashboard\Parts\ProductsPane.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Login\LoginView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Login\WindowsHelloControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Login\NamePasswordControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\OrderDishChoice\Details\OrderDishChoiceDishesFilter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OrderDishChoice\Dishes\OrderDishChoiceGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OrderDishChoice\Dishes\OrderDishChoiceList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OrderDishChoice\OrderDishChoiceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OrderDishes\Details\OrderDishesCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OrderDishes\Details\OrderDishesDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OrderDishes\List\OrderDishesList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OrderDishes\OrderDishesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OrderDish\Details\OrderDishRecommendList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Orders\OrdersFilterPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Phone\AudioSetting\AudioCodecs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Phone\AudioSetting\AudioParameters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Phone\PhoneCallConnectOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Phone\PhoneCallConnect\PhoneCallConnect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Phone\PhoneCallConnect\PhoneCallConnectControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Phone\PhoneCallReceive\PhoneCallReceiveDetails\PhoneCallReceiveCustomerDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Phone\PhoneCallReceive\PhoneCallReceiveView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OrderDish\Details\OrderDishCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\OrderDish\Details\OrderDishDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\OrderDish\OrderDishView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Orders\Details\OrdersCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Orders\Details\OrdersDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Orders\Details\OrdersOrderDishes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Orders\Details\OrdersOrderStatusHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Orders\List\OrdersListColor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Orders\List\OrdersList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Orders\OrdersView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Order\Details\OrderCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Order\Details\OrderDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Order\OrderView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Dishes\List\DishesList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Dishes\DishesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Dish\Details\DishCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Dish\Details\DishDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Dish\DishView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Phone\PhoneCallReceive\PhoneCallReceiveList\PhoneCallReceiveOrdersList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Settings\CreateDatabaseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Settings\SettingsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Settings\MigrationView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Shell\MainShellView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Shell\ShellView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Settings\ValidateConnectionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SplashScreen\ExtendedSplash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VOIP\Controls\AddressBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Controls\CallControlsP.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Controls\ChatBubble.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Controls\ContactAction.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Controls\IncomingChatBubble.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Controls\Numpad.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Controls\OutgoingChatBubble.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Controls\StatusBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Controls\TextBoxChatBubble.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\About.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\AccountSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\AdvancedSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\AudioSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\Chat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\Chats.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\ContactDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\ContactList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\Dialer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\FullScreenPicture.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\History.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\InCall.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\IncomingCall.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\Launcher.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\Settings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\Views\VideoSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VOIP\VOIPStyles\VOIPStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsMobile, Version=10.0.17763.0">
+      <Name>Windows Mobile Extensions for the UWP</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\SQLiteBase\Delivery.2.02.db" />
+    <None Include="Inventory.App_TemporaryKey.pfx" />
+    <Content Include="VOIP\Assets\linphonerc" />
+    <Content Include="VOIP\Assets\linphonerc-factory" />
+    <None Include="VOIP\Assets\Incall_Icons\rootca.pem" />
+    <Content Include="VOIP\Assets\rootca.pem" />
+    <PRIResource Include="VOIP\String\ru-ru\Resources.resw" />
+    <!-- 
+    <PRIResource Include="VOIP\String\en-US\Resources.resw" />
+    -->
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Integra.LoadingMonitor">
+      <HintPath>..\ExternalFiles\LoadingMonitor\Integra.LoadingMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="Integra.LoadingMonitor.Web">
+      <HintPath>..\ExternalFiles\LoadingMonitor\Integra.LoadingMonitor.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

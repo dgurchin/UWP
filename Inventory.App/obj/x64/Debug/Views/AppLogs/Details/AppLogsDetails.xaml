@@ -1,0 +1,73 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="Inventory.Views.AppLogsDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    xmlns:viewmodels="using:Inventory.ViewModels"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600">
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="DetailsTemplate"                                               >
+            <StackPanel x:ConnectionId='2' Margin="0,12" Spacing="6">
+                <controls:FormTextBox x:ConnectionId='3' Header="Сообщение"                                           TextWrapping="Wrap" Mode="ReadOnly" />
+                <controls:FormTextBox x:ConnectionId='4' Header="Описание"                                               TextWrapping="Wrap" Mode="ReadOnly" />
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid ColumnSpacing="6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Margin="12,12,0,12"
+                    BorderThickness="0,0,1,0"
+                    BorderBrush="LightGray">
+
+            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12">
+                <FontIcon x:ConnectionId='12' Margin="0,0,12,6"
+                              FontSize="42"
+                                                                                                                            
+                                                                                                                                  />
+
+                <TextBlock x:ConnectionId='13' Style="{StaticResource CardSuperHeader}" 
+                                                                                
+                               VerticalAlignment="Center" />
+            </StackPanel>
+
+            <TextBlock Style="{StaticResource CardHeader}" Text="ID записи" />
+            <TextBlock x:ConnectionId='6' Style="{StaticResource CardText}"                                                />
+
+            <TextBlock Style="{StaticResource CardHeader}" Text="Дата" />
+            <TextBlock x:ConnectionId='7' Style="{StaticResource CardText}"                                                                                                          />
+
+            <TextBlock Style="{StaticResource CardHeader}" Text="Время" />
+            <TextBlock x:ConnectionId='8' Style="{StaticResource CardText}"                                                                                                                                       />
+
+            <TextBlock Style="{StaticResource CardHeader}" Text="Пользователь" />
+            <TextBlock x:ConnectionId='9' Style="{StaticResource CardText}"                                                  />
+
+            <TextBlock Style="{StaticResource CardHeader}" Text="Источник" />
+            <TextBlock x:ConnectionId='10' Style="{StaticResource CardText}"                                                    />
+
+            <TextBlock Style="{StaticResource CardHeader}" Text="Действие" />
+            <TextBlock x:ConnectionId='11' Style="{StaticResource CardText}"                                                    />
+        </StackPanel>
+
+        <controls:Details x:ConnectionId='5' x:Name="details" Grid.Column="1" Margin="6"
+                          DefaultCommands="delete"
+                                                             
+                          DetailsTemplate="{StaticResource DetailsTemplate}"
+                                                                  
+                                                                                 
+                                                                      
+                                                                      
+                                                                          
+                                                                      
+                                                                           />
+    </Grid>
+</UserControl>
+

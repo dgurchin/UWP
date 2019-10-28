@@ -1,0 +1,26 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="Inventory.Controls.ListToolbar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Inventory.Controls"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="36">
+
+    <CommandBar x:ConnectionId='2' x:Name="commandBar" Height="36" DefaultLabelPosition="Right" Style="{StaticResource ToolBarStyle}" Background="Transparent">
+        <AppBarButton x:ConnectionId='3' x:Name="buttonCancel" Icon="Cancel"                                           LabelPosition="Default" HorizontalAlignment="Left" Style="{StaticResource ToolBarButtonStyle}" Tag="cancel" />
+        <AppBarButton x:ConnectionId='4' x:Name="buttonNew" Icon="Add"                                        LabelPosition="Default" HorizontalAlignment="Left" Style="{StaticResource ToolBarButtonStyle}" Tag="new" />
+
+        <AppBarButton x:ConnectionId='5' x:Name="buttonEdit" Icon="Edit" Label="Изменить" LabelPosition="Default" HorizontalAlignment="Left" Style="{StaticResource ToolBarButtonStyle}" Tag="edit" />
+        <AppBarButton x:ConnectionId='6' x:Name="buttonDelete" Icon="Delete" Label="Удалить" LabelPosition="Default" HorizontalAlignment="Left" Style="{StaticResource ToolBarButtonStyle}" Tag="delete" />
+        <CommandBar.Content>
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton x:ConnectionId='7' x:Name="buttonFilter" Icon="Filter" Label="Фильтр" LabelPosition="Collapsed" Style="{StaticResource ToolBarButtonCollapsedStyle}" Tag="filter"></AppBarButton>
+                <AppBarButton x:ConnectionId='8' x:Name="buttonSelect" Icon="List" Label="Выбрать" LabelPosition="Collapsed" Style="{StaticResource ToolBarButtonCollapsedStyle}" Tag="select" />
+                <AppBarButton x:ConnectionId='9' x:Name="buttonRefresh" Icon="Refresh" Label="Обновить" LabelPosition="Collapsed" Style="{StaticResource ToolBarButtonCollapsedStyle}" Tag="refresh" />
+                <controls:Search x:ConnectionId='10' x:Name="search" Margin="6,0,0,0"                                     Width="240" VerticalAlignment="Center" Tag="search"                                   />
+            </StackPanel>
+        </CommandBar.Content>
+    </CommandBar>
+</UserControl>
+
